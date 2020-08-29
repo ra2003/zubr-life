@@ -82,7 +82,7 @@
                                                 {{item}}
                                             </a>
                                         </p>
-                                        <p>
+                                        <p v-if="feature.properties.phones.length > 0">
                                             Телефоны:
                                             <a :href="'tel:+' + item"
                                                :key="item"
