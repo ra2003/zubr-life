@@ -20,7 +20,7 @@
             <vl-layer-tile id="osm">
                 <vl-source-osm></vl-source-osm>
             </vl-layer-tile>
-            <vl-feature v-for="item of predefined"
+            <vl-feature v-for="item of liveFeatures"
                         :key="item.id"
                         :properties="item.properties">
                 <template slot-scope="feature">
@@ -106,8 +106,10 @@
                 <b-button type="is-info"
                           size="is-medium"
                           icon-right="exclamation"/>
-                <b-button type="is-white"
+                <b-button type="is-warning"
                           size="is-medium"
+                          @click="filterModal = true"
+                          active
                           icon-right="filter"/>
             </div>
         </div>
@@ -117,29 +119,88 @@
                       rounded
                       icon-right="question"/>
         </div>
+        <b-modal
+            v-model="filterModal"
+            has-modal-card
+            trap-focus
+            :destroy-on-hide="false"
+            aria-role="dialog"
+            aria-modal>
+            <form action="">
+                <div class="modal-card" style="width: auto">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Фильтры</p>
+                        <button
+                            type="button"
+                            class="delete"
+                            @click="filterModal = false"/>
+                    </header>
+                    <section class="modal-card-body">
+                        <strong>Категории: </strong>
+                        <br>
+                        <br>
+                        <div class="field"
+                             v-for="item of types"
+                             :key="item">
+                            <b-checkbox v-model="filter.types"
+
+                                        :native-value="item">
+                                {{item}}
+                            </b-checkbox>
+                        </div>
+                    </section>
+                    <footer class="modal-card-foot">
+                        <button class="button" type="button" @click="filterModal = false">Закрыть</button>
+                    </footer>
+                </div>
+            </form>
+        </b-modal>
     </div>
 </template>
 <script>
     import predefined           from './features'
     import {findPointOnSurface} from 'vuelayers/lib/ol-ext'
 
+    const types = [
+        'telegram',
+        'жилье',
+        'иное',
+        'медицинская помощь',
+        'продукты питания',
+        'транспорт'
+    ];
     export default {
         data() {
             return {
                 center          : [27.568817138671978, 53.899078973945166],
                 zoom            : 10,
                 predefined,
+                types,
                 selectedFeatures: [],
+                filterModal     : false,
                 deviceCoordinate: undefined,
                 drawType        : undefined,
+                filter          : {
+                    types: [
+                        'telegram',
+                        'жилье',
+                        'медицинская помощь',
+                        'продукты питания',
+                    ]
+                }
             }
         },
-        methods: {
+        methods : {
             pointOnSurface: findPointOnSurface,
             onUpdatePosition(coordinate) {
                 this.deviceCoordinate = coordinate
             },
         },
+        computed: {
+            liveFeatures() {
+                return this.predefined.filter(item => this.filter.types.includes(item.properties.type));
+            }
+        }
     }
 </script>
 <style lang="sass">
