@@ -4,6 +4,7 @@
                 :load-tiles-while-interacting="true"
                 class="map">
             <vl-view :zoom.sync="zoom"
+                     :enable-rotation="false"
                      :center.sync="center"
             ></vl-view>
             <vl-layer-tile id="osm">
