@@ -127,6 +127,7 @@
         <div class="map-panel">
             <b-button type="is-primary"
                       size="is-medium"
+                      @click="helpModal = true"
                       rounded
                       icon-right="question"/>
         </div>
@@ -218,6 +219,38 @@
                 </div>
             </form>
         </b-modal>
+        <b-modal
+            v-model="helpModal"
+            has-modal-card
+            trap-focus
+            :destroy-on-hide="false"
+            aria-role="dialog"
+            aria-modal>
+            <form action="">
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Дополнительно</p>
+                        <button
+                            type="button"
+                            class="delete"
+                            @click="helpModal = false"/>
+                    </header>
+                    <section class="modal-card-body">
+                        <b-carousel
+                            :autoplay="false"
+                        >
+                            <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
+                                <section :class="`hero is-medium is-${carousel.color}`">
+                                    <div class="hero-body has-text-centered">
+                                        <h1 class="title">{{carousel.title}}</h1>
+                                    </div>
+                                </section>
+                            </b-carousel-item>
+                        </b-carousel>
+                    </section>
+                </div>
+            </form>
+        </b-modal>
     </div>
 </template>
 <script>
@@ -249,8 +282,17 @@
                 selectedFeatures: [],
                 filterModal     : false,
                 infoModal       : false,
+                helpModal       : false,
                 deviceCoordinate: undefined,
                 drawType        : undefined,
+                progress        : true,
+                progressType    : 'is-primary',
+                carousels       : [
+                    {title: 'Slide 1', color: 'grey'},
+                    {title: 'Slide 2', color: 'dark'},
+                    {title: 'Slide 3', color: 'primary'},
+                    {title: 'Slide 4', color: 'info'}
+                ],
                 filter          : {
                     types: [
                         'telegram',
@@ -326,6 +368,7 @@
             bottom: 12px
             max-width: none
             width: 23em
+
             &:after, &:before
                 top: 100%
                 border: solid transparent
@@ -335,6 +378,7 @@
                 position: absolute
                 pointer-events: none
                 left: -30px
+
             &:after
                 border-top-color: white
                 border-width: 10px
@@ -350,6 +394,7 @@
             .card-content
                 max-height: 20em
                 overflow: auto
+
             .content
                 word-break: break-all
 </style>
