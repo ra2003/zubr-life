@@ -30,14 +30,13 @@
                         <vl-style-icon v-else-if="item.properties.type === 'транспорт'" src="./assets/img/icons/prop_transport.png" :scale="0.5"></vl-style-icon>
                         <vl-style-icon v-else-if="item.properties.type === 'медицинская помощь'" src="./assets/img/icons/prop_health.png" :scale="0.5"></vl-style-icon>
                         <vl-style-icon v-else-if="item.properties.type === 'жилье'" src="./assets/img/icons/prop_housing.png" :scale="0.5"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.type === 'telegram'" src="./assets/img/icons/tg.png" :scale="0.6"></vl-style-icon>
+                        <vl-style-icon v-else-if="item.properties.type === 'telegram'" src="./assets/img/icons/tg.png" :scale="0.5"></vl-style-icon>
                         <vl-style-icon v-else src="./assets/img/icons/prop_other.png" :scale="0.5"></vl-style-icon>
                     </vl-style-box>
                 </template>
             </vl-feature>
             <vl-interaction-select :features.sync="selectedFeatures" v-if="drawType == null">
                 <template slot-scope="select">
-                    <!-- select styles -->
                     <vl-style-box>
                         <vl-style-stroke color="#423e9e" :width="7"></vl-style-stroke>
                         <vl-style-fill :color="[254, 178, 76, 0.7]"></vl-style-fill>
@@ -63,7 +62,6 @@
                             <section class="card" v-if="feature.id !== 'position-feature'">
                                 <header class="card-header">
                                     <p class="card-header-title">
-                                        {{feature}}
                                         <span v-if="feature.properties">{{feature.properties.type}}</span>
                                     </p>
                                     <a class="card-header-icon" title="Close"
