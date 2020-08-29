@@ -30,6 +30,7 @@
                         <vl-style-icon v-else-if="item.properties.type === 'транспорт'" src="./assets/img/icons/prop_transport.png" :scale="0.5"></vl-style-icon>
                         <vl-style-icon v-else-if="item.properties.type === 'медицинская помощь'" src="./assets/img/icons/prop_health.png" :scale="0.5"></vl-style-icon>
                         <vl-style-icon v-else-if="item.properties.type === 'жилье'" src="./assets/img/icons/prop_housing.png" :scale="0.5"></vl-style-icon>
+                        <vl-style-icon v-else-if="item.properties.type === 'образование'" src="./assets/img/icons/prop_edu.png" :scale="0.5"></vl-style-icon>
                         <vl-style-icon v-else-if="item.properties.type === 'telegram'" src="./assets/img/icons/tg.png" :scale="0.5"></vl-style-icon>
                         <vl-style-icon v-else src="./assets/img/icons/prop_other.png" :scale="0.5"></vl-style-icon>
                     </vl-style-box>
@@ -71,14 +72,25 @@
                                 </header>
                                 <div class="card-content">
                                     <div class="content" v-if="feature.properties">
-                                        <p v-if="feature.properties.url">
-                                            Ссылка: <a :href="feature.properties.url" target="_blank">
-                                            {{feature.properties.url}}
-                                        </a>
+                                        <p>Контакт: <span v-html="feature.properties.contact"></span></p>
+                                        <p v-if="feature.properties.links.length > 0">
+                                            Ссылки:
+                                            <a :href="item.indexOf('@') !== -1 ? 'mailto:' + item : item"
+                                               target="_blank"
+                                               style="padding-left: 4px"
+                                               v-for="item of feature.properties.links" :key="item">
+                                                {{item}}
+                                            </a>
+                                        </p>
+                                        <p>
+                                            Телефоны:
+                                            <a :href="'tel:+' + item"
+                                               :key="item"
+                                               style="padding-left: 3px"
+                                               v-for="item of feature.properties.phones">+{{item}}</a>
                                         </p>
                                         <p>Описание: {{feature.properties.text}}</p>
                                         <p v-if="feature.properties.address">Адрес: {{feature.properties.address}}</p>
-                                        <p>Контакт: <span v-html="feature.properties.contact"></span></p>
                                     </div>
                                 </div>
                             </section>
@@ -218,8 +230,9 @@
         'жилье',
         'иное',
         'медицинская помощь',
+        'образование',
         'продукты питания',
-        'транспорт'
+        'транспорт',
     ];
     export default {
         filters : {
@@ -244,6 +257,7 @@
                         'жилье',
                         'медицинская помощь',
                         'продукты питания',
+                        'образование'
                     ]
                 },
                 favourites
@@ -310,7 +324,7 @@
             position: absolute
             left: -50px
             bottom: 12px
-            width: 20em
+            width: 30em
             max-width: none
 
             &:after, &:before
