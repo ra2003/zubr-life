@@ -71,7 +71,7 @@
                                     </a>
                                 </header>
                                 <div class="card-content">
-                                    <div class="content" v-if="feature.properties">
+                                    <div class="content" v-if="feature.properties" style="padding-bottom: 15px">
                                         <p>Контакт: <span v-html="feature.properties.contact"></span></p>
                                         <p v-if="feature.properties.links.length > 0">
                                             Ссылки:
@@ -322,11 +322,10 @@
 
         .feature-popup
             position: absolute
-            left: -50px
+            left: -47px
             bottom: 12px
-            width: 30em
             max-width: none
-
+            width: 23em
             &:after, &:before
                 top: 100%
                 border: solid transparent
@@ -335,7 +334,7 @@
                 width: 0
                 position: absolute
                 pointer-events: none
-
+                left: -30px
             &:after
                 border-top-color: white
                 border-width: 10px
@@ -351,7 +350,6 @@
             .card-content
                 max-height: 20em
                 overflow: auto
-
             .content
                 word-break: break-all
 </style>
