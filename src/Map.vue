@@ -7,6 +7,16 @@
                      :enable-rotation="false"
                      :center.sync="center"
             ></vl-view>
+            <vl-geoloc @update:position="onUpdatePosition">
+                <template slot-scope="geoloc">
+                    <vl-feature v-if="geoloc.position" id="position-feature">
+                        <vl-geom-point :coordinates="geoloc.position"></vl-geom-point>
+                        <vl-style-box>
+                            <vl-style-icon src="./assets/marker.png" :scale="0.4" :anchor="[0.5, 1]"></vl-style-icon>
+                        </vl-style-box>
+                    </vl-feature>
+                </template>
+            </vl-geoloc>
             <vl-layer-tile id="osm">
                 <vl-source-osm></vl-source-osm>
             </vl-layer-tile>
@@ -42,15 +52,18 @@
                             <vl-style-stroke color="#d43f45" :width="2"></vl-style-stroke>
                         </vl-style-circle>
                     </vl-style-box>
-                    <vl-overlay class="feature-popup" v-for="feature in select.features"
-                                :key="feature.id" :id="feature.id"
+                    <vl-overlay class="feature-popup"
+                                v-for="feature in select.features"
+                                :key="feature.id"
+                                :id="feature.id"
                                 :position="pointOnSurface(feature.geometry)"
                                 :auto-pan="true"
                                 :auto-pan-animation="{ duration: 300 }">
                         <template>
-                            <section class="card">
+                            <section class="card" v-if="feature.id !== 'position-feature'">
                                 <header class="card-header">
                                     <p class="card-header-title">
+                                        {{feature}}
                                         <span v-if="feature.properties">{{feature.properties.type}}</span>
                                     </p>
                                     <a class="card-header-icon" title="Close"
@@ -71,37 +84,61 @@
                                     </div>
                                 </div>
                             </section>
+                            <section class="card" v-else>
+                                <div class="card-content">
+                                    <div class="content">
+                                        Ваше текущее местоположение
+                                    </div>
+                                </div>
+
+                            </section>
                         </template>
                     </vl-overlay>
                 </template>
             </vl-interaction-select>
         </vl-map>
+
         <div class="base-layers-panel">
             <div class="buttons has-addons">
-                <button class="button is-light">Запрос о помощи</button>
-                <button class="button is-light">
-                    <img src="./assets/img/icons/all_mini.png">Инициативы
-                </button>
+                <b-button type="is-success"
+                          size="is-medium"
+                          icon-right="plus"/>
+                <b-button type="is-info"
+                          size="is-medium"
+                          icon-right="exclamation"/>
+                <b-button type="is-white"
+                          size="is-medium"
+                          icon-right="filter"/>
             </div>
+        </div>
+        <div class="map-panel">
+            <b-button type="is-primary"
+                      size="is-medium"
+                      rounded
+                      icon-right="question"/>
         </div>
     </div>
 </template>
 <script>
-    import predefined             from './features'
-    import { findPointOnSurface } from 'vuelayers/lib/ol-ext'
+    import predefined           from './features'
+    import {findPointOnSurface} from 'vuelayers/lib/ol-ext'
 
     export default {
-        data () {
+        data() {
             return {
                 center          : [27.568817138671978, 53.899078973945166],
                 zoom            : 10,
                 predefined,
                 selectedFeatures: [],
+                deviceCoordinate: undefined,
                 drawType        : undefined,
             }
         },
         methods: {
             pointOnSurface: findPointOnSurface,
+            onUpdatePosition(coordinate) {
+                this.deviceCoordinate = coordinate
+            },
         },
     }
 </script>
@@ -123,6 +160,11 @@
 
         .map-panel
             padding: 0
+            position: absolute
+            top: 0
+            right: 0
+            max-height: 500px
+            width: 5em
 
             .panel-heading
                 box-shadow: 0 .25em .5em transparentize($dark, 0.8)
@@ -137,13 +179,6 @@
                         .button
                             display: block
                             flex: 1 1 100%
-
-            +tablet()
-                position: absolute
-                top: 0
-                right: 0
-                max-height: 500px
-                width: 22em
 
         .base-layers-panel
             position: absolute
