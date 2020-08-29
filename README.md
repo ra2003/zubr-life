@@ -22,3 +22,8 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Projection
+
+https://vuelayers.github.io/#/quickstart?id=global-data-projection
