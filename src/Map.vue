@@ -174,10 +174,23 @@
                         <div v-for="(favourite, key) in favourites" :key="key">
                             <p><strong>{{key}}:</strong></p>
                             <ul>
-                                <li v-for="item of favourite" :key="item.url">
-                                    <a :href="item.url" target="_blank">
+                                <li v-for="item of favourite" :key="item.text">
+                                    <span v-if="item.url.length > 1">
+                                        {{item.text}}
+                                        <br>
+                                    <a :href="url" target="_blank" v-for="url of item.url"
+                                       :key="url">
+                                        {{url | formatContact}}
+                                    </a>
+
+                                    </span>
+                                    <span v-else>
+                                        <a :href="url" target="_blank" v-for="url of item.url"
+                                           :key="url">
                                         {{item.text}}
                                     </a>
+                                    </span>
+
                                 </li>
                             </ul>
                         </div>
@@ -197,6 +210,7 @@
 </template>
 <script>
     import predefined           from './features'
+    import favourites           from './favourites'
     import {findPointOnSurface} from 'vuelayers/lib/ol-ext'
 
     const types = [
@@ -208,6 +222,11 @@
         'транспорт'
     ];
     export default {
+        filters : {
+            formatContact(value) {
+                return value.indexOf('http') !== 0 && value.indexOf(':') !== false ? value.split(':')[1] : value
+            }
+        },
         data() {
             return {
                 center          : [27.568817138671978, 53.899078973945166],
@@ -227,41 +246,7 @@
                         'продукты питания',
                     ]
                 },
-                favourites      : {
-                    'Фонд помощи'                : [
-                        {
-                            'url' : 'https://www.facebook.com/donate/759400044849707/3444427322276148/',
-                            'text': 'Belarus Solidarity Foundation'
-                        },
-                        {
-                            'url' : 'http://belaruswith.me/?fbclid=IwAR3z6FRUhsy4YwlzChb7j1H1omQR5k3jNGo1xcAanV4PdV898t77OncDqYs',
-                            'text': 'BYSOL'
-                        },
-                        {
-                            'text': 'взаимопомощь учителям, которые участвовали в УИК',
-                            'url' : 'https://t.me/chestnyeuchitelia_info'
-                        }
-                    ],
-                    'Помощь в поиске людей'      : [
-                        {
-                            'text' : 'Список задержанных',
-                            'url' : 'https://docs.google.com/spreadsheets/d/1kQBCWP-651zJwZepR03deZpAfvYJpo8mme-VgGzvjQg/edit#gid=0'
-                        }
-                    ],
-                    'Волонтёры и полезные ссылки': [
-                        {
-                            'url' : 'https://news.tut.by/society/694730.html',
-                            'text': 'сервис пропавшего от TUT.BY'
-                        }
-                    ],
-                    'Психологическая помощь' : [
-                        {
-                            'url' : 'https://lady.tut.by/news/relationship/696396.html?tg',
-                            'text' : 'TUT.by - Список бесплатных психологических инициатив'
-                        }
-                    ]
-
-                }
+                favourites
             }
         },
         methods : {
