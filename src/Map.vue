@@ -78,7 +78,7 @@
                                         </p>
                                         <p>Описание: {{feature.properties.text}}</p>
                                         <p v-if="feature.properties.address">Адрес: {{feature.properties.address}}</p>
-                                        <p>Контакт: {{feature.properties.contact}}</p>
+                                        <p>Контакт: <span v-html="feature.properties.contact"></span></p>
                                     </div>
                                 </div>
                             </section>
@@ -96,13 +96,14 @@
             </vl-interaction-select>
         </vl-map>
 
-        <div class="base-layers-panel">
+        <div class="toolbar-panel">
             <div class="buttons has-addons">
                 <b-button type="is-success"
                           size="is-medium"
                           icon-right="plus"/>
                 <b-button type="is-info"
                           size="is-medium"
+                          @click="infoModal = true"
                           icon-right="exclamation"/>
                 <b-button type="is-warning"
                           size="is-medium"
@@ -125,7 +126,7 @@
             aria-role="dialog"
             aria-modal>
             <form action="">
-                <div class="modal-card" style="width: auto">
+                <div class="modal-card">
                     <header class="modal-card-head">
                         <p class="modal-card-title">Фильтры</p>
                         <button
@@ -153,6 +154,45 @@
                 </div>
             </form>
         </b-modal>
+        <b-modal
+            v-model="infoModal"
+            has-modal-card
+            trap-focus
+            :destroy-on-hide="false"
+            aria-role="dialog"
+            aria-modal>
+            <form action="">
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Дополнительно</p>
+                        <button
+                            type="button"
+                            class="delete"
+                            @click="infoModal = false"/>
+                    </header>
+                    <section class="modal-card-body">
+                        <div v-for="(favourite, key) in favourites" :key="key">
+                            <p><strong>{{key}}:</strong></p>
+                            <ul>
+                                <li v-for="item of favourite" :key="item.url">
+                                    <a :href="item.url" target="_blank">
+                                        {{item.text}}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul>
+                            <li>
+
+                            </li>
+                        </ul>
+                    </section>
+                    <footer class="modal-card-foot">
+                        <button class="button" type="button" @click="infoModal = false">Закрыть</button>
+                    </footer>
+                </div>
+            </form>
+        </b-modal>
     </div>
 </template>
 <script>
@@ -171,11 +211,12 @@
         data() {
             return {
                 center          : [27.568817138671978, 53.899078973945166],
-                zoom            : 10,
+                zoom            : 9,
                 predefined,
                 types,
                 selectedFeatures: [],
                 filterModal     : false,
+                infoModal       : false,
                 deviceCoordinate: undefined,
                 drawType        : undefined,
                 filter          : {
@@ -185,6 +226,41 @@
                         'медицинская помощь',
                         'продукты питания',
                     ]
+                },
+                favourites      : {
+                    'Фонд помощи'                : [
+                        {
+                            'url' : 'https://www.facebook.com/donate/759400044849707/3444427322276148/',
+                            'text': 'Belarus Solidarity Foundation'
+                        },
+                        {
+                            'url' : 'http://belaruswith.me/?fbclid=IwAR3z6FRUhsy4YwlzChb7j1H1omQR5k3jNGo1xcAanV4PdV898t77OncDqYs',
+                            'text': 'BYSOL'
+                        },
+                        {
+                            'text': 'взаимопомощь учителям, которые участвовали в УИК',
+                            'url' : 'https://t.me/chestnyeuchitelia_info'
+                        }
+                    ],
+                    'Помощь в поиске людей'      : [
+                        {
+                            'text' : 'Список задержанных',
+                            'url' : 'https://docs.google.com/spreadsheets/d/1kQBCWP-651zJwZepR03deZpAfvYJpo8mme-VgGzvjQg/edit#gid=0'
+                        }
+                    ],
+                    'Волонтёры и полезные ссылки': [
+                        {
+                            'url' : 'https://news.tut.by/society/694730.html',
+                            'text': 'сервис пропавшего от TUT.BY'
+                        }
+                    ],
+                    'Психологическая помощь' : [
+                        {
+                            'url' : 'https://lady.tut.by/news/relationship/696396.html?tg',
+                            'text' : 'TUT.by - Список бесплатных психологических инициатив'
+                        }
+                    ]
+
                 }
             }
         },
@@ -239,7 +315,7 @@
                             display: block
                             flex: 1 1 100%
 
-        .base-layers-panel
+        .toolbar-panel
             position: absolute
             left: 50%
             bottom: 20px
