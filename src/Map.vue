@@ -416,7 +416,7 @@
                 if (!properties) {
                     return;
                 }
-                if (!properties.type) {
+                if (!properties.category) {
                     return;
                 }
                 if (this.zoom < 14) {

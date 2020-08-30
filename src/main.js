@@ -10,6 +10,7 @@ import App       from './Map.vue'
 Vue.config.productionTip = false
 Vue.use(Buefy, {
     defaultIconPack: 'fa',
+    defaultLocale: 'ru-RU'
 })
 Vue.use(
     VueLayers,
