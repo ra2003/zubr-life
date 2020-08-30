@@ -3,7 +3,7 @@
         <vl-map :load-tiles-while-animating="true"
                 :load-tiles-while-interacting="true"
                 class="map">
-            <vl-view
+            <vl-view :zoom.sync="zoom"
                      :enable-rotation="false"
                      :center.sync="center"
             ></vl-view>
@@ -26,12 +26,12 @@
                 <template slot-scope="feature">
                     <vl-geom-point :coordinates="item.coordinates"></vl-geom-point>
                     <vl-style-box>
-                        <vl-style-icon v-if="item.properties.type === 'продукты питания'" src="./assets/img/icons/prop_food.png" :scale="0.5"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.type === 'транспорт'" src="./assets/img/icons/prop_transport.png" :scale="0.5"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.type === 'медицинская помощь'" src="./assets/img/icons/prop_health.png" :scale="0.5"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.type === 'жилье'" src="./assets/img/icons/prop_housing.png" :scale="0.5"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.type === 'образование'" src="./assets/img/icons/prop_edu.png" :scale="0.5"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.type === 'telegram'" src="./assets/img/icons/tg.png" :scale="0.5"></vl-style-icon>
+                        <vl-style-icon v-if="item.properties.category === 'продукты питания'" src="./assets/img/icons/prop_food.png" :scale="0.5"></vl-style-icon>
+                        <vl-style-icon v-else-if="item.properties.category === 'транспорт'" src="./assets/img/icons/prop_transport.png" :scale="0.5"></vl-style-icon>
+                        <vl-style-icon v-else-if="item.properties.category === 'медицинская помощь'" src="./assets/img/icons/prop_health.png" :scale="0.5"></vl-style-icon>
+                        <vl-style-icon v-else-if="item.properties.category === 'жилье'" src="./assets/img/icons/prop_housing.png" :scale="0.5"></vl-style-icon>
+                        <vl-style-icon v-else-if="item.properties.category === 'образование'" src="./assets/img/icons/prop_edu.png" :scale="0.5"></vl-style-icon>
+                        <vl-style-icon v-else-if="item.properties.category === 'telegram'" src="./assets/img/icons/tg.png" :scale="0.5"></vl-style-icon>
                         <vl-style-icon v-else src="./assets/img/icons/prop_other.png" :scale="0.5"></vl-style-icon>
                     </vl-style-box>
                 </template>
@@ -66,7 +66,7 @@
                             <section class="card" v-if="feature.id !== 'position-feature'">
                                 <header class="card-header">
                                     <p class="card-header-title">
-                                        <span v-if="feature.properties">{{feature.properties.type}}</span>
+                                        <span v-if="feature.properties">{{feature.properties.category}}</span>
                                     </p>
                                     <a class="card-header-icon" title="Close"
                                        @click="selectedFeatures = selectedFeatures.filter(f => f.id !== feature.id)">
@@ -147,65 +147,65 @@
             aria-modal>
             <form action="">
                 <div class="modal-card">
-                <header class="modal-card-head">
-                    <p class="modal-card-title">Запрос о помощи</p>
-                    <button
-                        type="button"
-                        class="delete"
-                        @click="requestModal = false"/>
-                </header>
-                <section class="modal-card-body">
-                    <b-field required>
-                        <b-radio-button v-model="request.direction"
-                                        native-value="in"
-                                        type="is-danger">
-                            <span>Просьба</span>
-                        </b-radio-button>
-                        <b-radio-button v-model="request.direction"
-                                        native-value="out"
-                                        type="is-success">
-                            <span>Предложение</span>
-                        </b-radio-button>
-                    </b-field>
-                    <b-field label="Телефон">
-                        <b-input
-                            placeholder="Контактные данные"
-                            required>
-                        </b-input>
-                    </b-field>
-                    <b-field label="Email/Ссылка">
-                        <b-input placeholder="Email/Ссылка">
-                        </b-input>
-                    </b-field>
-                    <b-field label="Категория">
-                        <b-select v-model="request.type" required>
-                            <option v-for="item of types"
-                                    :key="item"
-                                    :value="item">{{item}}
-                            </option>
-                        </b-select>
-                    </b-field>
-                    <b-field label="Адрес">
-                        <b-input placeholder="Контактные данные">
-                        </b-input>
-                    </b-field>
-                    <b-field label="Контактное лицо">
-                        <b-input placeholder="Контактное лицо">
-                        </b-input>
-                    </b-field>
-                    <b-field label="Месторасположение">
-                        <b-input placeholder="Контактные данные">
-                        </b-input>
-                    </b-field>
-                    <b-field label="Описание" required>
-                        <b-input maxlength="100" type="textarea"></b-input>
-                    </b-field>
-                </section>
-                <footer class="modal-card-foot">
-                    <button class="button" type="button" @click="requestModal = false">Закрыть</button>
-                    <button class="button is-primary">Сохранить</button>
-                </footer>
-            </div>
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Запрос о помощи</p>
+                        <button
+                            type="button"
+                            class="delete"
+                            @click="requestModal = false"/>
+                    </header>
+                    <section class="modal-card-body">
+                        <b-field required>
+                            <b-radio-button v-model="request.direction"
+                                            native-value="in"
+                                            type="is-danger">
+                                <span>Просьба</span>
+                            </b-radio-button>
+                            <b-radio-button v-model="request.direction"
+                                            native-value="out"
+                                            type="is-success">
+                                <span>Предложение</span>
+                            </b-radio-button>
+                        </b-field>
+                        <b-field label="Телефон">
+                            <b-input
+                                placeholder="Контактные данные"
+                                required>
+                            </b-input>
+                        </b-field>
+                        <b-field label="Email/Ссылка">
+                            <b-input placeholder="Email/Ссылка">
+                            </b-input>
+                        </b-field>
+                        <b-field label="Категория">
+                            <b-select v-model="request.type" required>
+                                <option v-for="item of types"
+                                        :key="item"
+                                        :value="item">{{item}}
+                                </option>
+                            </b-select>
+                        </b-field>
+                        <b-field label="Адрес">
+                            <b-input placeholder="Контактные данные">
+                            </b-input>
+                        </b-field>
+                        <b-field label="Контактное лицо">
+                            <b-input placeholder="Контактное лицо">
+                            </b-input>
+                        </b-field>
+                        <b-field label="Месторасположение">
+                            <b-input placeholder="Контактные данные">
+                            </b-input>
+                        </b-field>
+                        <b-field label="Описание" required>
+                            <b-input maxlength="100" type="textarea"></b-input>
+                        </b-field>
+                    </section>
+                    <footer class="modal-card-foot">
+                        <button class="button" type="button" @click="requestModal = false">Закрыть</button>
+                        <button class="button is-primary">Сохранить</button>
+                    </footer>
+                </div>
             </form>
         </b-modal>
         <b-modal
@@ -357,6 +357,9 @@
         'продукты питания',
         'транспорт',
     ];
+
+    const apiURL = process.env.VUE_APP_API_URL;
+
     export default {
         filters: {
             formatContact(value) {
@@ -371,6 +374,7 @@
                 predefined,
                 types,
                 selectedFeatures: [],
+                remoteFeatures  : [],
                 filterModal     : false,
                 infoModal       : false,
                 helpModal       : false,
@@ -383,12 +387,6 @@
                     type     : '',
                     direction: ''
                 },
-                carousels       : [
-                    {title: 'Slide 1', color: 'grey'},
-                    {title: 'Slide 2', color: 'dark'},
-                    {title: 'Slide 3', color: 'primary'},
-                    {title: 'Slide 4', color: 'info'}
-                ],
                 filter          : {
                     types: [
                         'telegram',
@@ -406,6 +404,13 @@
             onUpdatePosition(coordinate) {
                 this.deviceCoordinate = coordinate
             },
+            loadFeatures() {
+                fetch(apiURL + '/requests', {headers: {'Content-Type' : 'application/ld+json'}})
+                    .then(r => r.json())
+                    .then(r => {
+                        this.remoteFeatures = r.data;
+                    })
+            },
             handleSelect(feature) {
                 let properties = feature.getProperties();
                 if (!properties) {
@@ -420,9 +425,15 @@
             },
         },
         computed: {
+            allFeatures() {
+                return this.remoteFeatures.concat(this.predefined);
+            },
             liveFeatures() {
-                return this.predefined.filter(item => this.filter.types.includes(item.properties.type));
+                return this.allFeatures.filter(item => this.filter.types.includes(item.properties.category));
             }
+        },
+        created() {
+            this.loadFeatures();
         }
     }
 </script>

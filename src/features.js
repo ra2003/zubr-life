@@ -2,7 +2,7 @@ export default [
     {
         "id"         : "ce83911e",
         "properties" : {
-            "type"   : "жилье",
+            "category"   : "жилье",
             "address": "г.Минск, ул.Кирова 4",
             "links"  : [],
             "contact": "Валерий",
@@ -19,7 +19,7 @@ export default [
     {
         "id"         : "20350d09",
         "properties" : {
-            "type"   : "продукты питания",
+            "category"   : "продукты питания",
             "address": "Минск, ул. Янки Брыля, д.21",
             "links"  : [
                 "http://rollbros.by/"
@@ -38,7 +38,7 @@ export default [
     {
         "id"         : "e2d5b28b",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Минск, пр. Независимости, 94, пом. 1Н",
             "links"  : [
                 "https://www.roden.by/"
@@ -59,7 +59,7 @@ export default [
     {
         "id"         : "74f708e4",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Минск, Червякова, 8",
             "links"  : [
                 "https://linline-club.by/"
@@ -78,7 +78,7 @@ export default [
     {
         "id"         : "6b1337f6",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Минск, Сурганова, 18",
             "links"  : [
                 "https://linline-club.by/"
@@ -97,7 +97,7 @@ export default [
     {
         "id"         : "65d7ab9b",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Минск, ул. Надеждинская, 2",
             "links"  : [
                 "https://eksana.by/"
@@ -116,7 +116,7 @@ export default [
     {
         "id"         : "0d706c87",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Минск, ул. Грибоедова, 11",
             "links"  : [
                 "https://medavenu.by/"
@@ -135,7 +135,7 @@ export default [
     {
         "id"         : "79ec2321",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Минск, ул. Матусевича, 70",
             "links"  : [
                 "https://lubimydoctor.by/"
@@ -157,7 +157,7 @@ export default [
     {
         "id"         : "ce2d8c53",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Минск, ул. Пионерская, 32",
             "links"  : [
                 "http://medera.by/"
@@ -177,7 +177,7 @@ export default [
     {
         "id"         : "f4753e43",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Минск, ул.Маяковского, 129А/1",
             "links"  : [
                 "https://www.narkolog.by/"
@@ -197,7 +197,7 @@ export default [
     {
         "id"         : "ac1e2a06",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "Минская обл., Минский р-н, аг. Лесной, 19В, пом. 23",
             "links"  : [
                 "https://forestmed.by/"
@@ -216,7 +216,7 @@ export default [
     {
         "id"         : "ae65b558",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Минск, ул.Жилуновича, 11А",
             "links"  : [
                 "https://mrt.by/"
@@ -237,7 +237,7 @@ export default [
     {
         "id"         : "7f63763e",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Гродно, ул.Троицкая, 31",
             "links"  : [
                 "viber://chat/?number=%2B375297847047"
@@ -256,7 +256,7 @@ export default [
     {
         "id"         : "e1a85164",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г. Жодино, пр. Мира, 19А",
             "links"  : [
                 "https://cdmed.by/"
@@ -275,7 +275,7 @@ export default [
     {
         "id"         : "b373f751",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Минск, 2-й пер. Розы Люксембург, 3",
             "links"  : [
                 "https://triomed.by/"
@@ -292,7 +292,7 @@ export default [
     {
         "id"         : "7147a921",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Минск, ул.Пионерская, 45",
             "links"  : [
                 "http://dentalsalon.by/"
@@ -312,7 +312,7 @@ export default [
     {
         "id"         : "842c4fe3",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Минск, пр. Победителей, 27",
             "links"  : [],
             "contact": "DORSUM",
@@ -329,7 +329,7 @@ export default [
     {
         "id"         : "60f8800f",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "Минский район, аг. Лесной",
             "links"  : [],
             "contact": "Отделение ультразвуковой диагностики в РНПЦ онкологии им. Александрово (Боровляны)",
@@ -346,7 +346,7 @@ export default [
     {
         "id"         : "60c486f8",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г. Минск, пр. Машерова, д. 9, каб. 106",
             "links"  : [
                 "https://umkastom.com/"
@@ -367,7 +367,7 @@ export default [
     {
         "id"         : "a79c1fa5",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Минск, ул.Зыбицкая, 3",
             "links"  : [],
             "contact": "«МиДент»",
@@ -384,7 +384,7 @@ export default [
     {
         "id"         : "5b2b4fed",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Гомель, ул.Кирова, 18",
             "links"  : [
                 "https://xn--80adhytboo4czd.xn--90ais/"
@@ -403,7 +403,7 @@ export default [
     {
         "id"         : "c90a4425",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "Минский р-н, аг. Колодищи, ул. Минская, 5",
             "links"  : [
                 "https://kolodischi.by/catalog-social/med-centr/31"
@@ -422,7 +422,7 @@ export default [
     {
         "id"         : "43c2801c",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Минск, ул.Пионерская, 45",
             "links"  : [
                 "http://dentalsalon.by/"
@@ -441,7 +441,7 @@ export default [
     {
         "id"         : "f2858e4f",
         "properties" : {
-            "type"   : "медицинская помощь",
+            "category"   : "медицинская помощь",
             "address": "г.Минск, ул.Олешева, 3",
             "links"  : [
                 "https://www.instagram.com/p/CEFFEzQh1Gl/?igshid=14wrxfvadkuqo»"
@@ -460,7 +460,7 @@ export default [
     {
         "id"         : "59d11142",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Орша",
             "links"  : [],
             "contact": "Спортивное учреждение «Спортивно-Технический клуб «ГАЗАвтоСистем-Орша»",
@@ -477,7 +477,7 @@ export default [
     {
         "id"         : "d6ebb699",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "Витебская обл., г.Дубровно, ул.Горецкая, 2а.",
             "links"  : [],
             "contact": "СТО «Дубровно»",
@@ -494,7 +494,7 @@ export default [
     {
         "id"         : "0cfa90e6",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Гродно, ул.Гаспадарчая, 42",
             "links"  : [],
             "contact": "СТО «Интер»",
@@ -511,7 +511,7 @@ export default [
     {
         "id"         : "abfcb4e0",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Гомель,  ул. Борисенко, 14",
             "links"  : [],
             "contact": "СТО на Борисенко",
@@ -528,7 +528,7 @@ export default [
     {
         "id"         : "086e2578",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, ул.Тимирязева, 65",
             "links"  : [
                 "https://2apelsina.by/"
@@ -547,7 +547,7 @@ export default [
     {
         "id"         : "07c4179b",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, ул. Уручская, 23, корпус 16",
             "links"  : [],
             "contact": "ООО «Автоцентр Гермес»",
@@ -565,7 +565,7 @@ export default [
     {
         "id"         : "f3f1aab9",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, ул. Куприянова, 1",
             "links"  : [],
             "contact": "Тюнинг-ателье SaVaBrothers",
@@ -582,7 +582,7 @@ export default [
     {
         "id"         : "d0718d82",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск,  ул. Гурского, 16а. ",
             "links"  : [],
             "contact": "СТО «ТТ МОТОР» Сергей",
@@ -599,7 +599,7 @@ export default [
     {
         "id"         : "20804746",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, ул. Монтажников, 9",
             "links"  : [],
             "contact": "Татико-Автостекла",
@@ -616,7 +616,7 @@ export default [
     {
         "id"         : "bce3b248",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, ул.Передовая д.6, корп.12",
             "links"  : [],
             "contact": "Автосервис «Ржавый гараж»",
@@ -633,7 +633,7 @@ export default [
     {
         "id"         : "ef33e8dc",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, ул. Монтажников, 9",
             "links"  : [],
             "contact": "СТО «M9-AUTO”",
@@ -650,7 +650,7 @@ export default [
     {
         "id"         : "b5fcf158",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, ул.Корженевского, 16б",
             "links"  : [
                 "https://avtosteklaminsk.by/"
@@ -669,7 +669,7 @@ export default [
     {
         "id"         : "c62c5522",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, ул.Змитрока Бядули, 13",
             "links"  : [
                 "https://autoremont.by/"
@@ -689,7 +689,7 @@ export default [
     {
         "id"         : "fa32c65d",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск,  ул.Долгобродская, 16а.",
             "links"  : [],
             "contact": "СТО «Не ломайся»",
@@ -706,7 +706,7 @@ export default [
     {
         "id"         : "9b0b0d03",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Столбцы, пер.Товарный 2а ",
             "links"  : [],
             "contact": "ВикАвтосервис",
@@ -724,7 +724,7 @@ export default [
     {
         "id"         : "fc57a188",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, ул.Стебенева, 5 ",
             "links"  : [
                 "https://www.instagram.com/rimbat_detailing/"
@@ -743,7 +743,7 @@ export default [
     {
         "id"         : "41c516c9",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Гродно, ул.Заболоть, 15А ",
             "links"  : [
                 "https://autogrodno.by/avtomojki/item/carbox.html"
@@ -763,7 +763,7 @@ export default [
     {
         "id"         : "71061025",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, ул.Жуковского, 11А",
             "links"  : [
                 "https://www.sudexpert.by/"
@@ -780,7 +780,7 @@ export default [
     {
         "id"         : "b9a1c738",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "Брестская обл., г.Пинск. ул.Мицкевича, 3",
             "links"  : [],
             "contact": "ИП Тризна А. А.",
@@ -797,7 +797,7 @@ export default [
     {
         "id"         : "6012de01",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, ул.Лещинского, 14А, пав.6",
             "links"  : [],
             "contact": "Магазин автозапчастей DTM",
@@ -814,7 +814,7 @@ export default [
     {
         "id"         : "970bc035",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, ул.Новаторская, 5",
             "links"  : [],
             "contact": "Бюро оценки и экспертизы «Автобел»",
@@ -833,7 +833,7 @@ export default [
     {
         "id"         : "b45de10b",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, пр.Жукова, 44",
             "links"  : [],
             "contact": "Бюро оценки и экспертизы «Автобел»",
@@ -852,7 +852,7 @@ export default [
     {
         "id"         : "77cc65a5",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Витебск, ул.П.Бровки, 38",
             "links"  : [],
             "contact": "Сто «Сигмаравто»",
@@ -869,7 +869,7 @@ export default [
     {
         "id"         : "2061ee5e",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Брест, ул.2-я Заводская, 2/4",
             "links"  : [],
             "contact": "Автоцентр Комета",
@@ -886,7 +886,7 @@ export default [
     {
         "id"         : "0c7ecae0",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, пер. Софьи Ковалевской, 42а",
             "links"  : [],
             "contact": "СТО «ТвоеАвто» Сергей",
@@ -903,7 +903,7 @@ export default [
     {
         "id"         : "debb3520",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "Кобринский район, д.Плоское, ул.Кольцевая, 18",
             "links"  : [
                 "http://petroval.by/"
@@ -922,7 +922,7 @@ export default [
     {
         "id"         : "d87aacfb",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "Червеньский р-н, г.п.Смиловичи, ул. Доватора, 9",
             "links"  : [],
             "contact": "СТО «АвтоИнженерСервис-Т» Сергей",
@@ -939,7 +939,7 @@ export default [
     {
         "id"         : "a49abcd0",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Мозырь, ул.Первомайская, 53ж",
             "links"  : [
                 "https://www.instagram.com/stomozyr/"
@@ -958,7 +958,7 @@ export default [
     {
         "id"         : "0677b606",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Бобруйск, ул.К.Либкнехта, 5а",
             "links"  : [
                 "http://avtospektr.by/"
@@ -977,7 +977,7 @@ export default [
     {
         "id"         : "921d97b9",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, ул.Иосифа Жиновича, 20 Время работы с 10.00 до 17.00",
             "links"  : [
                 "https://www.instagram.com/p/CD2DhaGhRyk/"
@@ -994,7 +994,7 @@ export default [
     {
         "id"         : "faa1c646",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, ул. Брикета,17/7",
             "links"  : [
                 "https://topcraft.by/"
@@ -1013,7 +1013,7 @@ export default [
     {
         "id"         : "c93b1b23",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Минск, ул.Левкова, 41",
             "links"  : [],
             "contact": "АльфаСервис, Юлия Малахова",
@@ -1030,7 +1030,7 @@ export default [
     {
         "id"         : "10076c1e",
         "properties" : {
-            "type"   : "транспорт",
+            "category"   : "транспорт",
             "address": "г.Новополоцк",
             "links"  : [
                 "https://www.instagram.com/miha190e/"
@@ -1047,7 +1047,7 @@ export default [
     {
         "id"         : "36c5b799",
         "properties" : {
-            "type"   : "иное",
+            "category"   : "иное",
             "address": "Минский район, д.Семково",
             "links"  : [],
             "contact": "ООО Центр развития личности",
@@ -1064,7 +1064,7 @@ export default [
     {
         "id"         : "e3402e25",
         "properties" : {
-            "type"   : "иное",
+            "category"   : "иное",
             "address": "Витебск, проезд Гоголя, д. 11",
             "links"  : [],
             "contact": "Михайличенко Юлия Александровна",
@@ -1081,7 +1081,7 @@ export default [
     {
         "id"         : "d0aa29ed",
         "properties" : {
-            "type"   : "иное",
+            "category"   : "иное",
             "address": "г.Минск, ул.Немига, 5",
             "links"  : [],
             "contact": "Renome Management",
@@ -1096,7 +1096,7 @@ export default [
     {
         "id"         : "598a48cd",
         "properties" : {
-            "type"   : "иное",
+            "category"   : "иное",
             "address": "г.Минск, ул. Первомайская, 18",
             "links"  : [],
             "contact": "",
@@ -1113,7 +1113,7 @@ export default [
     {
         "id"         : "20006539",
         "properties" : {
-            "type"   : "иное",
+            "category"   : "иное",
             "address": "г.Минск, ул.Короля, 20",
             "links"  : [
                 "help@musicmarket.by"
@@ -1130,7 +1130,7 @@ export default [
     {
         "id"         : "4d282633",
         "properties" : {
-            "type"   : "иное",
+            "category"   : "иное",
             "address": "г.Минск, ул.Кирилла и Мефодия, 8",
             "links"  : [],
             "contact": "Вероника",
@@ -1147,7 +1147,7 @@ export default [
     {
         "id"         : "ff3632b8",
         "properties" : {
-            "type"   : "иное",
+            "category"   : "иное",
             "address": "г.Минск, ул.Ольшевского, 1, к.4",
             "links"  : [],
             "contact": "Наталья",
@@ -1164,7 +1164,7 @@ export default [
     {
         "id"         : "6134f4fc",
         "properties" : {
-            "type"   : "иное",
+            "category"   : "иное",
             "address": "г.Минск, пр. Машерова, 9, к.8",
             "links"  : [],
             "contact": "Наталья",
@@ -1181,7 +1181,7 @@ export default [
     {
         "id"         : "97101137",
         "properties" : {
-            "type"   : "иное",
+            "category"   : "иное",
             "address": "г.Минск, ул. Тимирязева, 127, ТЦ Ждановичи",
             "links"  : [],
             "contact": "Мария",
@@ -1198,7 +1198,7 @@ export default [
     {
         "id"         : "aa8bf0f8",
         "properties" : {
-            "type"   : "иное",
+            "category"   : "иное",
             "address": "г.Минск, ул. Марьевская, 7А, офис 10",
             "links"  : [],
             "contact": "Выдавецтва «Янушкевіч», Андрэй",
@@ -1215,7 +1215,7 @@ export default [
     {
         "id"         : "fe1bed7b",
         "properties" : {
-            "type"   : "иное",
+            "category"   : "иное",
             "address": "г.Минск, ул.Ржавецкая, 5",
             "links"  : [
                 "https://www.b-c.by/"
@@ -1232,7 +1232,7 @@ export default [
     {
         "id"         : "eff70598",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "Вся Беларусь",
             "links"  : [],
             "contact": "",
@@ -1247,7 +1247,7 @@ export default [
     {
         "id"         : "9f28b072",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Vitebsk_strana"
@@ -1264,7 +1264,7 @@ export default [
     {
         "id"         : "a6775cd6",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Gomel_strana"
@@ -1281,7 +1281,7 @@ export default [
     {
         "id"         : "54320670",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Grodno_strana"
@@ -1298,7 +1298,7 @@ export default [
     {
         "id"         : "27ee364d",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/SDZOktMinsk"
@@ -1315,7 +1315,7 @@ export default [
     {
         "id"         : "76413a23",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/minsk_zavod"
@@ -1332,7 +1332,7 @@ export default [
     {
         "id"         : "5dc55dca",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/sdg_sov_minsk"
@@ -1349,7 +1349,7 @@ export default [
     {
         "id"         : "b771e015",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/frunzenskiy"
@@ -1366,7 +1366,7 @@ export default [
     {
         "id"         : "f94edf8d",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/joinchat/Gl7TiUdl7qlsspDlBB0V5w"
@@ -1383,7 +1383,7 @@ export default [
     {
         "id"         : "f34c626a",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/partizan_sdz"
@@ -1400,7 +1400,7 @@ export default [
     {
         "id"         : "32706de1",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/leninskiysdzh"
@@ -1417,7 +1417,7 @@ export default [
     {
         "id"         : "3be06151",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Minsk_central"
@@ -1434,7 +1434,7 @@ export default [
     {
         "id"         : "afd5847c",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/SDG_mosk_minsk"
@@ -1451,7 +1451,7 @@ export default [
     {
         "id"         : "9f20e8c8",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Baranki_strana"
@@ -1468,7 +1468,7 @@ export default [
     {
         "id"         : "498ddbc7",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/bobrujskstrana"
@@ -1485,7 +1485,7 @@ export default [
     {
         "id"         : "c0325f44",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Borisov_strana"
@@ -1502,7 +1502,7 @@ export default [
     {
         "id"         : "7c18e346",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Braslavforlife"
@@ -1519,7 +1519,7 @@ export default [
     {
         "id"         : "022ce258",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/vileika3"
@@ -1536,7 +1536,7 @@ export default [
     {
         "id"         : "cc4afb6c",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/volkovyskchat"
@@ -1553,7 +1553,7 @@ export default [
     {
         "id"         : "a915851a",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/vologin_strana"
@@ -1570,7 +1570,7 @@ export default [
     {
         "id"         : "5aa70013",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/glubokoeforlife"
@@ -1587,7 +1587,7 @@ export default [
     {
         "id"         : "80a0908a",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Gorkidliajizni"
@@ -1604,7 +1604,7 @@ export default [
     {
         "id"         : "b95feac6",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Gorodok_strana"
@@ -1621,7 +1621,7 @@ export default [
     {
         "id"         : "6307d288",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/dobrushperemen"
@@ -1638,7 +1638,7 @@ export default [
     {
         "id"         : "5e273354",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/dokshitsy"
@@ -1655,7 +1655,7 @@ export default [
     {
         "id"         : "64ee02da",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Zhodino_strana"
@@ -1672,7 +1672,7 @@ export default [
     {
         "id"         : "2bbda14f",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/zhlobin_chat1"
@@ -1689,7 +1689,7 @@ export default [
     {
         "id"         : "89d8cfc5",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/KalinkovichiDlyaZhizni"
@@ -1706,7 +1706,7 @@ export default [
     {
         "id"         : "3b7100cf",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/kobrinzizni"
@@ -1723,7 +1723,7 @@ export default [
     {
         "id"         : "a93e026c",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Krichev_strana_chat"
@@ -1740,7 +1740,7 @@ export default [
     {
         "id"         : "95eacd7a",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Lida_strana_chat"
@@ -1757,7 +1757,7 @@ export default [
     {
         "id"         : "b86f99fa",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/joinchat/JtQDAEcwU0IL4igCe9ogdw"
@@ -1774,7 +1774,7 @@ export default [
     {
         "id"         : "37d0a78f",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/MarynaGorkachat"
@@ -1791,7 +1791,7 @@ export default [
     {
         "id"         : "d3f67447",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/mozyr_for_life"
@@ -1808,7 +1808,7 @@ export default [
     {
         "id"         : "9b5597ea",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/molodechno_strana"
@@ -1825,7 +1825,7 @@ export default [
     {
         "id"         : "b03526f1",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/mosty_strana_chat"
@@ -1842,7 +1842,7 @@ export default [
     {
         "id"         : "5d6caefd",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Novogrudok_chat"
@@ -1859,7 +1859,7 @@ export default [
     {
         "id"         : "b9e742cd",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/orsha_strana_live"
@@ -1876,7 +1876,7 @@ export default [
     {
         "id"         : "5a441930",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Osipovichi_chat"
@@ -1893,7 +1893,7 @@ export default [
     {
         "id"         : "52b45dc6",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/ostrovec_strana_chat"
@@ -1910,7 +1910,7 @@ export default [
     {
         "id"         : "98d42d65",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/pinskstrana"
@@ -1927,7 +1927,7 @@ export default [
     {
         "id"         : "73a33444",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Postavschchina_SDG"
@@ -1944,7 +1944,7 @@ export default [
     {
         "id"         : "82708ba1",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/HPolotsk_strana"
@@ -1961,7 +1961,7 @@ export default [
     {
         "id"         : "849b8a87",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/rechitsa12stop"
@@ -1978,7 +1978,7 @@ export default [
     {
         "id"         : "1a877909",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/Svetlogorskchat"
@@ -1995,7 +1995,7 @@ export default [
     {
         "id"         : "c1c36819",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/skidelj"
@@ -2012,7 +2012,7 @@ export default [
     {
         "id"         : "2a0fca3a",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/slonim_strana"
@@ -2029,7 +2029,7 @@ export default [
     {
         "id"         : "7c0c99dd",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/strana_slutsk"
@@ -2046,7 +2046,7 @@ export default [
     {
         "id"         : "18c3d2fd",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/smorgon_strana_chat"
@@ -2063,7 +2063,7 @@ export default [
     {
         "id"         : "4bbc0486",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/soligorsk_gorod"
@@ -2080,7 +2080,7 @@ export default [
     {
         "id"         : "03ddaae0",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/stolbts97pro"
@@ -2097,7 +2097,7 @@ export default [
     {
         "id"         : "f7a49bae",
         "properties" : {
-            "type"   : "telegram",
+            "category"   : "telegram",
             "address": "",
             "links"  : [
                 "https://t.me/checherskthizni"
@@ -2114,7 +2114,7 @@ export default [
     {
         "id"         : "a2943b7a",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Ратомская, 7",
             "links"  : [
                 "https://peremena.by/"
@@ -2134,7 +2134,7 @@ export default [
     {
         "id"         : "b4d4e6d0",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "аг.Сеница, ул. Западная, 26",
             "links"  : [
                 "http://elispolya.by/"
@@ -2153,7 +2153,7 @@ export default [
     {
         "id"         : "e2c9b919",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Ржавецкая, 34",
             "links"  : [
                 "http://little-prince.by"
@@ -2173,7 +2173,7 @@ export default [
     {
         "id"         : "198f1894",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул.Тепличная, 1",
             "links"  : [],
             "contact": "АВС",
@@ -2190,7 +2190,7 @@ export default [
     {
         "id"         : "b626dfd7",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "пос. Дроздово, Подлесный пер. 11 Б",
             "links"  : [],
             "contact": "GREEN HILL",
@@ -2207,7 +2207,7 @@ export default [
     {
         "id"         : "31ea4722",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, Нововиленская д. 5 корпус А",
             "links"  : [],
             "contact": "АЛЬТАСФЕРА",
@@ -2222,7 +2222,7 @@ export default [
     {
         "id"         : "b85d62ec",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Рафиева, 30",
             "links"  : [],
             "contact": "АЛЬТЕРНАТИВА",
@@ -2241,7 +2241,7 @@ export default [
     {
         "id"         : "3bd25855",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, переулок М.Богдановича,15",
             "links"  : [],
             "contact": "ГОРОД СОЛНЦА",
@@ -2258,7 +2258,7 @@ export default [
     {
         "id"         : "d79db747",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Некрасова, 31",
             "links"  : [],
             "contact": "ДАВАЙТЕ РАСТИ",
@@ -2276,7 +2276,7 @@ export default [
     {
         "id"         : "8fc05e3f",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Ежи Гедройца, 20",
             "links"  : [],
             "contact": "ПЕРСПЕКТИВНЫЙ ВЗГЛЯД",
@@ -2294,7 +2294,7 @@ export default [
     {
         "id"         : "b256415b",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Коммунистическая, 19 к.34",
             "links"  : [],
             "contact": "РЕБЕНОК БУДУЩЕГО",
@@ -2312,7 +2312,7 @@ export default [
     {
         "id"         : "06b52ab9",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Мележа, 1",
             "links"  : [],
             "contact": "SUNNY SOUL",
@@ -2331,7 +2331,7 @@ export default [
     {
         "id"         : "17cb4508",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Пинская, 28/1",
             "links"  : [],
             "contact": "LUCH",
@@ -2348,7 +2348,7 @@ export default [
     {
         "id"         : "c14da29d",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, пр. Независимости, 117, 3 этаж",
             "links"  : [],
             "contact": "СТЕМБРИДЖ",
@@ -2365,7 +2365,7 @@ export default [
     {
         "id"         : "70672bd5",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Сторожевская, 8",
             "links"  : [],
             "contact": "ШКОЛА ЛВС",
@@ -2382,7 +2382,7 @@ export default [
     {
         "id"         : "26ba7520",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Пугачевская, 10",
             "links"  : [],
             "contact": "ЭКО-ЭЛ",
@@ -2399,7 +2399,7 @@ export default [
     {
         "id"         : "f9e2b7a5",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул.Бельского, 15",
             "links"  : [
                 "https://www.100ballov.by",
@@ -2419,7 +2419,7 @@ export default [
     {
         "id"         : "cc11477b",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул.Красная, 7",
             "links"  : [
                 "https://www.100ballov.by",
@@ -2439,7 +2439,7 @@ export default [
     {
         "id"         : "d9edbf58",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Гродно, ул. Мостовая, 31",
             "links"  : [
                 "http://grodno-school.100ballov.by",
@@ -2460,7 +2460,7 @@ export default [
     {
         "id"         : "5c1723df",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Авроровская, д. 6, пом. 1Н",
             "links"  : [
                 "http://uchis-igrai.by/"
@@ -2480,7 +2480,7 @@ export default [
     {
         "id"         : "1ba93aab",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г. Минск, ул. Якубова, 60\r\n",
             "links"  : [
                 "http://innovagroup.by",
@@ -2500,7 +2500,7 @@ export default [
     {
         "id"         : "9b0323a8",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г. Минск, ул. Пугачевская, 10",
             "links"  : [
                 "http://innovagroup.by",
@@ -2520,7 +2520,7 @@ export default [
     {
         "id"         : "42a957bb",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, 4-й Загородный переулок, 58Б",
             "links"  : [
                 "http://www.digital-class.by/?fbclid=IwAR0wsTSidKXi4JBhJHn51CN8IyxEPdG3DgPxtr0H44NPWN86dK3v3JsYfoM",
@@ -2541,7 +2541,7 @@ export default [
     {
         "id"         : "e02ca16d",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "Минский район, д.Жуков Луг, Дорожная, 17а",
             "links"  : [
                 "https://smart-s.by",
@@ -2561,7 +2561,7 @@ export default [
     {
         "id"         : "9a4dd839",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Горецкого 93 (Класс Toddler)",
             "links"  : [
                 "http://xn----7sbbje3bhxn4a2d8d.xn--90ais/"
@@ -2580,7 +2580,7 @@ export default [
     {
         "id"         : "8c395b92",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Бельского 15 (Класс Casa dei Bambini)",
             "links"  : [
                 "http://xn----7sbbje3bhxn4a2d8d.xn--90ais/"
@@ -2599,7 +2599,7 @@ export default [
     {
         "id"         : "0bff7d13",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Михаловская 14 (Класс Elementary)",
             "links"  : [
                 "http://xn----7sbbje3bhxn4a2d8d.xn--90ais/"
@@ -2618,7 +2618,7 @@ export default [
     {
         "id"         : "04b75e17",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, пр-т Победителей, 5",
             "links"  : [
                 "http://steamschool.by",
@@ -2638,7 +2638,7 @@ export default [
     {
         "id"         : "f02ebe3f",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Брест, б-р Шевченко, 4, оф.431, 417",
             "links"  : [
                 "https://my-baby.by",
@@ -2660,7 +2660,7 @@ export default [
     {
         "id"         : "bc0a1312",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г. Минск, ул.Карла Маркса, 32",
             "links"  : [
                 "https://2english.by",
@@ -2680,7 +2680,7 @@ export default [
     {
         "id"         : "cadd7eab",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г. Минск, ул.Карла Маркса, 32",
             "links"  : [
                 "https://itstep.by/"
@@ -2701,7 +2701,7 @@ export default [
     {
         "id"         : "a19871fb",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Гомель, ул.Пушкина, 2",
             "links"  : [
                 "https://gomel.itstep.by/"
@@ -2721,7 +2721,7 @@ export default [
     {
         "id"         : "eefa6f63",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Барановичи, пр.Советский, 35",
             "links"  : [
                 "https://baranovichi.itstep.by",
@@ -2741,7 +2741,7 @@ export default [
     {
         "id"         : "a6be47ff",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Брест, ул.Советская, 34",
             "links"  : [
                 "https://brest.itstep.by",
@@ -2762,7 +2762,7 @@ export default [
     {
         "id"         : "6b33bf63",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Бобруйск, ул.Горького, 12",
             "links"  : [
                 "http://bobruisk.itstep.by/"
@@ -2782,7 +2782,7 @@ export default [
     {
         "id"         : "7c5e4167",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г. Витебск, пр-т Московский, 31А",
             "links"  : [
                 "https://vitebsk.itstep.by",
@@ -2803,7 +2803,7 @@ export default [
     {
         "id"         : "7284fced",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Гродно, ул.Мицкевича, 3",
             "links"  : [
                 "https://grodno.itstep.by/",
@@ -2824,7 +2824,7 @@ export default [
     {
         "id"         : "8705747c",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Могилев, пер.Пожарный, 1а",
             "links"  : [
                 "http://mogilev.itstep.by/",
@@ -2845,7 +2845,7 @@ export default [
     {
         "id"         : "5e7e4181",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, пр.Победителей, 5",
             "links"  : [
                 "https://itpa.by/",
@@ -2865,7 +2865,7 @@ export default [
     {
         "id"         : "00fd7df3",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Революционная, 8",
             "links"  : [
                 "https://lingualand.by/",
@@ -2888,7 +2888,7 @@ export default [
     {
         "id"         : "1022da04",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Красноармейская, 11",
             "links"  : [
                 "https://lingualand.by/",
@@ -2911,7 +2911,7 @@ export default [
     {
         "id"         : "1f66d2a1",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Ленинградская, 20",
             "links"  : [
                 "https://lingualand.by/",
@@ -2934,7 +2934,7 @@ export default [
     {
         "id"         : "e59e931e",
         "properties" : {
-            "type"   : "образование",
+            "category"   : "образование",
             "address": "г.Минск, ул. Замковая, 33",
             "links"  : [
                 "https://lingualand.by/",
@@ -2957,7 +2957,7 @@ export default [
     {
         "id"         : "6280ff42",
         "properties" : {
-            "type"   : "жилье",
+            "category"   : "жилье",
             "address": "г. Несвиж",
             "links"  : [
                 "http://palacehotel.by/",
@@ -2978,7 +2978,7 @@ export default [
     {
         "id"         : "6422f597",
         "properties" : {
-            "type"   : "жилье",
+            "category"   : "жилье",
             "address": "г.Минск, ул.Кирова, 4",
             "links"  : [
                 "https://www.booking.com/hotel/by/hostel-point-minsk.ru.html"
