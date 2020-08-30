@@ -318,13 +318,21 @@
                                 <section>
                                     <div class="hero-body has-text-centered">
                                         <img src="./assets/img/logos/zubr.svg">
+                                        1
                                     </div>
                                 </section>
                             </b-carousel-item>
-                            <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
-                                <section :class="`hero is-medium is-${carousel.color}`">
+                            <b-carousel-item>
+                                <section>
                                     <div class="hero-body has-text-centered">
-                                        <h1 class="title">{{carousel.title}}</h1>
+                                        <h1 class="title">2</h1>
+                                    </div>
+                                </section>
+                            </b-carousel-item>
+                            <b-carousel-item>
+                                <section>
+                                    <div class="hero-body has-text-centered">
+                                        <h1 class="title">3</h1>
                                     </div>
                                 </section>
                             </b-carousel-item>
