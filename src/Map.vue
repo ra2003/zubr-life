@@ -179,14 +179,14 @@
                         </b-field>
                         <b-field label="Категория">
                             <b-select v-model="request.type" required>
-                                <option v-for="item of types"
+                                <option v-for="item of categories"
                                         :key="item"
                                         :value="item">{{item}}
                                 </option>
                             </b-select>
                         </b-field>
                         <b-field label="Адрес">
-                            <b-input placeholder="Контактные данные">
+                            <b-input placeholder="адресс">
                             </b-input>
                         </b-field>
                         <b-field label="Контактное лицо">
@@ -229,9 +229,9 @@
                         <br>
                         <br>
                         <div class="field"
-                             v-for="item of types"
+                             v-for="item of categories"
                              :key="item">
-                            <b-checkbox v-model="filter.types"
+                            <b-checkbox v-model="filter.categories"
 
                                         :native-value="item">
                                 {{item}}
@@ -348,7 +348,7 @@
     import favourites           from './favourites'
     import {findPointOnSurface} from 'vuelayers/lib/ol-ext'
 
-    const types = [
+    const categories = [
         'telegram',
         'жилье',
         'иное',
@@ -372,7 +372,7 @@
                 center          : [27.568817138671978, 53.899078973945166],
                 zoom            : 9,
                 predefined,
-                types,
+                categories,
                 selectedFeatures: [],
                 remoteFeatures  : [],
                 filterModal     : false,
@@ -388,7 +388,7 @@
                     direction: ''
                 },
                 filter          : {
-                    types: [
+                    categories: [
                         'telegram',
                         'жилье',
                         'медицинская помощь',
@@ -429,7 +429,7 @@
                 return this.remoteFeatures.concat(this.predefined);
             },
             liveFeatures() {
-                return this.allFeatures.filter(item => this.filter.types.includes(item.properties.category));
+                return this.allFeatures.filter(item => this.filter.categories.includes(item.properties.category));
             }
         },
         created() {
