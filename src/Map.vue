@@ -429,10 +429,8 @@
         .map-panel
             padding: 0
             position: absolute
-            top: 0
-            right: 0
-            max-height: 500px
-            width: 5em
+            top: 15px
+            right: 15px
 
             .panel-heading
                 box-shadow: 0 .25em .5em transparentize($dark, 0.8)
