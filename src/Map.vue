@@ -3,7 +3,7 @@
         <vl-map :load-tiles-while-animating="true"
                 :load-tiles-while-interacting="true"
                 class="map">
-            <vl-view :zoom.sync="zoom"
+            <vl-view
                      :enable-rotation="false"
                      :center.sync="center"
             ></vl-view>
@@ -129,7 +129,7 @@
             </div>
         </div>
         <div class="logo-panel">
-            <img src="./assets/img/logos/zubr.svg" width="70" height="70">
+            <img src="./assets/img/logos/zubr.svg" style="height: 3em">
         </div>
         <div class="map-panel">
             <b-button type="is-primary"
@@ -433,8 +433,8 @@
         .logo-panel
             padding: 0
             position: absolute
-            top: 15px
-            left: 40px
+            top: 0.8em
+            left: 2.8em
 
         .map
             height: 100%
