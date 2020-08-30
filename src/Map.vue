@@ -128,6 +128,9 @@
                           icon-right="filter"/>
             </div>
         </div>
+A        <div class="logo-panel">
+            <img src="./assets/img/logos/zubr.svg" width="70" height="70">
+        </div>
         <div class="map-panel">
             <b-button type="is-primary"
                       size="is-medium"
@@ -310,9 +313,14 @@
                             @click="helpModal = false"/>
                     </header>
                     <section class="modal-card-body">
-                        <b-carousel
-                            :autoplay="false"
-                        >
+                        <b-carousel :autoplay="false">
+                            <b-carousel-item>
+                                <section>
+                                    <div class="hero-body has-text-centered">
+                                        <img src="./assets/img/logos/zubr.svg">
+                                    </div>
+                                </section>
+                            </b-carousel-item>
                             <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
                                 <section :class="`hero is-medium is-${carousel.color}`">
                                     <div class="hero-body has-text-centered">
@@ -421,6 +429,12 @@
 
     .map-main
         position: relative
+
+        .logo-panel
+            padding: 0
+            position: absolute
+            top: 15px
+            left: 40px
 
         .map
             height: 100%
