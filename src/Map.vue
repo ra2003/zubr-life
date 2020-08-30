@@ -142,7 +142,8 @@
             :destroy-on-hide="false"
             aria-role="dialog"
             aria-modal>
-            <div class="modal-card">
+            <form action="">
+                <div class="modal-card">
                 <header class="modal-card-head">
                     <p class="modal-card-title">Запрос о помощи</p>
                     <button
@@ -151,66 +152,49 @@
                         @click="requestModal = false"/>
                 </header>
                 <section class="modal-card-body">
-                    <div class="field is-grouped">
-                        <b-field label="Телефон">
-                            <b-input
-                                placeholder="Контактные данные"
-                                required>
-                            </b-input>
-                        </b-field>
-                        <b-field label="Email/Ссылка">
-                            <b-input
-                                placeholder="Контактные данные"
-                                required>
-                            </b-input>
-                        </b-field>
-                    </div>
-                    <div class="field is-grouped">
-                        <b-field label="Тип">
-                            <b-radio-button v-model="request.direction"
-                                            native-value="out"
-                                            type="is-danger">
-                                <span>Просьба</span>
-                            </b-radio-button>
-                            <b-radio-button v-model="request.direction"
-                                            native-value="in"
-                                            type="is-success">
-                                <span>Предложение</span>
-                            </b-radio-button>
-                        </b-field>
-                        <b-field label="Категория">
-                            <b-select
-                                v-model="request.type"
-                                required
-                            >
-                                <option v-for="item of types"
-                                        :key="item"
-                                        :value="item">{{item}}
-                                </option>
-                            </b-select>
-                        </b-field>
-                    </div>
-                    <div class="field is-grouped">
-                        <b-field label="Адрес">
-                            <b-input
-                                placeholder="Контактные данные"
-                                required>
-                            </b-input>
-                        </b-field>
-                        <b-field label="Контактное лицо">
-                            <b-input
-                                placeholder="Контактные данные"
-                                required>
-                            </b-input>
-                        </b-field>
-                    </div>
-                    <b-field label="Месторасположение">
+                    <b-field required>
+                        <b-radio-button v-model="request.direction"
+                                        native-value="in"
+                                        type="is-danger">
+                            <span>Просьба</span>
+                        </b-radio-button>
+                        <b-radio-button v-model="request.direction"
+                                        native-value="out"
+                                        type="is-success">
+                            <span>Предложение</span>
+                        </b-radio-button>
+                    </b-field>
+                    <b-field label="Телефон">
                         <b-input
                             placeholder="Контактные данные"
                             required>
                         </b-input>
                     </b-field>
-                    <b-field label="Содержание">
+                    <b-field label="Email/Ссылка">
+                        <b-input placeholder="Email/Ссылка">
+                        </b-input>
+                    </b-field>
+                    <b-field label="Категория">
+                        <b-select v-model="request.type" required>
+                            <option v-for="item of types"
+                                    :key="item"
+                                    :value="item">{{item}}
+                            </option>
+                        </b-select>
+                    </b-field>
+                    <b-field label="Адрес">
+                        <b-input placeholder="Контактные данные">
+                        </b-input>
+                    </b-field>
+                    <b-field label="Контактное лицо">
+                        <b-input placeholder="Контактное лицо">
+                        </b-input>
+                    </b-field>
+                    <b-field label="Месторасположение">
+                        <b-input placeholder="Контактные данные">
+                        </b-input>
+                    </b-field>
+                    <b-field label="Описание" required>
                         <b-input maxlength="100" type="textarea"></b-input>
                     </b-field>
                 </section>
@@ -219,6 +203,7 @@
                     <button class="button is-primary">Сохранить</button>
                 </footer>
             </div>
+            </form>
         </b-modal>
         <b-modal
             v-model="filterModal"
@@ -475,6 +460,7 @@
             bottom: 12px
             max-width: none
             width: 23em
+            z-index: 2
 
             &:after, &:before
                 top: 100%
