@@ -128,7 +128,7 @@
                           icon-right="filter"/>
             </div>
         </div>
-A        <div class="logo-panel">
+        <div class="logo-panel">
             <img src="./assets/img/logos/zubr.svg" width="70" height="70">
         </div>
         <div class="map-panel">
