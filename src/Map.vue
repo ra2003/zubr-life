@@ -36,7 +36,10 @@
                     </vl-style-box>
                 </template>
             </vl-feature>
-            <vl-interaction-select :features.sync="selectedFeatures" v-if="drawType == null">
+            <vl-interaction-select
+                :features.sync="selectedFeatures"
+                @select="handleSelect"
+                v-if="drawType == null">
                 <template slot-scope="select">
                     <vl-style-box>
                         <vl-style-stroke color="#423e9e" :width="7"></vl-style-stroke>
@@ -268,11 +271,12 @@
         'транспорт',
     ];
     export default {
-        filters : {
+        filters: {
             formatContact(value) {
                 return value.indexOf('http') !== 0 && value.indexOf(':') !== false ? value.split(':')[1] : value
             }
         },
+
         data() {
             return {
                 center          : [27.568817138671978, 53.899078973945166],
@@ -309,6 +313,18 @@
             pointOnSurface: findPointOnSurface,
             onUpdatePosition(coordinate) {
                 this.deviceCoordinate = coordinate
+            },
+            handleSelect(feature) {
+                let properties = feature.getProperties();
+                if (!properties) {
+                    return;
+                }
+                if (!properties.type) {
+                    return;
+                }
+                if (this.zoom < 14) {
+                    this.zoom = 14;
+                }
             },
         },
         computed: {
