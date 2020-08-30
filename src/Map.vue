@@ -114,6 +114,7 @@
         <div class="toolbar-panel">
             <div class="buttons has-addons">
                 <b-button type="is-success"
+                          @click="requestModal = true"
                           size="is-medium"
                           icon-right="plus"/>
                 <b-button type="is-info"
@@ -134,6 +135,91 @@
                       rounded
                       icon-right="question"/>
         </div>
+        <b-modal
+            v-model="requestModal"
+            has-modal-card
+            trap-focus
+            :destroy-on-hide="false"
+            aria-role="dialog"
+            aria-modal>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Запрос о помощи</p>
+                    <button
+                        type="button"
+                        class="delete"
+                        @click="requestModal = false"/>
+                </header>
+                <section class="modal-card-body">
+                    <div class="field is-grouped">
+                        <b-field label="Телефон">
+                            <b-input
+                                placeholder="Контактные данные"
+                                required>
+                            </b-input>
+                        </b-field>
+                        <b-field label="Email/Ссылка">
+                            <b-input
+                                placeholder="Контактные данные"
+                                required>
+                            </b-input>
+                        </b-field>
+                    </div>
+                    <div class="field is-grouped">
+                        <b-field label="Тип">
+                            <b-radio-button v-model="request.direction"
+                                            native-value="out"
+                                            type="is-danger">
+                                <span>Просьба</span>
+                            </b-radio-button>
+                            <b-radio-button v-model="request.direction"
+                                            native-value="in"
+                                            type="is-success">
+                                <span>Предложение</span>
+                            </b-radio-button>
+                        </b-field>
+                        <b-field label="Категория">
+                            <b-select
+                                v-model="request.type"
+                                required
+                            >
+                                <option v-for="item of types"
+                                        :key="item"
+                                        :value="item">{{item}}
+                                </option>
+                            </b-select>
+                        </b-field>
+                    </div>
+                    <div class="field is-grouped">
+                        <b-field label="Адрес">
+                            <b-input
+                                placeholder="Контактные данные"
+                                required>
+                            </b-input>
+                        </b-field>
+                        <b-field label="Контактное лицо">
+                            <b-input
+                                placeholder="Контактные данные"
+                                required>
+                            </b-input>
+                        </b-field>
+                    </div>
+                    <b-field label="Месторасположение">
+                        <b-input
+                            placeholder="Контактные данные"
+                            required>
+                        </b-input>
+                    </b-field>
+                    <b-field label="Содержание">
+                        <b-input maxlength="100" type="textarea"></b-input>
+                    </b-field>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button" type="button" @click="requestModal = false">Закрыть</button>
+                    <button class="button is-primary">Сохранить</button>
+                </footer>
+            </div>
+        </b-modal>
         <b-modal
             v-model="filterModal"
             has-modal-card
@@ -287,10 +373,15 @@
                 filterModal     : false,
                 infoModal       : false,
                 helpModal       : false,
+                requestModal    : false,
                 deviceCoordinate: undefined,
                 drawType        : undefined,
                 progress        : true,
                 progressType    : 'is-primary',
+                request         : {
+                    type     : '',
+                    direction: ''
+                },
                 carousels       : [
                     {title: 'Slide 1', color: 'grey'},
                     {title: 'Slide 2', color: 'dark'},
