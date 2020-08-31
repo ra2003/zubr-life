@@ -92,7 +92,7 @@
                                                style="padding-left: 3px"
                                                v-for="item of feature.properties.phones">+{{item}}</a>
                                         </p>
-                                        <p>Описание: {{feature.properties.text}}</p>
+                                        <p>Описание: {{feature.properties.description}}</p>
                                         <p v-if="feature.properties.address">Адрес: {{feature.properties.address}}</p>
                                     </div>
                                 </div>
@@ -181,7 +181,7 @@
             :destroy-on-hide="false"
             aria-role="dialog"
             aria-modal>
-            <form action="">
+            <form action="" @submit.prevent="save">
                 <div class="modal-card">
                     <header class="modal-card-head">
                         <p class="modal-card-title">Запрос о помощи</p>
@@ -248,7 +248,7 @@
                     </section>
                     <footer class="modal-card-foot">
                         <button class="button" type="button" @click="requestModal = false">Закрыть</button>
-                        <button class="button is-primary">Сохранить</button>
+                        <button class="button is-primary" @submit.prevent="save">Сохранить</button>
                     </footer>
                 </div>
             </form>
@@ -432,12 +432,13 @@
                 drawing         : false,
                 location_type   : '',
                 request         : {
-                    type       : '',
-                    category   : '',
-                    phone      : '',
-                    address    : '',
-                    link       : '',
-                    description: '',
+                    type       : 'demand',
+                    category   : 'жилье',
+                    phone      : '+375291111111',
+                    address    : 'test',
+                    contact    : 'Contact',
+                    link       : 'https://t.me/zubr_in',
+                    description: 'Test',
                 },
                 filter          : {
                     categories: [
@@ -475,6 +476,45 @@
             onUpdatePosition(coordinate) {
                 this.deviceCoordinate = coordinate
                 this.location_type    = 'current_location';
+            },
+            save() {
+                this.createFeature();
+            },
+            createFeature() {
+                let data = Object.assign({}, this.request)
+                if (this.location_type === 'set_point') {
+                    data.longitude = this.drawnFeatures[0].geometry.coordinates[0];
+                    data.latitude  = this.drawnFeatures[0].geometry.coordinates[1];
+                } else {
+                    data.longitude = this.deviceCoordinate[0];
+                    data.latitude  = this.deviceCoordinate[1];
+                }
+
+                fetch(apiURL + '/request',
+                    {
+                        method : 'POST',
+                        headers: {'Content-Type': 'application/ld+json', 'Accept': 'application/ld+json'},
+                        body   : JSON.stringify(data)
+                    }
+                )
+                    .then(r => r.json())
+                    .then((r) => {
+                        if (r.error) {
+                            this.error    = r.error;
+                            this.isActive = true;
+
+                            return;
+                        }
+                        this.drawnFeatures = [];
+                        this.loadFeatures()
+                        this.location_type = 'current_location';
+                        this.$buefy.notification.open({
+                            message: 'Something happened correctly!',
+                            type: 'is-success'
+                        })
+                        this.requestModal = false;
+
+                    })
             },
             loadFeatures() {
                 fetch(apiURL + '/requests',
