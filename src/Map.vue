@@ -39,19 +39,19 @@
             <vl-interaction-select
                 :features.sync="selectedFeatures"
                 @select="handleSelect"
-                v-if="drawType == null">
+                v-if="drawing === false">
                 <template slot-scope="select">
                     <vl-style-box>
                         <vl-style-stroke color="#423e9e" :width="7"></vl-style-stroke>
                         <vl-style-fill :color="[254, 178, 76, 0.7]"></vl-style-fill>
-                        <vl-style-circle :radius="5">
+                        <vl-style-circle :radius="15">
                             <vl-style-stroke color="#423e9e" :width="7"></vl-style-stroke>
                             <vl-style-fill :color="[254, 178, 76, 0.7]"></vl-style-fill>
                         </vl-style-circle>
                     </vl-style-box>
                     <vl-style-box :z-index="1">
                         <vl-style-stroke color="#d43f45" :width="2"></vl-style-stroke>
-                        <vl-style-circle :radius="5">
+                        <vl-style-circle :radius="15">
                             <vl-style-stroke color="#d43f45" :width="2"></vl-style-stroke>
                         </vl-style-circle>
                     </vl-style-box>
@@ -109,9 +109,22 @@
                     </vl-overlay>
                 </template>
             </vl-interaction-select>
+            <vl-layer-vector id="draw-pane">
+                <vl-source-vector ident="draw-target" :features.sync="drawnFeatures"></vl-source-vector>
+                <vl-style-box>
+                    <vl-style-circle :radius="15">
+                        <vl-style-fill color="white"></vl-style-fill>
+                        <vl-style-stroke color="red"></vl-style-stroke>
+                    </vl-style-circle>
+                </vl-style-box>
+            </vl-layer-vector>
+            <vl-interaction-draw source="draw-target"
+                                 :condition="condition"
+                                 :active="drawing"
+                                 :type="'point'"></vl-interaction-draw>
         </vl-map>
 
-        <div class="toolbar-panel">
+        <div class="toolbar-panel" v-show="drawing === false">
             <div class="buttons has-addons">
                 <b-button type="is-success"
                           @click="requestModal = true"
@@ -124,20 +137,43 @@
                 <b-button type="is-warning"
                           size="is-medium"
                           @click="filterModal = true"
-                          active
                           icon-right="filter"/>
+                <b-button type="is-primary"
+                          size="is-medium"
+                          @click="helpModal = true"
+                          icon-right="question"/>
             </div>
         </div>
         <div class="logo-panel">
             <img src="./assets/img/logos/zubr.svg" style="height: 3em">
         </div>
-        <div class="map-panel">
-            <b-button type="is-primary"
-                      size="is-medium"
-                      @click="helpModal = true"
-                      rounded
-                      icon-right="question"/>
+        <div class="map-panel" v-show="drawing">
+            <div class="panel-block">
+                <table class="table is-fullwidth">
+                    <tr v-show="drawnFeatures.length > 0">
+                        <th>
+                            <b-button type="is-success" icon-left="check" @click="finishDrawing">
+                            </b-button>
+                        </th>
+                        <th>
+                            <b-button type="is-info" @click="resetDrawnPoint">
+                                Редактировать
+                            </b-button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <b-button type="is-danger"
+                                      @click="cancelDrawing"
+                                      style="margin-left: auto;margin-right: auto">
+                                Отмена
+                            </b-button>
+                        </th>
+                    </tr>
+                </table>
+            </div>
         </div>
+
         <b-modal
             v-model="requestModal"
             has-modal-card
@@ -156,29 +192,30 @@
                     </header>
                     <section class="modal-card-body">
                         <b-field required>
-                            <b-radio-button v-model="request.direction"
-                                            native-value="in"
+                            <b-radio-button v-model="request.type"
+                                            native-value="demand"
                                             type="is-danger">
                                 <span>Просьба</span>
                             </b-radio-button>
-                            <b-radio-button v-model="request.direction"
-                                            native-value="out"
+                            <b-radio-button v-model="request.type"
+                                            native-value="proposal"
                                             type="is-success">
                                 <span>Предложение</span>
                             </b-radio-button>
                         </b-field>
                         <b-field label="Телефон">
                             <b-input
+                                v-model="request.phone"
                                 placeholder="Контактные данные"
                                 required>
                             </b-input>
                         </b-field>
                         <b-field label="Email/Ссылка">
-                            <b-input placeholder="Email/Ссылка">
+                            <b-input placeholder="Email/Ссылка" v-model="request.link">
                             </b-input>
                         </b-field>
                         <b-field label="Категория">
-                            <b-select v-model="request.type" required>
+                            <b-select v-model="request.category" required>
                                 <option v-for="item of categories"
                                         :key="item"
                                         :value="item">{{item}}
@@ -186,19 +223,27 @@
                             </b-select>
                         </b-field>
                         <b-field label="Адрес">
-                            <b-input placeholder="адресс">
+                            <b-input placeholder="адрес" v-model="request.address">
                             </b-input>
                         </b-field>
                         <b-field label="Контактное лицо">
-                            <b-input placeholder="Контактное лицо">
+                            <b-input placeholder="Контактное лицо" v-model="request.contact">
                             </b-input>
                         </b-field>
                         <b-field label="Месторасположение">
-                            <b-input placeholder="Контактные данные">
-                            </b-input>
+                            <b-radio-button v-model="location_type"
+                                            native-value="current_location"
+                                            type="is-danger">
+                                <span>Текущая геопозиция</span>
+                            </b-radio-button>
+                            <b-radio-button v-model="location_type"
+                                            native-value="set_point"
+                                            type="is-success">
+                                <span>Метка на карте</span>
+                            </b-radio-button>
                         </b-field>
                         <b-field label="Описание" required>
-                            <b-input maxlength="100" type="textarea"></b-input>
+                            <b-input maxlength="100" type="textarea" v-model="request.description"></b-input>
                         </b-field>
                     </section>
                     <footer class="modal-card-foot">
@@ -382,10 +427,17 @@
                 deviceCoordinate: undefined,
                 drawType        : undefined,
                 progress        : true,
+                drawnFeatures   : [],
                 progressType    : 'is-primary',
+                drawing         : false,
+                location_type   : '',
                 request         : {
-                    type     : '',
-                    direction: ''
+                    type       : '',
+                    category   : '',
+                    phone      : '',
+                    address    : '',
+                    link       : '',
+                    description: '',
                 },
                 filter          : {
                     categories: [
@@ -400,12 +452,34 @@
             }
         },
         methods : {
+            resetDrawnPoint() {
+                this.drawnFeatures = [];
+            },
+            cancelDrawing() {
+                this.drawing       = false
+                this.drawnFeatures = [];
+            },
+            finishDrawing() {
+                this.drawing       = false;
+                this.requestModal  = true;
+                this.location_type = 'set_point';
+            },
+            condition() {
+                return this.drawnFeatures.length < 1;
+            },
+            interactionMode() {
+                this.requestModal = false;
+                this.drawing      = true;
+            },
             pointOnSurface: findPointOnSurface,
             onUpdatePosition(coordinate) {
                 this.deviceCoordinate = coordinate
+                this.location_type    = 'current_location';
             },
             loadFeatures() {
-                fetch(apiURL + '/requests', {headers: {'Content-Type' : 'application/ld+json'}})
+                fetch(apiURL + '/requests',
+                    {headers: {'Content-Type': 'application/ld+json'}}
+                )
                     .then(r => r.json())
                     .then(r => {
                         this.remoteFeatures = r.data;
@@ -434,6 +508,15 @@
         },
         created() {
             this.loadFeatures();
+        },
+        watch   : {
+            location_type(val) {
+                if (val === 'set_point') {
+                    this.interactionMode();
+                } else {
+                    this.drawnFeatures = [];
+                }
+            },
         }
     }
 </script>
@@ -452,8 +535,8 @@
         .logo-panel
             padding: 0
             position: absolute
-            top: 0.8em
-            left: 2.8em
+            top: 1em
+            right: 1em
 
         .map
             height: 100%
@@ -462,8 +545,9 @@
         .map-panel
             padding: 0
             position: absolute
-            top: 15px
-            right: 15px
+            top: 40px
+            left: 50%
+            transform: translateX(-50%)
 
             .panel-heading
                 box-shadow: 0 .25em .5em transparentize($dark, 0.8)
@@ -482,6 +566,7 @@
         .toolbar-panel
             position: absolute
             left: 50%
+            width: 200px
             bottom: 20px
             transform: translateX(-50%)
 
