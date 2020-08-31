@@ -191,7 +191,7 @@
                             @click="requestModal = false"/>
                     </header>
                     <section class="modal-card-body">
-                        <b-field required>
+                        <b-field label="Тип">
                             <b-radio-button v-model="request.type"
                                             native-value="demand"
                                             type="is-danger">
@@ -232,6 +232,7 @@
                         </b-field>
                         <b-field label="Месторасположение">
                             <b-radio-button v-model="location_type"
+                                            :disabled="!(Array.isArray(deviceCoordinate) && deviceCoordinate.length === 2)"
                                             native-value="current_location"
                                             type="is-danger">
                                 <span>Текущая геопозиция</span>
@@ -432,7 +433,7 @@
                 drawing         : false,
                 location_type   : '',
                 request         : {
-                    type       : 'demand',
+                    type       : '',
                     category   : 'жилье',
                     phone      : '+375291111111',
                     address    : 'test',
@@ -459,6 +460,7 @@
             cancelDrawing() {
                 this.drawing       = false
                 this.drawnFeatures = [];
+                this.location_type = '';
             },
             finishDrawing() {
                 this.drawing       = false;
@@ -475,9 +477,25 @@
             pointOnSurface: findPointOnSurface,
             onUpdatePosition(coordinate) {
                 this.deviceCoordinate = coordinate
-                this.location_type    = 'current_location';
+                if (!this.location_type) {
+                    this.location_type = 'current_location';
+                }
             },
             save() {
+                if (!this.location_type) {
+                    this.$buefy.notification.open({
+                        message: 'Выберите месторасположение',
+                        type   : 'is-danger'
+                    })
+                    return;
+                }
+                if (!this.request.type) {
+                    this.$buefy.notification.open({
+                        message: 'Укажите тип',
+                        type   : 'is-danger'
+                    })
+                    return;
+                }
                 this.createFeature();
             },
             createFeature() {
@@ -509,8 +527,8 @@
                         this.loadFeatures()
                         this.location_type = 'current_location';
                         this.$buefy.notification.open({
-                            message: 'Something happened correctly!',
-                            type: 'is-success'
+                            message: 'Успешно сохранено',
+                            type   : 'is-success'
                         })
                         this.requestModal = false;
 
