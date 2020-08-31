@@ -138,7 +138,7 @@
                           size="is-medium"
                           @click="filterModal = true"
                           icon-right="filter"/>
-                <b-button type="is-primary"
+                <b-button type="is-orange"
                           size="is-medium"
                           @click="helpModal = true"
                           icon-right="question"/>
@@ -153,6 +153,7 @@
                     <tr v-show="drawnFeatures.length > 0">
                         <th>
                             <b-button type="is-success" icon-left="check" @click="finishDrawing">
+                                Сохранить
                             </b-button>
                         </th>
                         <th>
@@ -165,7 +166,7 @@
                         <th colspan="2">
                             <b-button type="is-danger"
                                       @click="cancelDrawing"
-                                      style="margin-left: auto;margin-right: auto">
+                                      style="width: 100%">
                                 Отмена
                             </b-button>
                         </th>
@@ -548,14 +549,16 @@
                 if (!this.location_type) {
                     this.$buefy.notification.open({
                         message: 'Выберите месторасположение',
-                        type   : 'is-danger'
+                        type   : 'is-danger',
+                        duration: 5000,
                     })
                     return;
                 }
                 if (!this.request.type) {
                     this.$buefy.notification.open({
                         message: 'Укажите тип',
-                        type   : 'is-danger'
+                        type   : 'is-danger',
+                        duration: 5000,
                     })
                     return;
                 }
@@ -581,9 +584,11 @@
                     .then(r => r.json())
                     .then((r) => {
                         if (r.error) {
-                            this.error    = r.error;
-                            this.isActive = true;
-
+                            this.$buefy.notification.open({
+                                message: r.error,
+                                type   : 'is-danger',
+                                duration: 5000,
+                            })
                             return;
                         }
                         this.drawnFeatures = [];
@@ -591,11 +596,19 @@
                         this.location_type = 'current_location';
                         this.$buefy.notification.open({
                             message: 'Успешно сохранено',
-                            type   : 'is-success'
+                            type   : 'is-success',
+                            duration: 5000,
                         })
                         this.requestModal = false;
 
+                    }).catch(e => {
+                    this.$buefy.notification.open({
+                        message: 'Произошла ошибка',
+                        type   : 'is-danger',
+                        duration: 5000,
                     })
+                    throw e;
+                })
             },
             loadFeatures() {
                 fetch(apiURL + '/requests',
