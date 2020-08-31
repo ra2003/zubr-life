@@ -346,6 +346,7 @@
             v-model="helpModal"
             has-modal-card
             trap-focus
+            :on-cancel="closeHelpModal"
             :destroy-on-hide="false"
             aria-role="dialog"
             aria-modal>
@@ -356,7 +357,7 @@
                         <button
                             type="button"
                             class="delete"
-                            @click="helpModal = false"/>
+                            @click="closeHelpModal"/>
                     </header>
                     <section class="modal-card-body">
                         <b-carousel :autoplay="false">
@@ -373,13 +374,27 @@
                                     <div class="hero-body">
                                         <h3>Категории</h3>
                                         <ul>
-                                            <li><u>telegram</u> — региональные чаты для коммуникации с жителями вашей местности;</li>
-                                            <li><u>жилье</u> — запросы и предложения о помощи с временным или постоянным жильем пострадавшим людям и людям, оказавшимся в сложной ситуации;</li>
-                                            <li><u>иное</u> — иные запросы и предложения о помощи, не включенные в основные категории карты;</li>
-                                            <li><u>медпомощь</u> — бесплатная или с частичной оплатой медицинская помощь от клиник и частных врачей;</li>
-                                            <li><u>образование</u> — частные учреждения образования и компании, предлагающие переобучение/переквалификацию;</li>
-                                            <li><u>продукты питания</u> — помощь продуктами питания от фермеров и кафе/ресторанов;</li>
-                                            <li><u>транспорт</u> — помощь с перевозкой людей/грузов, ремонт авто и велосипедов, пострадавших в период протестов</li>
+                                            <li>
+                                                <u>telegram</u> — региональные чаты для коммуникации с жителями вашей местности;
+                                            </li>
+                                            <li>
+                                                <u>жилье</u> — запросы и предложения о помощи с временным или постоянным жильем пострадавшим людям и людям, оказавшимся в сложной ситуации;
+                                            </li>
+                                            <li>
+                                                <u>иное</u> — иные запросы и предложения о помощи, не включенные в основные категории карты;
+                                            </li>
+                                            <li>
+                                                <u>медпомощь</u> — бесплатная или с частичной оплатой медицинская помощь от клиник и частных врачей;
+                                            </li>
+                                            <li>
+                                                <u>образование</u> — частные учреждения образования и компании, предлагающие переобучение/переквалификацию;
+                                            </li>
+                                            <li>
+                                                <u>продукты питания</u> — помощь продуктами питания от фермеров и кафе/ресторанов;
+                                            </li>
+                                            <li>
+                                                <u>транспорт</u> — помощь с перевозкой людей/грузов, ремонт авто и велосипедов, пострадавших в период протестов
+                                            </li>
                                         </ul>
                                         <br>
                                         Для формирования запроса или отправки предложения - заполните соответствующую форму, нажав на "+" внизу рабочей области карты.
@@ -418,6 +433,36 @@
 
     const apiURL = process.env.VUE_APP_API_URL;
 
+    function setCookie(name, value) {
+        let options = {
+            path     : '/',
+            secure   : true,
+            'max-age': 36000000
+        };
+
+        if (options.expires instanceof Date) {
+            options.expires = options.expires.toUTCString();
+        }
+
+        let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+        for (let optionKey in options) {
+            updatedCookie += "; " + optionKey;
+            let optionValue = options[optionKey];
+            if (optionValue !== true) {
+                updatedCookie += "=" + optionValue;
+            }
+        }
+
+        document.cookie = updatedCookie;
+    }
+
+    function issetCookie(name) {
+        return document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([.$?*|{}()[]\\\/+^])/g, '\\$1') + "=([^;]*)"
+        )) !== null;
+    }
+
     export default {
         filters: {
             formatContact(value) {
@@ -435,7 +480,7 @@
                 remoteFeatures  : [],
                 filterModal     : false,
                 infoModal       : false,
-                helpModal       : false,
+                helpModal       : !issetCookie('onboarding'),
                 requestModal    : false,
                 deviceCoordinate: undefined,
                 drawType        : undefined,
@@ -466,6 +511,12 @@
             }
         },
         methods : {
+            closeHelpModal() {
+                if (!issetCookie('onboarding')) {
+                    setCookie('onboarding', true)
+                }
+                this.helpModal = false;
+            },
             resetDrawnPoint() {
                 this.drawnFeatures = [];
             },
