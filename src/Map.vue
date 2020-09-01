@@ -351,69 +351,79 @@
             :destroy-on-hide="false"
             aria-role="dialog"
             aria-modal>
-            <form action="">
-                <div class="modal-card">
-                    <header class="modal-card-head">
-                        <p class="modal-card-title">Дополнительно</p>
-                        <button
-                            type="button"
-                            class="delete"
-                            @click="closeHelpModal"/>
-                    </header>
-                    <section class="modal-card-body">
-                        <b-carousel :autoplay="false">
-                            <b-carousel-item>
-                                <section>
-                                    <div class="hero-body has-text-centered">
-                                        <img src="./assets/img/logos/zubr.svg">
-                                        1
-                                    </div>
-                                </section>
-                            </b-carousel-item>
-                            <b-carousel-item>
-                                <section>
-                                    <div class="hero-body">
-                                        <h3>Категории</h3>
-                                        <ul>
-                                            <li>
-                                                <u>telegram</u> — региональные чаты для коммуникации с жителями вашей местности;
-                                            </li>
-                                            <li>
-                                                <u>жилье</u> — запросы и предложения о помощи с временным или постоянным жильем пострадавшим людям и людям, оказавшимся в сложной ситуации;
-                                            </li>
-                                            <li>
-                                                <u>иное</u> — иные запросы и предложения о помощи, не включенные в основные категории карты;
-                                            </li>
-                                            <li>
-                                                <u>медпомощь</u> — бесплатная или с частичной оплатой медицинская помощь от клиник и частных врачей;
-                                            </li>
-                                            <li>
-                                                <u>образование</u> — частные учреждения образования и компании, предлагающие переобучение/переквалификацию;
-                                            </li>
-                                            <li>
-                                                <u>продукты питания</u> — помощь продуктами питания от фермеров и кафе/ресторанов;
-                                            </li>
-                                            <li>
-                                                <u>транспорт</u> — помощь с перевозкой людей/грузов, ремонт авто и велосипедов, пострадавших в период протестов
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        Для формирования запроса или отправки предложения - заполните соответствующую форму, нажав на "+" внизу рабочей области карты.
-                                        Для управления отображением категориями существует фильтр, позволяющий отображать исключительно необходимые категории взаимопомощи
-                                    </div>
-                                </section>
-                            </b-carousel-item>
-                            <b-carousel-item>
-                                <section>
-                                    <div class="hero-body has-text-centered">
-                                        <h1 class="title">3</h1>
-                                    </div>
-                                </section>
-                            </b-carousel-item>
-                        </b-carousel>
-                    </section>
-                </div>
-            </form>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Дополнительно</p>
+                    <button
+                        type="button"
+                        class="delete"
+                        @click="closeHelpModal"/>
+                </header>
+                <section class="modal-card-body">
+                    <b-carousel :autoplay="false">
+                        <b-carousel-item>
+                            <section>
+                                <div class="hero-body has-text-centered">
+                                    <img src="./assets/img/logos/zubr.svg">
+                                    1
+                                </div>
+                            </section>
+                        </b-carousel-item>
+                        <b-carousel-item>
+                            <section>
+                                <h3><strong>Используемые категории приложения</strong></h3>
+                                <ul>
+                                    <li>
+                                        <u>telegram</u> — региональные чаты для коммуникации с жителями вашей местности;
+                                    </li>
+                                    <li>
+                                        <u>жилье</u> — запросы и предложения о помощи с временным или постоянным жильем пострадавшим людям и людям, оказавшимся в сложной ситуации;
+                                    </li>
+                                    <li>
+                                        <u>иное</u> — иные запросы и предложения о помощи, не включенные в основные категории карты;
+                                    </li>
+                                    <li>
+                                        <u>медпомощь</u> — бесплатная или с частичной оплатой медицинская помощь от клиник и частных врачей;
+                                    </li>
+                                    <li>
+                                        <u>образование</u> — частные учреждения образования и компании, предлагающие переобучение/переквалификацию;
+                                    </li>
+                                    <li>
+                                        <u>продукты питания</u> — помощь продуктами питания от фермеров и кафе/ресторанов;
+                                    </li>
+                                    <li>
+                                        <u>транспорт</u> — помощь с перевозкой людей/грузов, ремонт авто и велосипедов, пострадавших в период протестов
+                                    </li>
+                                </ul>
+                            </section>
+                        </b-carousel-item>
+                        <b-carousel-item>
+                            <section>
+                                <p>
+                                    <b-button size="is-small"
+                                              type="is-success"
+                                              selected
+                                              icon-left="plus"></b-button> - Вызов формы для заполнения запроса или отправки
+                                    предложения о взаимопомощи.
+                                    Указать свое место нахождения в форме можно через текущую геопозицию или на карте.
+                                    Чем больше данных, тем оперативнее связь и помощь.
+                                </p>
+                                <p>
+                                    <b-button type="is-info"
+                                              size="is-small"
+                                              icon-right="exclamation"/> - Информация и контактные данные основных инициатив по помощи
+                                    как в Беларуси, так и за её пределами.
+                                </p>
+                                <p>
+                                    <b-button type="is-warning"
+                                              size="is-small"
+                                              icon-right="filter"/> - Фильтры карты маркеров.
+                                </p>
+                            </section>
+                        </b-carousel-item>
+                    </b-carousel>
+                </section>
+            </div>
         </b-modal>
     </div>
 </template>
