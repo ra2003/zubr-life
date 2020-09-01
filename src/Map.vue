@@ -144,8 +144,8 @@
                           icon-right="question"/>
             </div>
         </div>
-        <div class="logo-panel">
-            <img src="./assets/img/logos/zubr.svg" style="height: 3em">
+        <div class="logo-panel" style="width: 5em">
+            <img src="./assets/img/logos/zubr-text.png">
         </div>
         <div class="map-panel" v-show="drawing">
             <div class="panel-block">
@@ -174,7 +174,6 @@
                 </table>
             </div>
         </div>
-
         <b-modal
             v-model="requestModal"
             has-modal-card
