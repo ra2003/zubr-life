@@ -353,7 +353,7 @@
             aria-modal>
             <div class="modal-card">
                 <header class="modal-card-head">
-                    <p class="modal-card-title">Дополнительно</p>
+                    <p class="modal-card-title" style="text-align: center;font-size: 1.3rem;">Помощь</p>
                     <button
                         type="button"
                         class="delete"
@@ -362,15 +362,22 @@
                 <section class="modal-card-body">
                     <b-carousel :autoplay="false">
                         <b-carousel-item>
-                            <section>
-                                <div class="hero-body has-text-centered">
-                                    <img src="./assets/img/logos/zubr.svg">
-                                    1
+                            <section style="padding: 1em 2em 2em 4em;">
+                                <div style="margin: auto;width: 15em;padding-bottom: 10px">
+                                    <img src="./assets/img/logos/zubr.svg" >
                                 </div>
+                                <p>
+                                    Инициатива <strong>ZUBR.life</strong> была создана командой ZUBR для помощи людям,
+                                    оказавшимся в затруднительном положении,
+                                    связанном со своей гражданской позицией. На карте отображаются условными
+                                    знаками <span style="color:#d74e4e">красного</span> цвета запросы о помощи
+                                    и <span style="color:green">зеленого</span> цвета - предложения о помощи
+                                    от частных компаний и физических лиц.
+                                </p>
                             </section>
                         </b-carousel-item>
                         <b-carousel-item>
-                            <section>
+                            <section style="padding: 1em 2em 2em 4em;">
                                 <h3><strong>Используемые категории приложения</strong></h3>
                                 <ul>
                                     <li>
@@ -398,7 +405,7 @@
                             </section>
                         </b-carousel-item>
                         <b-carousel-item>
-                            <section>
+                            <section style="padding: 1em 2em 2em 4em;">
                                 <p>
                                     <b-button size="is-small"
                                               type="is-success"
