@@ -26,13 +26,13 @@
                 <template slot-scope="feature">
                     <vl-geom-point :coordinates="item.coordinates"></vl-geom-point>
                     <vl-style-box>
-                        <vl-style-icon v-if="item.properties.category === 'продукты питания'" src="./assets/img/icons/prop_food.png" :scale="0.5"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.category === 'транспорт'" src="./assets/img/icons/prop_transport.png" :scale="0.5"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.category === 'медицинская помощь'" src="./assets/img/icons/prop_health.png" :scale="0.5"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.category === 'жилье'" src="./assets/img/icons/prop_housing.png" :scale="0.5"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.category === 'образование'" src="./assets/img/icons/prop_edu.png" :scale="0.5"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.category === 'telegram'" src="./assets/img/icons/tg.png" :scale="0.5"></vl-style-icon>
-                        <vl-style-icon v-else src="./assets/img/icons/prop_other.png" :scale="0.5"></vl-style-icon>
+                        <vl-style-icon v-if="item.properties.category === 'продукты питания'" src="./assets/img/icons/prop_food.png" :scale="0.5" opacity="0.75"></vl-style-icon>
+                        <vl-style-icon v-else-if="item.properties.category === 'транспорт'" src="./assets/img/icons/prop_transport.png" :scale="0.5" opacity="0.75"></vl-style-icon>
+                        <vl-style-icon v-else-if="item.properties.category === 'медицинская помощь'" src="./assets/img/icons/prop_health.png" :scale="0.5" opacity="0.75"></vl-style-icon>
+                        <vl-style-icon v-else-if="item.properties.category === 'жилье'" src="./assets/img/icons/prop_housing.png" :scale="0.5" opacity="0.75"></vl-style-icon>
+                        <vl-style-icon v-else-if="item.properties.category === 'образование'" src="./assets/img/icons/prop_edu.png" :scale="0.5" opacity="0.75"></vl-style-icon>
+                        <vl-style-icon v-else-if="item.properties.category === 'telegram'" src="./assets/img/icons/tg.png" :scale="0.5" opacity="0.75"></vl-style-icon>
+                        <vl-style-icon v-else src="./assets/img/icons/prop_other.png" :scale="0.5" opacity="0.75"></vl-style-icon>
                     </vl-style-box>
                 </template>
             </vl-feature>
@@ -125,20 +125,24 @@
         </vl-map>
 
         <div class="toolbar-panel" v-show="drawing === false">
-            <div class="buttons has-addons">
-                <b-button type="is-success"
+            <div class="buttons has-addons toolbar-buttons" >
+                <b-button type="is-orange"
                           @click="requestModal = true"
                           size="is-medium"
+                          outlined
                           icon-right="plus"/>
-                <b-button type="is-info"
+                <b-button type="is-orange"
+                          outlined
                           size="is-medium"
                           @click="infoModal = true"
                           icon-right="exclamation"/>
-                <b-button type="is-warning"
+                <b-button type="is-orange"
+                          outlined
                           size="is-medium"
                           @click="filterModal = true"
                           icon-right="filter"/>
                 <b-button type="is-orange"
+                          outlined
                           size="is-medium"
                           @click="helpModal = true"
                           icon-right="question"/>
@@ -164,7 +168,7 @@
                     </tr>
                     <tr>
                         <th colspan="2">
-                            <b-button type="is-danger"
+                            <b-button type="is-orange"
                                       @click="cancelDrawing"
                                       style="width: 100%">
                                 Отмена
@@ -194,7 +198,7 @@
                         <b-field label="Тип">
                             <b-radio-button v-model="request.type"
                                             native-value="demand"
-                                            type="is-danger">
+                                            type="is-orange">
                                 <span>Просьба</span>
                             </b-radio-button>
                             <b-radio-button v-model="request.type"
@@ -234,12 +238,12 @@
                             <b-radio-button v-model="location_type"
                                             :disabled="!(Array.isArray(deviceCoordinate) && deviceCoordinate.length === 2)"
                                             native-value="current_location"
-                                            type="is-danger">
+                                            type="is-orange">
                                 <span>Текущая геопозиция</span>
                             </b-radio-button>
                             <b-radio-button v-model="location_type"
                                             native-value="set_point"
-                                            type="is-success">
+                                            type="is-orange">
                                 <span>Метка на карте</span>
                             </b-radio-button>
                         </b-field>
@@ -361,12 +365,12 @@
                 <section class="modal-card-body">
                     <b-carousel :autoplay="false">
                         <b-carousel-item>
-                            <section style="padding: 1em 2em 2em 4em;">
+                            <section class="carousel-1">
                                 <div style="margin: auto;width: 15em;padding-bottom: 10px">
                                     <img src="./assets/img/logos/zubr.svg" >
                                 </div>
                                 <p>
-                                    Инициатива <strong>ZUBR.life</strong> была создана командой ZUBR для помощи людям,
+                                        Инициатива <strong>ZUBR.life</strong> была создана командой ZUBR для помощи людям,
                                     оказавшимся в затруднительном положении,
                                     связанном со своей гражданской позицией. На карте отображаются условными
                                     знаками <span style="color:#d74e4e">красного</span> цвета запросы о помощи
@@ -376,7 +380,7 @@
                             </section>
                         </b-carousel-item>
                         <b-carousel-item>
-                            <section style="padding: 1em 2em 2em 4em;">
+                            <section class="carousel-2">
                                 <h3><strong>Используемые категории приложения</strong></h3>
                                 <ul>
                                     <li>
@@ -404,25 +408,28 @@
                             </section>
                         </b-carousel-item>
                         <b-carousel-item>
-                            <section style="padding: 1em 2em 2em 4em;">
+                            <section class="carousel-3">
                                 <p>
-                                    <b-button size="is-small"
-                                              type="is-success"
-                                              selected
+                                    <b-button
+                                              type="is-orange"
+                                              size="is-small"
+                                              outlined
                                               icon-left="plus"></b-button> - Вызов формы для заполнения запроса или отправки
                                     предложения о взаимопомощи.
                                     Указать свое место нахождения в форме можно через текущую геопозицию или на карте.
                                     Чем больше данных, тем оперативнее связь и помощь.
                                 </p>
                                 <p>
-                                    <b-button type="is-info"
+                                    <b-button type="is-orange"
                                               size="is-small"
+                                              outlined
                                               icon-right="exclamation"/> - Информация и контактные данные основных инициатив по помощи
                                     как в Беларуси, так и за её пределами.
                                 </p>
                                 <p>
-                                    <b-button type="is-warning"
+                                    <b-button type="is-orange"
                                               size="is-small"
+                                              outlined
                                               icon-right="filter"/> - Фильтры карты маркеров.
                                 </p>
                             </section>
@@ -565,7 +572,7 @@
                 if (!this.location_type) {
                     this.$buefy.notification.open({
                         message: 'Выберите месторасположение',
-                        type   : 'is-danger',
+                        type   : 'is-orange',
                         duration: 5000,
                     })
                     return;
@@ -573,7 +580,7 @@
                 if (!this.request.type) {
                     this.$buefy.notification.open({
                         message: 'Укажите тип',
-                        type   : 'is-danger',
+                        type   : 'is-orange',
                         duration: 5000,
                     })
                     return;
@@ -602,7 +609,7 @@
                         if (r.error) {
                             this.$buefy.notification.open({
                                 message: r.error,
-                                type   : 'is-danger',
+                                type   : 'is-orange',
                                 duration: 5000,
                             })
                             return;
@@ -620,7 +627,7 @@
                     }).catch(e => {
                     this.$buefy.notification.open({
                         message: 'Произошла ошибка',
-                        type   : 'is-danger',
+                        type   : 'is-orange',
                         duration: 5000,
                     })
                     throw e;
@@ -671,7 +678,43 @@
     }
 </script>
 <style lang="sass">
+    @use "sass:map"
     @import ~bulma/sass/utilities/_all
+
+    $orange: hsl(24, 85%, 48%) !default
+    $link-hover: $orange
+    $success: #00A896
+
+
+    $colors : mergeColorMaps($colors, ("orange" : ($orange, $white), "primary" : ($orange, $primary-invert), "success" : ($success, $success-invert)))
+
+    @import ~buefy/src/scss/buefy-build
+
+    .toolbar-buttons
+        background-color: $white
+        button
+            margin-bottom: 0 !important
+    .carousel-arrow .icon.has-icons-left
+        left: 0.5rem
+    .carousel-arrow .icon.has-icons-right
+        right: 0.5rem
+    .carousel-1
+        word-break: break-word
+        padding-bottom: 2em
+        +desktop
+            padding: 0 1em 2.3em 2.3em
+    .carousel-2
+        padding-bottom: 2em
+        word-break: break-word
+        +desktop
+            padding: 0 0 2em 2.7em
+
+    .carousel-3
+        padding-bottom: 2em
+        word-break: break-word
+        line-height: 28px
+        +desktop
+            padding: 0 0 2em 3em
 
     html, body, #map
         width: 100%
@@ -716,7 +759,6 @@
         .toolbar-panel
             position: absolute
             left: 50%
-            width: 200px
             bottom: 20px
             transform: translateX(-50%)
 

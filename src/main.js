@@ -1,9 +1,6 @@
 import Vue       from 'vue'
 import Buefy     from 'buefy'
-import 'buefy/dist/buefy.css'
-// import VueLayers modules
 import VueLayers from 'vuelayers'
-// import VueLayers styles
 import 'vuelayers/lib/style.css'
 import App       from './Map.vue'
 
