@@ -801,6 +801,9 @@
         created() {
             this.loadFeatures();
         },
+        mounted() {
+            setInterval(this.loadFeatures, 45000)
+        },
         watch   : {
             location_type(val) {
                 if (val === 'set_point') {
