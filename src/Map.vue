@@ -112,6 +112,12 @@
                     <vl-style-func :factory="clusterStyleFunc(key)"/>
                 </vl-source-cluster>
             </vl-layer-vector>
+            <vl-layer-vector>
+                <vl-source-cluster :distance="30">
+                    <vl-source-vector :features.sync="liveFeatures"></vl-source-vector>
+                    <vl-style-func :factory="clusterStyleFunc"/>
+                </vl-source-cluster>
+            </vl-layer-vector>
             <vl-layer-vector id="draw-pane">
                 <vl-source-vector ident="draw-target" :features.sync="drawnFeatures"></vl-source-vector>
                 <vl-style-box>
@@ -716,7 +722,7 @@
                 return this.remoteFeatures.concat(this.predefined);
             },
             liveFeatures() {
-                return this.allFeatures.filter(item => this.filter.categories.includes(item.properties.category));
+                return this.remoteFeatures;
             }
         },
         created() {
