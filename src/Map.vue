@@ -486,7 +486,7 @@
     }
 
     let map = {
-        proposal : {}
+        proposal: {}
     };
 
     for (let item of predefined) {
@@ -522,10 +522,10 @@
                                     color: '#00A896',
                                 })
                                 params['text']           = size.toString()
-                            } else if(category === null && size === 1) {
+                            } else if (category === null && size === 1) {
                                 category = feature.getProperties().features[0].getProperties().category;
                             }
-                            if (category === null){
+                            if (category === null) {
                                 category = 'other';
                             }
                             if (type === null) {
@@ -559,7 +559,7 @@
                             }),
                         };
 
-                        if (category === null){
+                        if (category === null) {
                             category = 'other';
                         }
                         if (type === null) {
@@ -854,8 +854,12 @@
         .toolbar-panel
             position: absolute
             left: 50%
-            bottom: 20px
+            bottom: 130px
+            width: 197px
             transform: translateX(-50%)
+
+            +desktop
+                bottom: 40px
 
         .feature-popup
             position: absolute
