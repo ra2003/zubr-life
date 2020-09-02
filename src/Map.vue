@@ -469,7 +469,7 @@
                                               size="is-small"
                                               outlined
                                               icon-right="filter"/>
-                                    - Фильтры карты маркеров.
+                                    - Фильтр отображения маркеров карты.
                                 </p>
                             </section>
                         </b-carousel-item>
