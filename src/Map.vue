@@ -46,7 +46,12 @@
                             <section class="card" v-if="feature.id !== 'position-feature'">
                                 <header class="card-header">
                                     <p class="card-header-title">
-                                        <span v-if="feature.properties">{{categories[feature.properties.category]}}</span>
+                                        <span v-if="feature.properties.features">
+                                            {{categories[feature.properties.features[0].properties.category]}}
+                                        </span>
+                                        <span v-else>
+                                            {{categories[feature.properties.category]}}
+                                        </span>
                                     </p>
                                     <a class="card-header-icon" title="Close"
                                        @click="selectedFeatures = selectedFeatures.filter(f => f.id !== feature.id)">
@@ -54,28 +59,65 @@
                                     </a>
                                 </header>
                                 <div class="card-content">
-                                    <div class="content" v-if="feature.properties" style="padding-bottom: 15px"
-                                         :key="item.id"
-                                         v-for="item of feature.properties.features">
-                                        <p>Контакт: <span v-html="item.properties.contact"></span></p>
-                                        <p v-if="item.properties.links.length > 0">
+                                    <div class="content" v-if="feature.properties.features" style="padding-bottom: 10px;line-height: 22px">
+                                        <div :key="item.id"
+                                             v-for="(item,key) of feature.properties.features">
+                                            <span v-if="item.properties.contact">
+                                                Контакт: <span v-html="item.properties.contact"></span>
+                                                <br>
+                                            </span>
+                                            <span v-if="item.properties.links.length > 0">
+                                                Ссылки:
+                                                <a :href="link.indexOf('@') !== -1 ? 'mailto:' + link : link"
+                                                   target="_blank"
+                                                   style="padding-left: 4px"
+                                                   v-for="link of item.properties.links" :key="link">
+                                                    {{link}}
+                                                </a>
+                                                <br>
+                                            </span>
+                                            <span v-if="item.properties.phones.length > 0">
+                                                Телефоны:
+                                                <a :href="'tel:' + phone"
+                                                   :key="phone"
+                                                   style="padding-left: 3px"
+                                                   v-for="phone of item.properties.phones">{{phone}}</a>
+                                                <br>
+                                            </span>
+
+                                            <span>Описание: {{item.properties.description}}</span>
+                                            <br>
+                                            <span v-if="item.properties.address">Адрес: {{item.properties.address}}</span>
+                                            <hr v-if="key !== feature.properties.features.length - 1">
+                                        </div>
+                                    </div>
+                                    <div class="content" v-else style="padding-bottom: 10px">
+                                        <span v-if="feature.properties.contact">
+                                            Контакт: <span v-html="feature.properties.contact"></span>
+                                            <br>
+                                        </span>
+                                        <span v-if="feature.properties.links.length > 0">
                                             Ссылки:
-                                            <a :href="link.indexOf('@') !== -1 ? 'mailto:' + link : link"
+                                            <a :href="item.indexOf('@') !== -1 ? 'mailto:' + item : item"
                                                target="_blank"
                                                style="padding-left: 4px"
-                                               v-for="link of item.properties.links" :key="link">
-                                                {{link}}
+                                               v-for="item of feature.properties.links" :key="item">
+                                                {{item}}
                                             </a>
-                                        </p>
-                                        <p v-if="item.properties.phones.length > 0">
+                                            <br>
+                                        </span>
+                                        <span v-if="feature.properties.phones.length > 0">
                                             Телефоны:
-                                            <a :href="'tel:+' + item"
+                                            <a :href="'tel:' + phone"
                                                :key="phone"
                                                style="padding-left: 3px"
-                                               v-for="phone of item.properties.phones">+{{phone}}</a>
-                                        </p>
-                                        <p>Описание: {{item.properties.description}}</p>
-                                        <p v-if="item.properties.address">Адрес: {{item.properties.address}}</p>
+                                               v-for="phone of feature.properties.phones">{{phone}}</a>
+                                            <br>
+                                        </span>
+
+                                        <span>Описание: {{feature.properties.description}}</span>
+                                        <br>
+                                        <span v-if="feature.properties.address">Адрес: {{feature.properties.address}}</span>
                                     </div>
                                 </div>
                             </section>
@@ -110,7 +152,7 @@
                         :properties="item.properties">
                 <template slot-scope="feature">
                     <vl-geom-point :coordinates="item.geometry.coordinates"></vl-geom-point>
-                    <vl-style-func :factory="clusterStyleFunc1(null, null)"/>
+                    <vl-style-func :factory="pointStyle"/>
                 </template>
             </vl-feature>
             <vl-interaction-draw source="draw-target"
@@ -459,7 +501,8 @@
         let options = {
             path     : '/',
             secure   : true,
-            'max-age': 36000000
+            'max-age': 36000000,
+            SameSite: 'strict'
         };
 
         if (options.expires instanceof Date) {
@@ -547,34 +590,36 @@
                 }
 
             },
-            clusterStyleFunc1(category, type) {
-                return () => {
-                    const cache = {}
+            pointStyle() {
+                const cache = {}
 
-                    return function __clusterStyleFunc1(feature) {
-                        let params = {
-                            font: '14px sans-serif',
-                            fill: new Fill({
-                                color: 'rgb(255,255,255)',
-                            }),
-                        };
+                return function __pointStyle(feature) {
+                    const size   = 1;
+                    let style    = cache[size];
+                    let category = feature.getProperties().category
+                    let type     = feature.getProperties().type
+                    let params   = {
+                        font: '14px sans-serif',
+                        fill: new Fill({
+                            color: 'rgb(255,255,255)',
+                        }),
+                    };
 
-                        if (category === null) {
-                            category = 'other';
-                        }
-                        if (type === null) {
-                            type = 'proposal';
-                        }
-
-                        return [new Style({
+                    if (type === null) {
+                        type = 'proposal';
+                    }
+                    if (!style) {
+                        style       = new Style({
                             image: new Icon({
                                 scale  : 0.5,
                                 opacity: 0.75,
                                 src    : `/img/icons/${type}_${category}.png`,
                             }),
                             text : new Text(params),
-                        })]
+                        })
+                        cache[size] = style
                     }
+                    return [style]
                 }
 
             },
@@ -866,7 +911,7 @@
             left: -47px
             bottom: 12px
             max-width: none
-            width: 23em
+            width: 50vh
             z-index: 2
 
             &:after, &:before
@@ -897,4 +942,6 @@
 
             .content
                 word-break: break-all
+            +desktop
+                width: 23em
 </style>
