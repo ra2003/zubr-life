@@ -402,8 +402,8 @@
                     <b-carousel :autoplay="false">
                         <b-carousel-item>
                             <section class="carousel-1">
-                                <div style="margin: auto;width: 15em;padding-bottom: 10px">
-                                    <img src="/img/logos/zubr.svg">
+                                <div style="margin: auto;width: 16em;">
+                                    <img src="/img/logos/life.svg">
                                 </div>
                                 <p>
                                     Инициатива <strong>ZUBR.life</strong> была создана командой ZUBR для помощи людям,
@@ -553,7 +553,7 @@
                             let params = {
                                 font: '14px sans-serif',
                                 fill: new Fill({
-                                    color: 'rgb(255,255,255)',
+                                    color: 'black',
                                 }),
                             };
 
@@ -562,7 +562,7 @@
                                 params['offsetY'] = -15;
 
                                 params['backgroundFill'] = new Fill({
-                                    color: '#00A896',
+                                    color: '#ffe980',
                                 })
                                 params['text']           = size.toString()
                             } else if (category === null && size === 1) {
@@ -791,11 +791,8 @@
             }
         },
         computed: {
-            allFeatures() {
-                return this.remoteFeatures.concat(this.predefined);
-            },
             liveFeatures() {
-                return this.remoteFeatures;
+                return this.remoteFeatures.filter(item => this.filter.categories.includes(item.properties.category));
             }
         },
         created() {
