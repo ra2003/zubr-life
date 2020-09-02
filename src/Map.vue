@@ -20,22 +20,6 @@
             <vl-layer-tile id="osm">
                 <vl-source-osm></vl-source-osm>
             </vl-layer-tile>
-            <!--            <vl-feature v-for="item of liveFeatures"-->
-            <!--                        :key="item.id"-->
-            <!--                        :properties="item.properties">-->
-            <!--                <template slot-scope="feature">-->
-            <!--                    <vl-geom-point :coordinates="item.coordinates"></vl-geom-point>-->
-            <!--                    <vl-style-box>-->
-            <!--                        <vl-style-icon v-if="item.properties.category === 'продукты питания'" src="./assets/img/icons/prop_food.png" :scale="0.5" opacity="0.75"></vl-style-icon>-->
-            <!--                        <vl-style-icon v-else-if="item.properties.category === 'транспорт'" src="./assets/img/icons/prop_transport.png" :scale="0.5" opacity="0.75"></vl-style-icon>-->
-            <!--                        <vl-style-icon v-else-if="item.properties.category === 'медицинская помощь'" src="./assets/img/icons/prop_health.png" :scale="0.5" opacity="0.75"></vl-style-icon>-->
-            <!--                        <vl-style-icon v-else-if="item.properties.category === 'жилье'" src="./assets/img/icons/prop_housing.png" :scale="0.5" opacity="0.75"></vl-style-icon>-->
-            <!--                        <vl-style-icon v-else-if="item.properties.category === 'образование'" src="./assets/img/icons/prop_edu.png" :scale="0.5" opacity="0.75"></vl-style-icon>-->
-            <!--                        <vl-style-icon v-else-if="item.properties.category === 'telegram'" src="./assets/img/icons/tg.png" :scale="0.5" opacity="0.75"></vl-style-icon>-->
-            <!--                        <vl-style-icon v-else src="./assets/img/icons/prop_other.png" :scale="0.5" opacity="0.75"></vl-style-icon>-->
-            <!--                    </vl-style-box>-->
-            <!--                </template>-->
-            <!--            </vl-feature>-->
             <vl-interaction-select
                 :features.sync="selectedFeatures"
                 @select="handleSelect"
@@ -106,16 +90,10 @@
                     </vl-overlay>
                 </template>
             </vl-interaction-select>
-            <vl-layer-vector v-for="(items, key) in map" :key="key">
+            <vl-layer-vector v-for="(items, key) in map['proposal']" :key="key">
                 <vl-source-cluster :distance="30" v-if="filter.categories.includes(key)">
                     <vl-source-vector :features.sync="items"></vl-source-vector>
-                    <vl-style-func :factory="clusterStyleFunc(key)"/>
-                </vl-source-cluster>
-            </vl-layer-vector>
-            <vl-layer-vector>
-                <vl-source-cluster :distance="30">
-                    <vl-source-vector :features.sync="liveFeatures"></vl-source-vector>
-                    <vl-style-func :factory="clusterStyleFunc"/>
+                    <vl-style-func :factory="clusterStyleFunc(key, 'proposal')"/>
                 </vl-source-cluster>
             </vl-layer-vector>
             <vl-layer-vector id="draw-pane">
@@ -127,6 +105,14 @@
                     </vl-style-circle>
                 </vl-style-box>
             </vl-layer-vector>
+            <vl-feature v-for="item of liveFeatures"
+                        :key="item.id"
+                        :properties="item.properties">
+                <template slot-scope="feature">
+                    <vl-geom-point :coordinates="item.geometry.coordinates"></vl-geom-point>
+                    <vl-style-func :factory="clusterStyleFunc1(null, null)"/>
+                </template>
+            </vl-feature>
             <vl-interaction-draw source="draw-target"
                                  :condition="condition"
                                  :active="drawing"
@@ -499,18 +485,20 @@
         )) !== null;
     }
 
-    let map = {};
+    let map = {
+        proposal : {}
+    };
 
     for (let item of predefined) {
-        if (!map[item.properties.category]) {
-            map[item.properties.category] = [];
+        if (!map['proposal'][item.properties.category]) {
+            map['proposal'][item.properties.category] = [];
         }
-        map[item.properties.category].push(item)
+        map['proposal'][item.properties.category].push(item)
     }
 
     export default {
         methods: {
-            clusterStyleFunc(category) {
+            clusterStyleFunc(category, type) {
                 return () => {
                     const cache = {}
 
@@ -525,6 +513,7 @@
                                     color: 'rgb(255,255,255)',
                                 }),
                             };
+
                             if (size > 1) {
                                 params['offsetX'] = 15;
                                 params['offsetY'] = -15;
@@ -533,12 +522,20 @@
                                     color: '#00A896',
                                 })
                                 params['text']           = size.toString()
+                            } else if(category === null && size === 1) {
+                                category = feature.getProperties().features[0].getProperties().category;
+                            }
+                            if (category === null){
+                                category = 'other';
+                            }
+                            if (type === null) {
+                                type = 'proposal';
                             }
                             style = new Style({
                                 image: new Icon({
                                     scale  : 0.5,
                                     opacity: 0.75,
-                                    src    : `/img/icons/prop_${category}.png`,
+                                    src    : `/img/icons/${type}_${category}.png`,
                                 }),
                                 text : new Text(params),
                             })
@@ -546,6 +543,37 @@
                             cache[size] = style
                         }
                         return [style]
+                    }
+                }
+
+            },
+            clusterStyleFunc1(category, type) {
+                return () => {
+                    const cache = {}
+
+                    return function __clusterStyleFunc1(feature) {
+                        let params = {
+                            font: '14px sans-serif',
+                            fill: new Fill({
+                                color: 'rgb(255,255,255)',
+                            }),
+                        };
+
+                        if (category === null){
+                            category = 'other';
+                        }
+                        if (type === null) {
+                            type = 'proposal';
+                        }
+
+                        return [new Style({
+                            image: new Icon({
+                                scale  : 0.5,
+                                opacity: 0.75,
+                                src    : `/img/icons/${type}_${category}.png`,
+                            }),
+                            text : new Text(params),
+                        })]
                     }
                 }
 
