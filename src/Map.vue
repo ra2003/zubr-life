@@ -812,6 +812,12 @@
                     this.drawnFeatures = [];
                 }
             },
+            deviceCoordinate(val, old) {
+                if (old === undefined) {
+                    this.zoom = 14;
+                    this.center = val
+                }
+            }
         }
     }
 </script>
