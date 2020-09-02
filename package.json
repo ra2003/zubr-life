@@ -12,7 +12,7 @@
         "bulma": "^0.7.2",
         "core-js": "^3.6.5",
         "lodash": "^4.17.11",
-        "ol": "^5.3.1",
+        "ol": "^6.3.1",
         "vue": "^2.5.17",
         "vuelayers": "^0.11.4"
     },
@@ -43,7 +43,8 @@
         "rules": {
             "vue/no-use-v-if-with-v-for": 0,
             "vue/no-unused-vars": 0,
-            "no-debugger": 0
+            "no-debugger": 0,
+            "no-unused-vars" : 1
         }
     },
     "browserslist": [

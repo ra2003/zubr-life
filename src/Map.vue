@@ -12,7 +12,7 @@
                     <vl-feature v-if="geoloc.position" id="position-feature">
                         <vl-geom-point :coordinates="geoloc.position"></vl-geom-point>
                         <vl-style-box>
-                            <vl-style-icon src="./assets/marker.png" :scale="0.4" :anchor="[0.5, 1]"></vl-style-icon>
+                            <vl-style-icon src="/img/icons/marker.png" :scale="0.4" :anchor="[0.5, 1]"></vl-style-icon>
                         </vl-style-box>
                     </vl-feature>
                 </template>
@@ -20,22 +20,22 @@
             <vl-layer-tile id="osm">
                 <vl-source-osm></vl-source-osm>
             </vl-layer-tile>
-            <vl-feature v-for="item of liveFeatures"
-                        :key="item.id"
-                        :properties="item.properties">
-                <template slot-scope="feature">
-                    <vl-geom-point :coordinates="item.coordinates"></vl-geom-point>
-                    <vl-style-box>
-                        <vl-style-icon v-if="item.properties.category === 'продукты питания'" src="./assets/img/icons/prop_food.png" :scale="0.5" opacity="0.75"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.category === 'транспорт'" src="./assets/img/icons/prop_transport.png" :scale="0.5" opacity="0.75"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.category === 'медицинская помощь'" src="./assets/img/icons/prop_health.png" :scale="0.5" opacity="0.75"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.category === 'жилье'" src="./assets/img/icons/prop_housing.png" :scale="0.5" opacity="0.75"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.category === 'образование'" src="./assets/img/icons/prop_edu.png" :scale="0.5" opacity="0.75"></vl-style-icon>
-                        <vl-style-icon v-else-if="item.properties.category === 'telegram'" src="./assets/img/icons/tg.png" :scale="0.5" opacity="0.75"></vl-style-icon>
-                        <vl-style-icon v-else src="./assets/img/icons/prop_other.png" :scale="0.5" opacity="0.75"></vl-style-icon>
-                    </vl-style-box>
-                </template>
-            </vl-feature>
+            <!--            <vl-feature v-for="item of liveFeatures"-->
+            <!--                        :key="item.id"-->
+            <!--                        :properties="item.properties">-->
+            <!--                <template slot-scope="feature">-->
+            <!--                    <vl-geom-point :coordinates="item.coordinates"></vl-geom-point>-->
+            <!--                    <vl-style-box>-->
+            <!--                        <vl-style-icon v-if="item.properties.category === 'продукты питания'" src="./assets/img/icons/prop_food.png" :scale="0.5" opacity="0.75"></vl-style-icon>-->
+            <!--                        <vl-style-icon v-else-if="item.properties.category === 'транспорт'" src="./assets/img/icons/prop_transport.png" :scale="0.5" opacity="0.75"></vl-style-icon>-->
+            <!--                        <vl-style-icon v-else-if="item.properties.category === 'медицинская помощь'" src="./assets/img/icons/prop_health.png" :scale="0.5" opacity="0.75"></vl-style-icon>-->
+            <!--                        <vl-style-icon v-else-if="item.properties.category === 'жилье'" src="./assets/img/icons/prop_housing.png" :scale="0.5" opacity="0.75"></vl-style-icon>-->
+            <!--                        <vl-style-icon v-else-if="item.properties.category === 'образование'" src="./assets/img/icons/prop_edu.png" :scale="0.5" opacity="0.75"></vl-style-icon>-->
+            <!--                        <vl-style-icon v-else-if="item.properties.category === 'telegram'" src="./assets/img/icons/tg.png" :scale="0.5" opacity="0.75"></vl-style-icon>-->
+            <!--                        <vl-style-icon v-else src="./assets/img/icons/prop_other.png" :scale="0.5" opacity="0.75"></vl-style-icon>-->
+            <!--                    </vl-style-box>-->
+            <!--                </template>-->
+            <!--            </vl-feature>-->
             <vl-interaction-select
                 :features.sync="selectedFeatures"
                 @select="handleSelect"
@@ -43,30 +43,26 @@
                 <template slot-scope="select">
                     <vl-style-box>
                         <vl-style-stroke color="#423e9e" :width="7"></vl-style-stroke>
-                        <vl-style-fill :color="[254, 178, 76, 0.7]"></vl-style-fill>
                         <vl-style-circle :radius="15">
-                            <vl-style-stroke color="#423e9e" :width="7"></vl-style-stroke>
+                            <vl-style-stroke color="#00A896" :width="7"></vl-style-stroke>
                             <vl-style-fill :color="[254, 178, 76, 0.7]"></vl-style-fill>
                         </vl-style-circle>
                     </vl-style-box>
                     <vl-style-box :z-index="1">
-                        <vl-style-stroke color="#d43f45" :width="2"></vl-style-stroke>
-                        <vl-style-circle :radius="15">
-                            <vl-style-stroke color="#d43f45" :width="2"></vl-style-stroke>
-                        </vl-style-circle>
+                        <vl-style-stroke color="#00A896" :width="1"></vl-style-stroke>
                     </vl-style-box>
                     <vl-overlay class="feature-popup"
                                 v-for="feature in select.features"
                                 :key="feature.id"
                                 :id="feature.id"
-                                :position="pointOnSurface(feature.geometry)"
+                                :position="findPointOnSurface(feature.geometry)"
                                 :auto-pan="true"
                                 :auto-pan-animation="{ duration: 300 }">
                         <template>
                             <section class="card" v-if="feature.id !== 'position-feature'">
                                 <header class="card-header">
                                     <p class="card-header-title">
-                                        <span v-if="feature.properties">{{feature.properties.category}}</span>
+                                        <span v-if="feature.properties">{{categories[feature.properties.category]}}</span>
                                     </p>
                                     <a class="card-header-icon" title="Close"
                                        @click="selectedFeatures = selectedFeatures.filter(f => f.id !== feature.id)">
@@ -74,26 +70,28 @@
                                     </a>
                                 </header>
                                 <div class="card-content">
-                                    <div class="content" v-if="feature.properties" style="padding-bottom: 15px">
-                                        <p>Контакт: <span v-html="feature.properties.contact"></span></p>
-                                        <p v-if="feature.properties.links.length > 0">
+                                    <div class="content" v-if="feature.properties" style="padding-bottom: 15px"
+                                         :key="item.id"
+                                         v-for="item of feature.properties.features">
+                                        <p>Контакт: <span v-html="item.properties.contact"></span></p>
+                                        <p v-if="item.properties.links.length > 0">
                                             Ссылки:
-                                            <a :href="item.indexOf('@') !== -1 ? 'mailto:' + item : item"
+                                            <a :href="link.indexOf('@') !== -1 ? 'mailto:' + link : link"
                                                target="_blank"
                                                style="padding-left: 4px"
-                                               v-for="item of feature.properties.links" :key="item">
-                                                {{item}}
+                                               v-for="link of item.properties.links" :key="link">
+                                                {{link}}
                                             </a>
                                         </p>
-                                        <p v-if="feature.properties.phones.length > 0">
+                                        <p v-if="item.properties.phones.length > 0">
                                             Телефоны:
                                             <a :href="'tel:+' + item"
-                                               :key="item"
+                                               :key="phone"
                                                style="padding-left: 3px"
-                                               v-for="item of feature.properties.phones">+{{item}}</a>
+                                               v-for="phone of item.properties.phones">+{{phone}}</a>
                                         </p>
-                                        <p>Описание: {{feature.properties.description}}</p>
-                                        <p v-if="feature.properties.address">Адрес: {{feature.properties.address}}</p>
+                                        <p>Описание: {{item.properties.description}}</p>
+                                        <p v-if="item.properties.address">Адрес: {{item.properties.address}}</p>
                                     </div>
                                 </div>
                             </section>
@@ -103,12 +101,17 @@
                                         Ваше текущее местоположение
                                     </div>
                                 </div>
-
                             </section>
                         </template>
                     </vl-overlay>
                 </template>
             </vl-interaction-select>
+            <vl-layer-vector v-for="(items, key) in map" :key="key">
+                <vl-source-cluster :distance="30" v-if="filter.categories.includes(key)">
+                    <vl-source-vector :features.sync="items"></vl-source-vector>
+                    <vl-style-func :factory="clusterStyleFunc(key)"/>
+                </vl-source-cluster>
+            </vl-layer-vector>
             <vl-layer-vector id="draw-pane">
                 <vl-source-vector ident="draw-target" :features.sync="drawnFeatures"></vl-source-vector>
                 <vl-style-box>
@@ -125,7 +128,7 @@
         </vl-map>
 
         <div class="toolbar-panel" v-show="drawing === false">
-            <div class="buttons has-addons toolbar-buttons" >
+            <div class="buttons has-addons toolbar-buttons">
                 <b-button type="is-orange"
                           @click="requestModal = true"
                           size="is-medium"
@@ -149,7 +152,7 @@
             </div>
         </div>
         <div class="logo-panel" style="width: 5em">
-            <img src="./assets/img/logos/zubr-text.png">
+            <img src="/img/logos/zubr-text.png">
         </div>
         <div class="map-panel" v-show="drawing">
             <div class="panel-block">
@@ -220,9 +223,9 @@
                         </b-field>
                         <b-field label="Категория">
                             <b-select v-model="request.category" required>
-                                <option v-for="item of categories"
-                                        :key="item"
-                                        :value="item">{{item}}
+                                <option v-for="(item,key) in categories"
+                                        :key="key"
+                                        :value="key">{{item}}
                                 </option>
                             </b-select>
                         </b-field>
@@ -239,7 +242,7 @@
                                             :disabled="!(Array.isArray(deviceCoordinate) && deviceCoordinate.length === 2)"
                                             native-value="current_location"
                                             type="is-orange">
-                                <span>Текущая геопозиция</span>
+                                <span>Текущее местоположение</span>
                             </b-radio-button>
                             <b-radio-button v-model="location_type"
                                             native-value="set_point"
@@ -279,11 +282,10 @@
                         <br>
                         <br>
                         <div class="field"
-                             v-for="item of categories"
-                             :key="item">
+                             v-for="(item, key) of categories"
+                             :key="key">
                             <b-checkbox v-model="filter.categories"
-
-                                        :native-value="item">
+                                        :native-value="key">
                                 {{item}}
                             </b-checkbox>
                         </div>
@@ -367,10 +369,10 @@
                         <b-carousel-item>
                             <section class="carousel-1">
                                 <div style="margin: auto;width: 15em;padding-bottom: 10px">
-                                    <img src="./assets/img/logos/zubr.svg" >
+                                    <img src="/img/logos/zubr.svg">
                                 </div>
                                 <p>
-                                        Инициатива <strong>ZUBR.life</strong> была создана командой ZUBR для помощи людям,
+                                    Инициатива <strong>ZUBR.life</strong> была создана командой ZUBR для помощи людям,
                                     оказавшимся в затруднительном положении,
                                     связанном со своей гражданской позицией. На карте отображаются условными
                                     знаками <span style="color:#d74e4e">красного</span> цвета запросы о помощи
@@ -411,10 +413,11 @@
                             <section class="carousel-3">
                                 <p>
                                     <b-button
-                                              type="is-orange"
-                                              size="is-small"
-                                              outlined
-                                              icon-left="plus"></b-button> - Вызов формы для заполнения запроса или отправки
+                                        type="is-orange"
+                                        size="is-small"
+                                        outlined
+                                        icon-left="plus"></b-button>
+                                    - Вызов формы для заполнения запроса или отправки
                                     предложения о взаимопомощи.
                                     Указать свое место нахождения в форме можно через текущую геопозицию или на карте.
                                     Чем больше данных, тем оперативнее связь и помощь.
@@ -423,14 +426,16 @@
                                     <b-button type="is-orange"
                                               size="is-small"
                                               outlined
-                                              icon-right="exclamation"/> - Информация и контактные данные основных инициатив по помощи
+                                              icon-right="exclamation"/>
+                                    - Информация и контактные данные основных инициатив по помощи
                                     как в Беларуси, так и за её пределами.
                                 </p>
                                 <p>
                                     <b-button type="is-orange"
                                               size="is-small"
                                               outlined
-                                              icon-right="filter"/> - Фильтры карты маркеров.
+                                              icon-right="filter"/>
+                                    - Фильтры карты маркеров.
                                 </p>
                             </section>
                         </b-carousel-item>
@@ -441,19 +446,20 @@
     </div>
 </template>
 <script>
-    import predefined           from './features'
-    import favourites           from './favourites'
-    import {findPointOnSurface} from 'vuelayers/lib/ol-ext'
+    import predefined                from './features'
+    import favourites                from './favourites'
+    import {findPointOnSurface}      from 'vuelayers/lib/ol-ext'
+    import {Fill, Style, Text, Icon} from 'ol/style';
 
-    const categories = [
-        'telegram',
-        'жилье',
-        'иное',
-        'медицинская помощь',
-        'образование',
-        'продукты питания',
-        'транспорт',
-    ];
+    const categories = {
+        'telegram' : 'telegram',
+        'housing'  : 'жилье',
+        'other'    : 'иное',
+        'health'   : 'медицинская помощь',
+        'education': 'образование',
+        'food'     : 'продукты питания',
+        'transport': 'транспорт',
+    };
 
     const apiURL = process.env.VUE_APP_API_URL;
 
@@ -487,54 +493,57 @@
         )) !== null;
     }
 
-    export default {
-        filters: {
-            formatContact(value) {
-                return value.indexOf('http') !== 0 && value.indexOf(':') !== false ? value.split(':')[1] : value
-            }
-        },
+    let map = {};
 
-        data() {
-            return {
-                center          : [27.568817138671978, 53.899078973945166],
-                zoom            : 9,
-                predefined,
-                categories,
-                selectedFeatures: [],
-                remoteFeatures  : [],
-                filterModal     : false,
-                infoModal       : false,
-                helpModal       : !issetCookie('onboarding'),
-                requestModal    : false,
-                deviceCoordinate: undefined,
-                drawType        : undefined,
-                progress        : true,
-                drawnFeatures   : [],
-                progressType    : 'is-primary',
-                drawing         : false,
-                location_type   : '',
-                request         : {
-                    type       : '',
-                    category   : 'жилье',
-                    phone      : '+375291111111',
-                    address    : 'test',
-                    contact    : 'Contact',
-                    link       : 'https://t.me/zubr_in',
-                    description: 'Test',
-                },
-                filter          : {
-                    categories: [
-                        'telegram',
-                        'жилье',
-                        'медицинская помощь',
-                        'продукты питания',
-                        'образование'
-                    ]
-                },
-                favourites
-            }
-        },
-        methods : {
+    for (let item of predefined) {
+        if (!map[item.properties.category]) {
+            map[item.properties.category] = [];
+        }
+        map[item.properties.category].push(item)
+    }
+
+    export default {
+        methods: {
+            clusterStyleFunc(category) {
+                return () => {
+                    const cache = {}
+
+                    return function __clusterStyleFunc(feature) {
+                        const size = feature.get('features').length
+                        let style  = cache[size]
+
+                        if (!style) {
+                            let params = {
+                                font: '14px sans-serif',
+                                fill: new Fill({
+                                    color: 'rgb(255,255,255)',
+                                }),
+                            };
+                            if (size > 1) {
+                                params['offsetX'] = 15;
+                                params['offsetY'] = -15;
+
+                                params['backgroundFill'] = new Fill({
+                                    color: '#00A896',
+                                })
+                                params['text']           = size.toString()
+                            }
+                            style = new Style({
+                                image: new Icon({
+                                    scale  : 0.5,
+                                    opacity: 0.75,
+                                    src    : `/img/icons/prop_${category}.png`,
+                                }),
+                                text : new Text(params),
+                            })
+
+                            cache[size] = style
+                        }
+                        return [style]
+                    }
+                }
+
+            },
             closeHelpModal() {
                 if (!issetCookie('onboarding')) {
                     setCookie('onboarding', true)
@@ -561,7 +570,7 @@
                 this.requestModal = false;
                 this.drawing      = true;
             },
-            pointOnSurface: findPointOnSurface,
+            findPointOnSurface,
             onUpdatePosition(coordinate) {
                 this.deviceCoordinate = coordinate
                 if (!this.location_type) {
@@ -571,16 +580,16 @@
             save() {
                 if (!this.location_type) {
                     this.$buefy.notification.open({
-                        message: 'Выберите месторасположение',
-                        type   : 'is-orange',
+                        message : 'Выберите месторасположение',
+                        type    : 'is-orange',
                         duration: 5000,
                     })
                     return;
                 }
                 if (!this.request.type) {
                     this.$buefy.notification.open({
-                        message: 'Укажите тип',
-                        type   : 'is-orange',
+                        message : 'Укажите тип',
+                        type    : 'is-orange',
                         duration: 5000,
                     })
                     return;
@@ -596,7 +605,6 @@
                     data.longitude = this.deviceCoordinate[0];
                     data.latitude  = this.deviceCoordinate[1];
                 }
-
                 fetch(apiURL + '/request',
                     {
                         method : 'POST',
@@ -608,8 +616,8 @@
                     .then((r) => {
                         if (r.error) {
                             this.$buefy.notification.open({
-                                message: r.error,
-                                type   : 'is-orange',
+                                message : r.error,
+                                type    : 'is-orange',
                                 duration: 5000,
                             })
                             return;
@@ -618,16 +626,16 @@
                         this.loadFeatures()
                         this.location_type = 'current_location';
                         this.$buefy.notification.open({
-                            message: 'Успешно сохранено',
-                            type   : 'is-success',
+                            message : 'Успешно сохранено',
+                            type    : 'is-success',
                             duration: 5000,
                         })
                         this.requestModal = false;
 
                     }).catch(e => {
                     this.$buefy.notification.open({
-                        message: 'Произошла ошибка',
-                        type   : 'is-orange',
+                        message : 'Произошла ошибка',
+                        type    : 'is-orange',
                         duration: 5000,
                     })
                     throw e;
@@ -654,6 +662,54 @@
                     this.zoom = 14;
                 }
             },
+        },
+        filters: {
+            formatContact(value) {
+                return value.indexOf('http') !== 0 && value.indexOf(':') !== false
+                    ? value.split(':')[1]
+                    : value
+            }
+        },
+
+        data() {
+            return {
+                center          : [27.568817138671978, 53.899078973945166],
+                zoom            : 9,
+                map,
+                categories,
+                selectedFeatures: [],
+                remoteFeatures  : [],
+                filterModal     : false,
+                infoModal       : false,
+                helpModal       : !issetCookie('onboarding'),
+                requestModal    : false,
+                deviceCoordinate: undefined,
+                drawType        : undefined,
+                progress        : true,
+                drawnFeatures   : [],
+                progressType    : 'is-primary',
+                drawing         : false,
+                location_type   : '',
+                request         : {
+                    type       : '',
+                    category   : 'жилье',
+                    phone      : '+375291111111',
+                    address    : 'test',
+                    contact    : 'Contact',
+                    link       : 'https://t.me/zubr_in',
+                    description: 'Test',
+                },
+                filter          : {
+                    categories: [
+                        'telegram',
+                        'housing',
+                        'health',
+                        'food',
+                        'education'
+                    ]
+                },
+                favourites
+            }
         },
         computed: {
             allFeatures() {
@@ -686,23 +742,28 @@
     $success: #00A896
 
 
-    $colors : mergeColorMaps($colors, ("orange" : ($orange, $white), "primary" : ($orange, $primary-invert), "success" : ($success, $success-invert)))
+    $colors: mergeColorMaps($colors, ("orange" : ($orange, $white), "primary" : ($orange, $primary-invert), "success" : ($success, $success-invert)))
 
     @import ~buefy/src/scss/buefy-build
 
     .toolbar-buttons
         background-color: $white
+
         button
             margin-bottom: 0 !important
+
     .carousel-arrow .icon.has-icons-left
         left: 0.5rem
+
     .carousel-arrow .icon.has-icons-right
         right: 0.5rem
+
     .carousel-1
         word-break: break-word
         padding-bottom: 2em
         +desktop
             padding: 0 1em 2.3em 2.3em
+
     .carousel-2
         padding-bottom: 2em
         word-break: break-word

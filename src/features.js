@@ -1,9 +1,10 @@
 export default [
     {
-        "id"         : "20bf6e24",
-        "properties" : {
+        "id"        : "c5299efa",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "жилье",
+            "category"   : "housing",
             "address"    : "Могилевская обл., Кировский р-н",
             "links"      : [
                 "https://t.me/evgeniy_grigoriev"
@@ -12,16 +13,20 @@ export default [
             "description": "Отдам дом в деревне (правда он требует восстановления, никто не жил уже лет 15). Дом в Кировском р-не (Могилевская обл.). Дом требует тщательного ремонта (в нем никто не жил и не ухаживал уже 15 лет). Хоз построек фактически нет, участка под засеивание нет, только придомовой участок)",
             "phones"     : []
         },
-        "coordinates": [
-            29.670315,
-            53.25425
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                29.670315,
+                53.25425
+            ]
+        }
     },
     {
-        "id"         : "2959b3d8",
-        "properties" : {
+        "id"        : "704865cc",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "жилье",
+            "category"   : "housing",
             "address"    : "г.Минск, ул.Кирова 4",
             "links"      : [],
             "contact"    : "Валерий",
@@ -30,16 +35,20 @@ export default [
                 "375297861033"
             ]
         },
-        "coordinates": [
-            27.552202,
-            53.892546
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.552202,
+                53.892546
+            ]
+        }
     },
     {
-        "id"         : "e8740bcc",
-        "properties" : {
+        "id"        : "6e0ecbc7",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "продукты питания",
+            "category"   : "food",
             "address"    : "Минск, ул.Янки Брыля, 21",
             "links"      : [
                 "http://rollbros.by/"
@@ -50,16 +59,20 @@ export default [
                 "375333337447"
             ]
         },
-        "coordinates": [
-            27.48131,
-            53.878837
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.48131,
+                53.878837
+            ]
+        }
     },
     {
-        "id"         : "b0d55fc3",
-        "properties" : {
+        "id"        : "8b488dec",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "продукты питания",
+            "category"   : "food",
             "address"    : "г.Минск, ул.Шафарнянская, 11",
             "links"      : [
                 "https://ezhik.by",
@@ -72,16 +85,20 @@ export default [
                 "375293553300"
             ]
         },
-        "coordinates": [
-            27.682184,
-            53.946966
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.682184,
+                53.946966
+            ]
+        }
     },
     {
-        "id"         : "b5e612fc",
-        "properties" : {
+        "id"        : "58ac88ec",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "Вся Беларусь",
             "links"      : [
                 "czhelp2020@gmail.com"
@@ -90,16 +107,20 @@ export default [
             "description": "Если вы, члены вашей семьи, родственники или знакомые пострадали от насилия и/или пыток 9 августа 2020 года или позже, напишите нам. Беларуские волонтёры и волонтеры из Чехии свяжутся с вами на условиях анонимности и предложат заполнить онлайн-форму. Преимущество будет отдано тем, у кого (независимо от пола): из-за опасности нет возможности лечиться в Беларуси, требуется операция и/или серьезная реабилитация и/или кризисная помощь после изнасилования а также женщины и дети",
             "phones"     : []
         },
-        "coordinates": [
-            15.255267,
-            49.581369
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                15.255267,
+                49.581369
+            ]
+        }
     },
     {
-        "id"         : "259b8e0e",
-        "properties" : {
+        "id"        : "95a795ea",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Минск, пр. Независимости, 94, пом. 1Н",
             "links"      : [
                 "https://www.roden.by/"
@@ -112,56 +133,68 @@ export default [
                 "375173000029"
             ]
         },
-        "coordinates": [
-            27.628258,
-            53.927783
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.628258,
+                53.927783
+            ]
+        }
     },
     {
-        "id"         : "98683f3c",
-        "properties" : {
+        "id"        : "cd820045",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Минск, Червякова, 8",
             "links"      : [
                 "https://linline-club.by/"
             ],
             "contact"    : "Сеть клиник \"Линлайн\" ",
-            "description": "Медицинская помощь женщинам и девушкам; реабилитация, неврология",
+            "description": "health женщинам и девушкам; реабилитация, неврология",
             "phones"     : [
                 "375296263943"
             ]
         },
-        "coordinates": [
-            27.551332,
-            53.922001
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.551332,
+                53.922001
+            ]
+        }
     },
     {
-        "id"         : "58c8b06d",
-        "properties" : {
+        "id"        : "a6a388cb",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Минск, Сурганова, 18",
             "links"      : [
                 "https://linline-club.by/"
             ],
             "contact"    : "Сеть клиник \"Линлайн\"",
-            "description": "Медицинская помощь женщинам и девушкам; реабилитация, неврология",
+            "description": "health женщинам и девушкам; реабилитация, неврология",
             "phones"     : [
                 "375447046004"
             ]
         },
-        "coordinates": [
-            27.599373,
-            53.924301
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.599373,
+                53.924301
+            ]
+        }
     },
     {
-        "id"         : "091622bc",
-        "properties" : {
+        "id"        : "62f492d5",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Минск, ул.Надеждинская, 2",
             "links"      : [
                 "https://eksana.by/"
@@ -172,16 +205,20 @@ export default [
                 "375172150202"
             ]
         },
-        "coordinates": [
-            27.564461,
-            53.883367
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.564461,
+                53.883367
+            ]
+        }
     },
     {
-        "id"         : "9dac0c6e",
-        "properties" : {
+        "id"        : "7e580bd2",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Минск, ул.Грибоедова, 11",
             "links"      : [
                 "https://medavenu.by/"
@@ -192,16 +229,20 @@ export default [
                 "375172828400"
             ]
         },
-        "coordinates": [
-            27.526972,
-            53.914365
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.526972,
+                53.914365
+            ]
+        }
     },
     {
-        "id"         : "62bd12f4",
-        "properties" : {
+        "id"        : "dd300329",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Минск, ул.Матусевича, 70",
             "links"      : [
                 "https://lubimydoctor.by/"
@@ -215,16 +256,20 @@ export default [
                 "375257245533"
             ]
         },
-        "coordinates": [
-            27.452428,
-            53.918331
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.452428,
+                53.918331
+            ]
+        }
     },
     {
-        "id"         : "1991baca",
-        "properties" : {
+        "id"        : "7ca08e10",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Минск, ул.Пионерская, 32",
             "links"      : [
                 "http://medera.by/"
@@ -236,16 +281,20 @@ export default [
                 "375293390344"
             ]
         },
-        "coordinates": [
-            27.483362,
-            53.939397
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.483362,
+                53.939397
+            ]
+        }
     },
     {
-        "id"         : "6f1493fc",
-        "properties" : {
+        "id"        : "6e1d19d9",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Минск, ул.Маяковского, 129А/1",
             "links"      : [
                 "https://www.narkolog.by/"
@@ -257,16 +306,20 @@ export default [
                 "375293996103"
             ]
         },
-        "coordinates": [
-            27.575614,
-            53.860721
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.575614,
+                53.860721
+            ]
+        }
     },
     {
-        "id"         : "25d7b95b",
-        "properties" : {
+        "id"        : "06d1f4ea",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "Минская обл., Минский р-н, аг. Лесной, 19В, пом. 23",
             "links"      : [
                 "https://forestmed.by/"
@@ -277,16 +330,20 @@ export default [
                 "375173700099375293700099375333700099"
             ]
         },
-        "coordinates": [
-            27.681025,
-            54.005211
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.681025,
+                54.005211
+            ]
+        }
     },
     {
-        "id"         : "5e46cc7e",
-        "properties" : {
+        "id"        : "068cab7c",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Минск, ул.Жилуновича, 11А",
             "links"      : [
                 "https://mrt.by/"
@@ -299,16 +356,20 @@ export default [
                 "375173953232"
             ]
         },
-        "coordinates": [
-            27.63647,
-            53.879817
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.63647,
+                53.879817
+            ]
+        }
     },
     {
-        "id"         : "5bc1d748",
-        "properties" : {
+        "id"        : "acf66bd1",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Гродно, ул.Троицкая, 31",
             "links"      : [
                 "viber://chat/?number=%2B375297847047"
@@ -319,16 +380,20 @@ export default [
                 "375297847047"
             ]
         },
-        "coordinates": [
-            23.827844,
-            53.680673
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                23.827844,
+                53.680673
+            ]
+        }
     },
     {
-        "id"         : "7e97903a",
-        "properties" : {
+        "id"        : "a3704f0c",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г. Жодино, пр. Мира, 19А",
             "links"      : [
                 "https://cdmed.by/"
@@ -339,16 +404,20 @@ export default [
                 "375293772858"
             ]
         },
-        "coordinates": [
-            28.30786,
-            54.089091
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                28.30786,
+                54.089091
+            ]
+        }
     },
     {
-        "id"         : "32330a32",
-        "properties" : {
+        "id"        : "d681e3dd",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Минск, 2-й пер. Розы Люксембург, 3",
             "links"      : [
                 "https://triomed.by/"
@@ -357,16 +426,20 @@ export default [
             "description": "Оказывает бесплатную стоматологическую помощь пострадавшим вплоть до установки имплантов и коронок если зубы выбиты.",
             "phones"     : []
         },
-        "coordinates": [
-            27.528197,
-            53.894537
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.528197,
+                53.894537
+            ]
+        }
     },
     {
-        "id"         : "aee2e1d7",
-        "properties" : {
+        "id"        : "885794df",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Минск, ул.Пионерская, 45",
             "links"      : [
                 "http://dentalsalon.by/"
@@ -378,16 +451,20 @@ export default [
                 "375298435599"
             ]
         },
-        "coordinates": [
-            27.483053,
-            53.938087
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.483053,
+                53.938087
+            ]
+        }
     },
     {
-        "id"         : "6192b222",
-        "properties" : {
+        "id"        : "cfbb3d6e",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Минск, пр. Победителей, 27",
             "links"      : [],
             "contact"    : "DORSUM",
@@ -396,56 +473,68 @@ export default [
                 "375336262006"
             ]
         },
-        "coordinates": [
-            27.54006,
-            53.911748
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.54006,
+                53.911748
+            ]
+        }
     },
     {
-        "id"         : "fdeba42c",
-        "properties" : {
+        "id"        : "8cec6398",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "Минский район, аг. Лесной",
             "links"      : [],
             "contact"    : "Отделение ультразвуковой диагностики в РНПЦ онкологии им. Александрово (Боровляны)",
-            "description": "Бесплатная медицинская помощь по любым видам УЗИ. Если есть подтверждающие документы, иметь их с собой. Предварительная запись",
+            "description": "Бесплатная health по любым видам УЗИ. Если есть подтверждающие документы, иметь их с собой. Предварительная запись",
             "phones"     : [
                 "375173899712"
             ]
         },
-        "coordinates": [
-            27.695896,
-            54.008382
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.695896,
+                54.008382
+            ]
+        }
     },
     {
-        "id"         : "4da218a5",
-        "properties" : {
+        "id"        : "4883f9fd",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г. Минск, пр. Машерова, д. 9, каб. 106",
             "links"      : [
                 "https://umkastom.com/"
             ],
             "contact"    : "Стоматология \"УмкаБелМед\"",
-            "description": "Бесплатная медицинская помощь. Любые виды стоматологических услуг. Нужно иметь подтверждающий документ (освидетельствование либо иную справку)",
+            "description": "Бесплатная health. Любые виды стоматологических услуг. Нужно иметь подтверждающий документ (освидетельствование либо иную справку)",
             "phones"     : [
                 "375447977080",
                 "375297550160",
                 "375173507080"
             ]
         },
-        "coordinates": [
-            27.571857,
-            53.915664
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.571857,
+                53.915664
+            ]
+        }
     },
     {
-        "id"         : "0ee3dcbc",
-        "properties" : {
+        "id"        : "021d10e0",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Минск, ул.Зыбицкая, 3",
             "links"      : [],
             "contact"    : "\"МиДент\"",
@@ -454,16 +543,20 @@ export default [
                 "375447773403"
             ]
         },
-        "coordinates": [
-            27.560395,
-            53.905253
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.560395,
+                53.905253
+            ]
+        }
     },
     {
-        "id"         : "689d9c59",
-        "properties" : {
+        "id"        : "4e630399",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Гомель, ул.Кирова, 18",
             "links"      : [
                 "https://xn--80adhytboo4czd.xn--90ais/"
@@ -474,36 +567,44 @@ export default [
                 "375296609553"
             ]
         },
-        "coordinates": [
-            31.007433,
-            52.428304
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                31.007433,
+                52.428304
+            ]
+        }
     },
     {
-        "id"         : "bbaaeb77",
-        "properties" : {
+        "id"        : "32ea82ca",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "Минский р-н, аг. Колодищи, ул.Минская, 5",
             "links"      : [
                 "https://kolodischi.by/catalog-social/med-centr/31"
             ],
             "contact"    : "Медицинский центр \"Пангея Медикал\"",
-            "description": "Бесплатная медицинская помощь, УЗИ брюшной полости, УЗИ мягких тканей",
+            "description": "Бесплатная health, УЗИ брюшной полости, УЗИ мягких тканей",
             "phones"     : [
                 "375447723942"
             ]
         },
-        "coordinates": [
-            27.778229,
-            53.955318
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.778229,
+                53.955318
+            ]
+        }
     },
     {
-        "id"         : "16e07ce0",
-        "properties" : {
+        "id"        : "573f5abd",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Минск, ул.Пионерская, 45",
             "links"      : [
                 "http://dentalsalon.by/"
@@ -514,16 +615,20 @@ export default [
                 "375298435599"
             ]
         },
-        "coordinates": [
-            27.483063,
-            53.938087
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.483063,
+                53.938087
+            ]
+        }
     },
     {
-        "id"         : "50c05202",
-        "properties" : {
+        "id"        : "5d50bb46",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "медицинская помощь",
+            "category"   : "health",
             "address"    : "г.Минск, ул.Олешева, 3",
             "links"      : [
                 "https://www.instagram.com/p/CEFFEzQh1Gl/?igshid=14wrxfvadkuqo\""
@@ -534,16 +639,20 @@ export default [
                 "375173783883"
             ]
         },
-        "coordinates": [
-            27.60503,
-            53.945194
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.60503,
+                53.945194
+            ]
+        }
     },
     {
-        "id"         : "d65c5757",
-        "properties" : {
+        "id"        : "a56739e1",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Орша",
             "links"      : [],
             "contact"    : "Спортивное учреждение \"Спортивно-Технический клуб \"ГАЗАвтоСистем-Орша\"",
@@ -552,16 +661,20 @@ export default [
                 "375297449663"
             ]
         },
-        "coordinates": [
-            30.428593,
-            54.510325
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                30.428593,
+                54.510325
+            ]
+        }
     },
     {
-        "id"         : "200340e4",
-        "properties" : {
+        "id"        : "51e4c2ba",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "Витебская обл., г.Дубровно, ул.Горецкая, 2а.",
             "links"      : [],
             "contact"    : "СТО \"Дубровно\"",
@@ -570,16 +683,20 @@ export default [
                 "375295422390"
             ]
         },
-        "coordinates": [
-            30.695568,
-            54.566835
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                30.695568,
+                54.566835
+            ]
+        }
     },
     {
-        "id"         : "c3aa0c1f",
-        "properties" : {
+        "id"        : "8eb269d5",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Гродно, ул.Гаспадарчая, 42",
             "links"      : [],
             "contact"    : "СТО \"Интер\"",
@@ -588,16 +705,20 @@ export default [
                 "375295800901"
             ]
         },
-        "coordinates": [
-            23.826899,
-            53.716804
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                23.826899,
+                53.716804
+            ]
+        }
     },
     {
-        "id"         : "021c723a",
-        "properties" : {
+        "id"        : "481c9b6a",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Гомель, ул.Борисенко, 14",
             "links"      : [],
             "contact"    : "СТО на Борисенко",
@@ -606,16 +727,20 @@ export default [
                 "375291087788"
             ]
         },
-        "coordinates": [
-            30.924807,
-            52.419643
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                30.924807,
+                52.419643
+            ]
+        }
     },
     {
-        "id"         : "2c8b04a8",
-        "properties" : {
+        "id"        : "742aed74",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Тимирязева, 65",
             "links"      : [
                 "https://2apelsina.by/"
@@ -626,16 +751,20 @@ export default [
                 "375291954772"
             ]
         },
-        "coordinates": [
-            27.509344,
-            53.924341
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.509344,
+                53.924341
+            ]
+        }
     },
     {
-        "id"         : "fe5343ad",
-        "properties" : {
+        "id"        : "a448aab6",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Уручская, 23, корпус 16",
             "links"      : [],
             "contact"    : "ООО \"Автоцентр Гермес\"",
@@ -645,16 +774,20 @@ export default [
                 "375291570670"
             ]
         },
-        "coordinates": [
-            27.693535,
-            53.957537
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.693535,
+                53.957537
+            ]
+        }
     },
     {
-        "id"         : "14634cde",
-        "properties" : {
+        "id"        : "c63a7f3c",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Куприянова, 1",
             "links"      : [],
             "contact"    : "Тюнинг-ателье SaVaBrothers",
@@ -663,16 +796,20 @@ export default [
                 "375295566669"
             ]
         },
-        "coordinates": [
-            27.524903,
-            53.899145
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.524903,
+                53.899145
+            ]
+        }
     },
     {
-        "id"         : "0b2645f5",
-        "properties" : {
+        "id"        : "e62fd0e9",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Гурского, 16а. ",
             "links"      : [],
             "contact"    : "СТО \"ТТ МОТОР\", Сергей",
@@ -681,16 +818,20 @@ export default [
                 "375296993727"
             ]
         },
-        "coordinates": [
-            27.478757,
-            53.89007
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.478757,
+                53.89007
+            ]
+        }
     },
     {
-        "id"         : "a7bfefcd",
-        "properties" : {
+        "id"        : "812e058f",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Монтажников, 9",
             "links"      : [],
             "contact"    : "Татико-Автостекла",
@@ -699,16 +840,20 @@ export default [
                 "375173366688"
             ]
         },
-        "coordinates": [
-            27.411832,
-            53.871039
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.411832,
+                53.871039
+            ]
+        }
     },
     {
-        "id"         : "5ab4dccb",
-        "properties" : {
+        "id"        : "278af2cc",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Передовая д.6, корп.12",
             "links"      : [],
             "contact"    : "Автосервис \"Ржавый гараж\"",
@@ -717,16 +862,20 @@ export default [
                 "375293737161"
             ]
         },
-        "coordinates": [
-            27.626749,
-            53.899491
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.626749,
+                53.899491
+            ]
+        }
     },
     {
-        "id"         : "e3e70e7b",
-        "properties" : {
+        "id"        : "d8fa3e91",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Монтажников, 9",
             "links"      : [],
             "contact"    : "СТО \"M9-AUTO”",
@@ -735,16 +884,20 @@ export default [
                 "375299395764"
             ]
         },
-        "coordinates": [
-            27.411832,
-            53.871039
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.411832,
+                53.871039
+            ]
+        }
     },
     {
-        "id"         : "0ddf167d",
-        "properties" : {
+        "id"        : "64d7ed60",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Корженевского, 16б",
             "links"      : [
                 "https://avtosteklaminsk.by/"
@@ -755,16 +908,20 @@ export default [
                 "375296565353"
             ]
         },
-        "coordinates": [
-            27.524675,
-            53.841623
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.524675,
+                53.841623
+            ]
+        }
     },
     {
-        "id"         : "73a1d5d6",
-        "properties" : {
+        "id"        : "08c53403",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Змитрока Бядули, 13",
             "links"      : [
                 "https://autoremont.by/"
@@ -776,16 +933,20 @@ export default [
                 "375296100720"
             ]
         },
-        "coordinates": [
-            27.585939,
-            53.902226
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.585939,
+                53.902226
+            ]
+        }
     },
     {
-        "id"         : "9a77be4d",
-        "properties" : {
+        "id"        : "a667212d",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Долгобродская, 16а.",
             "links"      : [],
             "contact"    : "СТО \"Не ломайся\"",
@@ -794,16 +955,20 @@ export default [
                 "375293336623"
             ]
         },
-        "coordinates": [
-            27.600106,
-            53.89583
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.600106,
+                53.89583
+            ]
+        }
     },
     {
-        "id"         : "b56a7523",
-        "properties" : {
+        "id"        : "9aac0443",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Столбцы, пер.Товарный 2а ",
             "links"      : [],
             "contact"    : "ВикАвтосервис",
@@ -813,16 +978,20 @@ export default [
                 "375296752343"
             ]
         },
-        "coordinates": [
-            26.746515,
-            53.478888
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                26.746515,
+                53.478888
+            ]
+        }
     },
     {
-        "id"         : "81207497",
-        "properties" : {
+        "id"        : "daa76dc6",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Стебенева, 5 ",
             "links"      : [
                 "https://www.instagram.com/rimbat_detailing/"
@@ -833,16 +1002,20 @@ export default [
                 "375298933920"
             ]
         },
-        "coordinates": [
-            27.554269,
-            53.83353
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.554269,
+                53.83353
+            ]
+        }
     },
     {
-        "id"         : "39032225",
-        "properties" : {
+        "id"        : "581ec310",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Гродно, ул.Заболоть, 15А ",
             "links"      : [
                 "https://autogrodno.by/avtomojki/item/carbox.html"
@@ -854,16 +1027,20 @@ export default [
                 "375445358585"
             ]
         },
-        "coordinates": [
-            23.906277,
-            53.709674
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                23.906277,
+                53.709674
+            ]
+        }
     },
     {
-        "id"         : "6cc1216f",
-        "properties" : {
+        "id"        : "7dd5950d",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Жуковского, 11А",
             "links"      : [
                 "https://www.sudexpert.by/"
@@ -872,16 +1049,20 @@ export default [
             "description": "Оценка повреждений авто от действий 3 лиц с 9.08.20 (не ДТП) со скидкой 92%.",
             "phones"     : []
         },
-        "coordinates": [
-            27.55137,
-            53.880958
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.55137,
+                53.880958
+            ]
+        }
     },
     {
-        "id"         : "0484dcfa",
-        "properties" : {
+        "id"        : "22a33bc6",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "Брестская обл., г.Пинск. ул.Мицкевича, 3",
             "links"      : [],
             "contact"    : "ИП Тризна А. А.",
@@ -890,16 +1071,20 @@ export default [
                 "375296345230"
             ]
         },
-        "coordinates": [
-            26.114541,
-            52.116728
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                26.114541,
+                52.116728
+            ]
+        }
     },
     {
-        "id"         : "f0cf60ea",
-        "properties" : {
+        "id"        : "08d4aa13",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Лещинского, 14А, пав.6",
             "links"      : [],
             "contact"    : "Магазин автозапчастей DTM",
@@ -908,16 +1093,20 @@ export default [
                 "375296201919"
             ]
         },
-        "coordinates": [
-            27.451789,
-            53.916423
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.451789,
+                53.916423
+            ]
+        }
     },
     {
-        "id"         : "23ae10c8",
-        "properties" : {
+        "id"        : "9829a2ca",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Новаторская, 5",
             "links"      : [],
             "contact"    : "Бюро оценки и экспертизы \"Автобел\"",
@@ -928,16 +1117,20 @@ export default [
                 "375296131466"
             ]
         },
-        "coordinates": [
-            27.536793,
-            53.935444
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.536793,
+                53.935444
+            ]
+        }
     },
     {
-        "id"         : "43dbd42d",
-        "properties" : {
+        "id"        : "e086a3aa",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, пр.Жукова, 44",
             "links"      : [],
             "contact"    : "Бюро оценки и экспертизы \"Автобел\"",
@@ -948,16 +1141,20 @@ export default [
                 "375296131466"
             ]
         },
-        "coordinates": [
-            27.517875,
-            53.876676
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.517875,
+                53.876676
+            ]
+        }
     },
     {
-        "id"         : "95cf7717",
-        "properties" : {
+        "id"        : "1c9ef8ce",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Витебск, ул.П.Бровки, 38",
             "links"      : [],
             "contact"    : "Сто \"Сигмаравто\"",
@@ -966,16 +1163,20 @@ export default [
                 "375292121113"
             ]
         },
-        "coordinates": [
-            30.240352,
-            55.159534
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                30.240352,
+                55.159534
+            ]
+        }
     },
     {
-        "id"         : "8cf9acf7",
-        "properties" : {
+        "id"        : "7816d1b7",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Брест, ул.2-я Заводская, 2/4",
             "links"      : [],
             "contact"    : "Автоцентр Комета",
@@ -984,16 +1185,20 @@ export default [
                 "375292121113"
             ]
         },
-        "coordinates": [
-            23.742134,
-            52.10212
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                23.742134,
+                52.10212
+            ]
+        }
     },
     {
-        "id"         : "75060b49",
-        "properties" : {
+        "id"        : "89a531f0",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, пер. Софьи Ковалевской, 42а",
             "links"      : [],
             "contact"    : "СТО \"ТвоеАвто\", Сергей",
@@ -1002,16 +1207,20 @@ export default [
                 "375293101207"
             ]
         },
-        "coordinates": [
-            27.509697,
-            53.868598
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.509697,
+                53.868598
+            ]
+        }
     },
     {
-        "id"         : "46f461a3",
-        "properties" : {
+        "id"        : "2e55c22c",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "Кобринский район, д.Плоское, ул.Кольцевая, 18",
             "links"      : [
                 "http://petroval.by/"
@@ -1022,16 +1231,20 @@ export default [
                 "375292246039"
             ]
         },
-        "coordinates": [
-            24.397806,
-            52.141971
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                24.397806,
+                52.141971
+            ]
+        }
     },
     {
-        "id"         : "02eab33c",
-        "properties" : {
+        "id"        : "1e08f61a",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "Червеньский р-н, г.п.Смиловичи, ул.Доватора, 9",
             "links"      : [],
             "contact"    : "СТО \"АвтоИнженерСервис-Т\", Сергей",
@@ -1040,16 +1253,20 @@ export default [
                 "375296853662"
             ]
         },
-        "coordinates": [
-            28.021322,
-            53.749953
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                28.021322,
+                53.749953
+            ]
+        }
     },
     {
-        "id"         : "65cea15d",
-        "properties" : {
+        "id"        : "d0589b78",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Мозырь, ул.Первомайская, 53ж",
             "links"      : [
                 "https://www.instagram.com/stomozyr/"
@@ -1060,16 +1277,20 @@ export default [
                 "375297342375"
             ]
         },
-        "coordinates": [
-            29.240289,
-            52.04557
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                29.240289,
+                52.04557
+            ]
+        }
     },
     {
-        "id"         : "5b2e40a0",
-        "properties" : {
+        "id"        : "08243362",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Бобруйск, ул.К.Либкнехта, 5а",
             "links"      : [
                 "http://avtospektr.by/"
@@ -1080,16 +1301,20 @@ export default [
                 "375295430524"
             ]
         },
-        "coordinates": [
-            29.23463,
-            53.138147
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                29.23463,
+                53.138147
+            ]
+        }
     },
     {
-        "id"         : "480a96c9",
-        "properties" : {
+        "id"        : "6b6ed09e",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Иосифа Жиновича, 20 Время работы с 10.00 до 17.00",
             "links"      : [
                 "https://www.instagram.com/p/CD2DhaGhRyk/"
@@ -1098,16 +1323,20 @@ export default [
             "description": "Готовы бесплатно отремонтировать велосипеды, которые могли быть сломаны в последние дни. ",
             "phones"     : []
         },
-        "coordinates": [
-            27.443012,
-            53.92403
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.443012,
+                53.92403
+            ]
+        }
     },
     {
-        "id"         : "e37b6ee3",
-        "properties" : {
+        "id"        : "0288fc9c",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Брикета,17/7",
             "links"      : [
                 "https://topcraft.by/"
@@ -1118,16 +1347,20 @@ export default [
                 "375291029922"
             ]
         },
-        "coordinates": [
-            27.412836,
-            53.903806
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.412836,
+                53.903806
+            ]
+        }
     },
     {
-        "id"         : "7c30a106",
-        "properties" : {
+        "id"        : "e867fd25",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Минск, ул.Левкова, 41",
             "links"      : [],
             "contact"    : "АльфаСервис, Юлия Малахова",
@@ -1136,16 +1369,20 @@ export default [
                 "375293342280"
             ]
         },
-        "coordinates": [
-            27.555618,
-            53.873893
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.555618,
+                53.873893
+            ]
+        }
     },
     {
-        "id"         : "8bf2f3a0",
-        "properties" : {
+        "id"        : "6b56407e",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "транспорт",
+            "category"   : "transport",
             "address"    : "г.Новополоцк",
             "links"      : [
                 "https://www.instagram.com/miha190e/"
@@ -1154,16 +1391,20 @@ export default [
             "description": "Ремонт машины, оплата деталей.",
             "phones"     : []
         },
-        "coordinates": [
-            28.645505,
-            55.534888
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                28.645505,
+                55.534888
+            ]
+        }
     },
     {
-        "id"         : "464f32db",
-        "properties" : {
+        "id"        : "031335f7",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "иное",
+            "category"   : "other",
             "address"    : "Минский район, д.Семково",
             "links"      : [],
             "contact"    : "ООО Центр развития личности",
@@ -1172,16 +1413,20 @@ export default [
                 "375296354010"
             ]
         },
-        "coordinates": [
-            27.440152,
-            54.010371
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.440152,
+                54.010371
+            ]
+        }
     },
     {
-        "id"         : "a4f77a7e",
-        "properties" : {
+        "id"        : "b9d00101",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "иное",
+            "category"   : "other",
             "address"    : "Витебск, проезд Гоголя, д. 11",
             "links"      : [],
             "contact"    : "Михайличенко Юлия Александровна",
@@ -1190,16 +1435,20 @@ export default [
                 "375293138742"
             ]
         },
-        "coordinates": [
-            30.202853,
-            55.186473
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                30.202853,
+                55.186473
+            ]
+        }
     },
     {
-        "id"         : "c5c085bb",
-        "properties" : {
+        "id"        : "27052adb",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "иное",
+            "category"   : "other",
             "address"    : "г.Минск, ул.Немига, 5",
             "links"      : [
                 "https://www.renome-management.com/uslugi"
@@ -1208,16 +1457,20 @@ export default [
             "description": "Мы в Renome Management уверены, что никто в этот период не должен остаться наедине со своими трудностями. В том числе на поприще B2B. Мы знаем, что сейчас в тяжелой ситуации оказались не только люди, работающие в найме, но и все у кого есть свое дело — от самой маленькой кофейни до полноценного производства или IT-компании. Если текущая ситуация повлияла на вас или ваш бизнес и вы ищете пути решения проблем или дальнейшего развития — мы готовы помочь. Поэтому с сегодняшнего дня мы начинаем проводить бесплатные консультации по маркетингу, pr, финансам и продажам в формате вопрос-ответ. ",
             "phones"     : []
         },
-        "coordinates": [
-            27.549864,
-            53.902239
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.549864,
+                53.902239
+            ]
+        }
     },
     {
-        "id"         : "b83d0010",
-        "properties" : {
+        "id"        : "1ba8a608",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "иное",
+            "category"   : "other",
             "address"    : "г.Минск, ул.Первомайская, 18",
             "links"      : [],
             "contact"    : "",
@@ -1226,16 +1479,20 @@ export default [
                 "375296210939"
             ]
         },
-        "coordinates": [
-            27.574539,
-            53.900166
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.574539,
+                53.900166
+            ]
+        }
     },
     {
-        "id"         : "00cb429d",
-        "properties" : {
+        "id"        : "72d7e0e2",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "иное",
+            "category"   : "other",
             "address"    : "г.Минск, ул.Короля, 20",
             "links"      : [
                 "help@musicmarket.by"
@@ -1244,16 +1501,20 @@ export default [
             "description": "Пострадавшим в мирных акциях протеста или потерявшим работу за свои убеждения родителям поможем купить для их детей (в т.ч. студентов) музыкальные инструменты и аксессуары к новому учебному году",
             "phones"     : []
         },
-        "coordinates": [
-            27.540078,
-            53.903534
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.540078,
+                53.903534
+            ]
+        }
     },
     {
-        "id"         : "19eb98a2",
-        "properties" : {
+        "id"        : "85c2d2c1",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "иное",
+            "category"   : "other",
             "address"    : "г.Минск, ул.Кирилла и Мефодия, 8",
             "links"      : [],
             "contact"    : "Вероника",
@@ -1262,16 +1523,20 @@ export default [
                 "375257610337"
             ]
         },
-        "coordinates": [
-            27.557138,
-            53.905658
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.557138,
+                53.905658
+            ]
+        }
     },
     {
-        "id"         : "126f5db9",
-        "properties" : {
+        "id"        : "65ec0444",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "иное",
+            "category"   : "other",
             "address"    : "г.Минск, ул.Ольшевского, 1, к.4",
             "links"      : [],
             "contact"    : "Наталья",
@@ -1280,16 +1545,20 @@ export default [
                 "375296031104"
             ]
         },
-        "coordinates": [
-            27.50592,
-            53.912905
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.50592,
+                53.912905
+            ]
+        }
     },
     {
-        "id"         : "f40a7840",
-        "properties" : {
+        "id"        : "4d875130",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "иное",
+            "category"   : "other",
             "address"    : "г.Минск, пр. Машерова, 9, к.8",
             "links"      : [],
             "contact"    : "Наталья",
@@ -1298,16 +1567,20 @@ export default [
                 "375296031104"
             ]
         },
-        "coordinates": [
-            27.57264,
-            53.915206
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.57264,
+                53.915206
+            ]
+        }
     },
     {
-        "id"         : "2a9a1307",
-        "properties" : {
+        "id"        : "103d50fe",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "иное",
+            "category"   : "other",
             "address"    : "г.Минск, ул.Тимирязева, 127, ТЦ Ждановичи",
             "links"      : [],
             "contact"    : "Мария",
@@ -1316,16 +1589,20 @@ export default [
                 "375447232042"
             ]
         },
-        "coordinates": [
-            27.443248,
-            53.938137
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.443248,
+                53.938137
+            ]
+        }
     },
     {
-        "id"         : "968b6cd2",
-        "properties" : {
+        "id"        : "f974b1c6",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "иное",
+            "category"   : "other",
             "address"    : "г.Минск, ул.Марьевская, 7А, офис 10",
             "links"      : [],
             "contact"    : "Выдавецтва \"Янушкевіч\", Андрэй",
@@ -1334,16 +1611,20 @@ export default [
                 "375291422976"
             ]
         },
-        "coordinates": [
-            27.585776,
-            53.906603
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.585776,
+                53.906603
+            ]
+        }
     },
     {
-        "id"         : "837553a9",
-        "properties" : {
+        "id"        : "48f3aac7",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "иное",
+            "category"   : "other",
             "address"    : "г.Минск, ул.Ржавецкая, 5",
             "links"      : [
                 "https://www.b-c.by/"
@@ -1352,30 +1633,38 @@ export default [
             "description": "Можно оставить ребенка, если ваш муж, брат, отец попал в беду и вам нужно отлучиться.",
             "phones"     : []
         },
-        "coordinates": [
-            27.461838,
-            53.936653
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.461838,
+                53.936653
+            ]
+        }
     },
     {
-        "id"         : "f0d5441f",
-        "properties" : {
+        "id"        : "9ba81d22",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "Вся Беларусь",
             "links"      : [],
             "contact"    : "",
             "description": "Возможно, у вас есть дети в возрасте от 6 до 12 лет. Мы готовы организовать занятия с вашими детьми (с 10.00 до 13.00). У нас выстроено Монтессори-развивающее пространство, где дети смогут отвлечься от тревог последних дней, а наши педагоги окружат их заботой и вниманием. Занятия будут организованы БЕСПЛАТНО.",
             "phones"     : []
         },
-        "coordinates": [
-            27.477655,
-            53.874089
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.477655,
+                53.874089
+            ]
+        }
     },
     {
-        "id"         : "c7d3c8a6",
-        "properties" : {
+        "id"        : "3cf9ebdd",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1386,14 +1675,18 @@ export default [
             "description": "Здесь мы обсуждаем новости канала @Vitebskstrana без флуда, флейма, фейков, попрошайничества, нецензурных выражений, провокаций, запрещенных материалов в нашей стране.",
             "phones"     : []
         },
-        "coordinates": [
-            30.202704,
-            55.184452
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                30.202704,
+                55.184452
+            ]
+        }
     },
     {
-        "id"         : "c8a71e4e",
-        "properties" : {
+        "id"        : "d617387a",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1404,14 +1697,18 @@ export default [
             "description": "Здесь мы обсуждаем новости канала @Gomelstrana без флуда, флейма, фейков, попрошайничества, нецензурных выражений, провокаций, запрещенных материалов в нашей стране.",
             "phones"     : []
         },
-        "coordinates": [
-            31.01276,
-            52.423509
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                31.01276,
+                52.423509
+            ]
+        }
     },
     {
-        "id"         : "6c681b05",
-        "properties" : {
+        "id"        : "95b887cc",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1422,14 +1719,18 @@ export default [
             "description": "Здесь мы обсуждаем новости канала @Grodnostrana без флуда, флейма, фейков, попрошайничества, нецензурных выражений, провокаций, запрещенных материалов в нашей стране.",
             "phones"     : []
         },
-        "coordinates": [
-            23.829489,
-            53.677265
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                23.829489,
+                53.677265
+            ]
+        }
     },
     {
-        "id"         : "1113c880",
-        "properties" : {
+        "id"        : "223ce2f1",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1440,14 +1741,18 @@ export default [
             "description": "Группа СДЖ октябрьского р-на г.Минска",
             "phones"     : []
         },
-        "coordinates": [
-            27.538778,
-            53.860505
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.538778,
+                53.860505
+            ]
+        }
     },
     {
-        "id"         : "640a1585",
-        "properties" : {
+        "id"        : "ae2bfd4b",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1458,14 +1763,18 @@ export default [
             "description": "Группа Заводского района Страны для жизни!\nКанал: https://t.me/zavod_zhizn",
             "phones"     : []
         },
-        "coordinates": [
-            27.647696,
-            53.869213
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.647696,
+                53.869213
+            ]
+        }
     },
     {
-        "id"         : "5d0184e9",
-        "properties" : {
+        "id"        : "e9526f88",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1476,14 +1785,18 @@ export default [
             "description": "Чат солидарности и взаимопомощи жителей Советского района города Минска.",
             "phones"     : []
         },
-        "coordinates": [
-            27.585744,
-            53.941185
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.585744,
+                53.941185
+            ]
+        }
     },
     {
-        "id"         : "822f5532",
-        "properties" : {
+        "id"        : "167996f0",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1494,14 +1807,18 @@ export default [
             "description": "Чат СДЖ Фрунзенского р-н Минска!!!",
             "phones"     : []
         },
-        "coordinates": [
-            27.454599,
-            53.90635
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.454599,
+                53.90635
+            ]
+        }
     },
     {
-        "id"         : "64a02bfd",
-        "properties" : {
+        "id"        : "5792dac5",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1512,14 +1829,18 @@ export default [
             "description": "Чат для Беларусов требующих перемен. @strana_official основной канал Страны для жизни",
             "phones"     : []
         },
-        "coordinates": [
-            27.646953,
-            53.939941
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.646953,
+                53.939941
+            ]
+        }
     },
     {
-        "id"         : "7abd3a21",
-        "properties" : {
+        "id"        : "65b3f707",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1530,14 +1851,18 @@ export default [
             "description": "Группа СДЖ Партизанского р-на Минска.",
             "phones"     : []
         },
-        "coordinates": [
-            27.633917,
-            53.903148
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.633917,
+                53.903148
+            ]
+        }
     },
     {
-        "id"         : "607dd5fc",
-        "properties" : {
+        "id"        : "8f29f950",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1548,14 +1873,18 @@ export default [
             "description": "Колядичи, Новый двор, Гатово, Михановичи и прилегающие территории",
             "phones"     : []
         },
-        "coordinates": [
-            27.585623,
-            53.8597
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.585623,
+                53.8597
+            ]
+        }
     },
     {
-        "id"         : "50e3f221",
-        "properties" : {
+        "id"        : "e074630b",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1566,14 +1895,18 @@ export default [
             "description": "Районный чат \"Страны для Жизни\" ",
             "phones"     : []
         },
-        "coordinates": [
-            27.521846,
-            53.935781
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.521846,
+                53.935781
+            ]
+        }
     },
     {
-        "id"         : "92253977",
-        "properties" : {
+        "id"        : "38bebb35",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1584,14 +1917,18 @@ export default [
             "description": "Московский район СДЖ",
             "phones"     : []
         },
-        "coordinates": [
-            27.493139,
-            53.870715
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.493139,
+                53.870715
+            ]
+        }
     },
     {
-        "id"         : "0f7bbc80",
-        "properties" : {
+        "id"        : "9b64f6b0",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1602,14 +1939,18 @@ export default [
             "description": "Барановичи Для Жизни Чат",
             "phones"     : []
         },
-        "coordinates": [
-            26.016682,
-            53.132553
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                26.016682,
+                53.132553
+            ]
+        }
     },
     {
-        "id"         : "0b1b3f8e",
-        "properties" : {
+        "id"        : "951b9748",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1620,14 +1961,18 @@ export default [
             "description": "Бобруйск Для Жизни",
             "phones"     : []
         },
-        "coordinates": [
-            29.225844,
-            53.146982
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                29.225844,
+                53.146982
+            ]
+        }
     },
     {
-        "id"         : "bcb87c9d",
-        "properties" : {
+        "id"        : "7a2014f3",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1638,14 +1983,18 @@ export default [
             "description": "Группа города Борисова. Обсуждаем как построить Страну Для Жизни.",
             "phones"     : []
         },
-        "coordinates": [
-            28.512307,
-            54.224059
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                28.512307,
+                54.224059
+            ]
+        }
     },
     {
-        "id"         : "f8493065",
-        "properties" : {
+        "id"        : "dc40d1fa",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1656,14 +2005,18 @@ export default [
             "description": "Браслав для жизни",
             "phones"     : []
         },
-        "coordinates": [
-            27.031582,
-            55.639806
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.031582,
+                55.639806
+            ]
+        }
     },
     {
-        "id"         : "c6ee2a9d",
-        "properties" : {
+        "id"        : "81771217",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1674,14 +2027,18 @@ export default [
             "description": "Вилейка для Жизни",
             "phones"     : []
         },
-        "coordinates": [
-            26.914706,
-            54.48768
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                26.914706,
+                54.48768
+            ]
+        }
     },
     {
-        "id"         : "07b07149",
-        "properties" : {
+        "id"        : "fb7af928",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1692,14 +2049,18 @@ export default [
             "description": "Общение на тему как построить Страну Для Жизни. Правила: без спама, флуда, ссылок, попрошайничества, оскорблений, мата, провокаций, запрещенных материалов в РБ.",
             "phones"     : []
         },
-        "coordinates": [
-            24.462763,
-            53.163187
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                24.462763,
+                53.163187
+            ]
+        }
     },
     {
-        "id"         : "cb257204",
-        "properties" : {
+        "id"        : "7370a583",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1710,14 +2071,18 @@ export default [
             "description": "Новости и обсуждение событий в Воложине и Беларуси.",
             "phones"     : []
         },
-        "coordinates": [
-            26.527235,
-            54.090295
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                26.527235,
+                54.090295
+            ]
+        }
     },
     {
-        "id"         : "e18fcaad",
-        "properties" : {
+        "id"        : "c9b9d7f0",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1728,14 +2093,18 @@ export default [
             "description": "Глубокое Для Жизни!",
             "phones"     : []
         },
-        "coordinates": [
-            27.685805,
-            55.138291
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.685805,
+                55.138291
+            ]
+        }
     },
     {
-        "id"         : "a3e2e307",
-        "properties" : {
+        "id"        : "0eaf8d36",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1746,14 +2115,18 @@ export default [
             "description": "Районный Чат \"Страна Для Жизни\"",
             "phones"     : []
         },
-        "coordinates": [
-            30.995092,
-            54.283329
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                30.995092,
+                54.283329
+            ]
+        }
     },
     {
-        "id"         : "9262009a",
-        "properties" : {
+        "id"        : "c6c8cd78",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1764,14 +2137,18 @@ export default [
             "description": "Городок Для Жизни ЧАТ",
             "phones"     : []
         },
-        "coordinates": [
-            29.982802,
-            55.462521
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                29.982802,
+                55.462521
+            ]
+        }
     },
     {
-        "id"         : "27952d58",
-        "properties" : {
+        "id"        : "3b3fdca4",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1782,14 +2159,18 @@ export default [
             "description": "В чате обсуждаем вопросы как построить Страну Для Жизни, без флуда, флейма, фейков, попрошайничества, рекламы, нецензурных выражений, провокаций, запрещенных материалов в нашей стране.",
             "phones"     : []
         },
-        "coordinates": [
-            31.318613,
-            52.412292
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                31.318613,
+                52.412292
+            ]
+        }
     },
     {
-        "id"         : "1ee89ed6",
-        "properties" : {
+        "id"        : "4a7dfdb2",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1800,14 +2181,18 @@ export default [
             "description": "Чат города Докшицы, говорим на любые темы.",
             "phones"     : []
         },
-        "coordinates": [
-            27.765138,
-            54.892087
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.765138,
+                54.892087
+            ]
+        }
     },
     {
-        "id"         : "e7d22abe",
-        "properties" : {
+        "id"        : "bd3ac179",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1818,14 +2203,18 @@ export default [
             "description": "Канал Жодино @zhodino_strana_channel\nЧат БЕЛАЗа @belaz_strana\nМамы ЖДЖ @mamki_strana\nСвитанок @svitanok_strana\nКЗТШ @kztsh_strana",
             "phones"     : []
         },
-        "coordinates": [
-            28.321093,
-            54.094456
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                28.321093,
+                54.094456
+            ]
+        }
     },
     {
-        "id"         : "4c194480",
-        "properties" : {
+        "id"        : "e68076b2",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1836,14 +2225,18 @@ export default [
             "description": "Здесь мы обсуждаем новости канала @Zhlobin_strana без флуда, флейма, фейков, попрошайничества, нецензурных выражений, провокаций, запрещенных материалов в нашей стране.",
             "phones"     : []
         },
-        "coordinates": [
-            30.039114,
-            52.892176
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                30.039114,
+                52.892176
+            ]
+        }
     },
     {
-        "id"         : "7cf020c8",
-        "properties" : {
+        "id"        : "6b808806",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1854,14 +2247,18 @@ export default [
             "description": "Ивье для жизни",
             "phones"     : []
         },
-        "coordinates": [
-            25.769902,
-            53.930917
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                25.769902,
+                53.930917
+            ]
+        }
     },
     {
-        "id"         : "7534d2e4",
-        "properties" : {
+        "id"        : "e855e899",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1872,14 +2269,18 @@ export default [
             "description": "Официальнай чат Калинковичи для Жизни,здесь вы можете оперативно получать и делиться новостями без рекламы, спама,флуда,фейков,оскорблений.",
             "phones"     : []
         },
-        "coordinates": [
-            29.33261,
-            52.128898
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                29.33261,
+                52.128898
+            ]
+        }
     },
     {
-        "id"         : "67a0d4aa",
-        "properties" : {
+        "id"        : "0f1d6f2a",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1890,14 +2291,18 @@ export default [
             "description": "Кобрин для Жизни",
             "phones"     : []
         },
-        "coordinates": [
-            24.354783,
-            52.208184
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                24.354783,
+                52.208184
+            ]
+        }
     },
     {
-        "id"         : "133964b9",
-        "properties" : {
+        "id"        : "1cf17a19",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1908,14 +2313,18 @@ export default [
             "description": "Здесь мы обсуждаем новости канала @Krichev_strana без флуда, флейма, фейков, попрошайничества, нецензурных выражений, провокаций, запрещенных материалов в нашей стране.",
             "phones"     : []
         },
-        "coordinates": [
-            31.706709,
-            53.695771
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                31.706709,
+                53.695771
+            ]
+        }
     },
     {
-        "id"         : "18acf82e",
-        "properties" : {
+        "id"        : "92ea95b0",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1926,14 +2335,18 @@ export default [
             "description": "Общение по темам основного канала: @strana_official Обсуждаем как построить Страну Для Жизни. Правила: без спама, флуда, ссылок, попрошайничества, оскорблений, мата, провокаций, запрещенных материалов в РБ.",
             "phones"     : []
         },
-        "coordinates": [
-            25.301356,
-            53.891549
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                25.301356,
+                53.891549
+            ]
+        }
     },
     {
-        "id"         : "7fab4df6",
-        "properties" : {
+        "id"        : "3fa8237c",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1944,14 +2357,18 @@ export default [
             "description": "Данный чат создан для общения, поиска единомышленников, тех кто не равнодушен к событиям происходящим в Республике Беларусь, а также организации исключительно МИРНЫХ акций в городе Логойск",
             "phones"     : []
         },
-        "coordinates": [
-            27.847118,
-            54.200484
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.847118,
+                54.200484
+            ]
+        }
     },
     {
-        "id"         : "7640ff26",
-        "properties" : {
+        "id"        : "040e7b40",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1962,14 +2379,18 @@ export default [
             "description": "Мар'іна Горка чат",
             "phones"     : []
         },
-        "coordinates": [
-            28.148019,
-            53.511782
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                28.148019,
+                53.511782
+            ]
+        }
     },
     {
-        "id"         : "fce0d7a3",
-        "properties" : {
+        "id"        : "6e784dba",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1980,14 +2401,18 @@ export default [
             "description": "Мозырь для Жизни",
             "phones"     : []
         },
-        "coordinates": [
-            29.23705,
-            52.052891
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                29.23705,
+                52.052891
+            ]
+        }
     },
     {
-        "id"         : "07f58d0a",
-        "properties" : {
+        "id"        : "c3031487",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -1998,14 +2423,18 @@ export default [
             "description": "t.me/MoloStrana - канал (new)\nt.me/molodechno_strana/928 - правила чата",
             "phones"     : []
         },
-        "coordinates": [
-            26.863869,
-            54.308928
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                26.863869,
+                54.308928
+            ]
+        }
     },
     {
-        "id"         : "e2765e96",
-        "properties" : {
+        "id"        : "f650ba41",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2016,14 +2445,18 @@ export default [
             "description": "Открытая группа. Общение по темам основного канала: @strana_official Обсуждаем как построить Страну Для Жизни. Правила: без спама, флуда, ссылок, попрошайничества, оскорблений, мата, провокаций, запрещенных материалов в РБ.",
             "phones"     : []
         },
-        "coordinates": [
-            24.542908,
-            53.413661
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                24.542908,
+                53.413661
+            ]
+        }
     },
     {
-        "id"         : "eb48b661",
-        "properties" : {
+        "id"        : "8cbcf4d9",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2034,14 +2467,18 @@ export default [
             "description": "Региональный чат \"Страны для Жизни\" ",
             "phones"     : []
         },
-        "coordinates": [
-            25.819416,
-            53.594024
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                25.819416,
+                53.594024
+            ]
+        }
     },
     {
-        "id"         : "e42d2410",
-        "properties" : {
+        "id"        : "a62db5bc",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2052,14 +2489,18 @@ export default [
             "description": "Оповещение о движениях автозаков/микроавтобусов милиции/ОМОНА по городу чтобы исключить случайные задержания мирных граждан",
             "phones"     : []
         },
-        "coordinates": [
-            30.410397,
-            54.51492
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                30.410397,
+                54.51492
+            ]
+        }
     },
     {
-        "id"         : "56d1bbc4",
-        "properties" : {
+        "id"        : "4da72ce8",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2070,14 +2511,18 @@ export default [
             "description": "Осиповичский чат \"Страны для Жизни\" ",
             "phones"     : []
         },
-        "coordinates": [
-            28.638017,
-            53.308695
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                28.638017,
+                53.308695
+            ]
+        }
     },
     {
-        "id"         : "a6468359",
-        "properties" : {
+        "id"        : "6bc15c9e",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2088,14 +2533,18 @@ export default [
             "description": "Островец Для Жизни ЧАТ",
             "phones"     : []
         },
-        "coordinates": [
-            25.959287,
-            54.615529
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                25.959287,
+                54.615529
+            ]
+        }
     },
     {
-        "id"         : "400d9dd0",
-        "properties" : {
+        "id"        : "0aa86f65",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2106,14 +2555,18 @@ export default [
             "description": "Здесь мы обсуждаем новости канала @Pinsk_strana без фейков,флуда, флейма попрошайничества, нецензурных выражений, провокаций, запрещенных материалов в нашей стране.",
             "phones"     : []
         },
-        "coordinates": [
-            26.071049,
-            52.121097
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                26.071049,
+                52.121097
+            ]
+        }
     },
     {
-        "id"         : "352e9973",
-        "properties" : {
+        "id"        : "1df55008",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2124,14 +2577,18 @@ export default [
             "description": "Группа для тех, кто считает Поставщину своей Малой Родиной и готов открыто заявить о своем праве участвовать в ее судьбе; не равнодушен к происходящему вокруг, своему будущему и будущему своих детей.",
             "phones"     : []
         },
-        "coordinates": [
-            26.83892,
-            55.113581
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                26.83892,
+                55.113581
+            ]
+        }
     },
     {
-        "id"         : "484c37b0",
-        "properties" : {
+        "id"        : "7e5c3d63",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2142,14 +2599,18 @@ export default [
             "description": "Здесь мы обсуждаем новости канала @Polotsk_strana без нецензурных выражений,запрещенных материалов в  нашей стране.",
             "phones"     : []
         },
-        "coordinates": [
-            28.715333,
-            55.503509
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                28.715333,
+                55.503509
+            ]
+        }
     },
     {
-        "id"         : "49e86130",
-        "properties" : {
+        "id"        : "53f1c539",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2160,14 +2621,18 @@ export default [
             "description": "Построй свою страну для Жизни! Возможно именно ты сможешь что-то изменить!",
             "phones"     : []
         },
-        "coordinates": [
-            30.386639,
-            52.371468
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                30.386639,
+                52.371468
+            ]
+        }
     },
     {
-        "id"         : "b86895ba",
-        "properties" : {
+        "id"        : "09f98dc3",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2178,14 +2643,18 @@ export default [
             "description": "Здесь мы обсуждаем новости без флуда, флейма, фейков, попрошайничества, нецензурных выражений, провокаций, запрещенных материалов в нашей стране. Основной канал @Svetlogorskstrana",
             "phones"     : []
         },
-        "coordinates": [
-            29.746065,
-            52.627974
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                29.746065,
+                52.627974
+            ]
+        }
     },
     {
-        "id"         : "20052c11",
-        "properties" : {
+        "id"        : "76309760",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2196,14 +2665,18 @@ export default [
             "description": "Скидель для жизни",
             "phones"     : []
         },
-        "coordinates": [
-            24.240707,
-            53.580918
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                24.240707,
+                53.580918
+            ]
+        }
     },
     {
-        "id"         : "fb54280a",
-        "properties" : {
+        "id"        : "d3d43c3a",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2214,14 +2687,18 @@ export default [
             "description": "Слоним для Жизни",
             "phones"     : []
         },
-        "coordinates": [
-            25.323994,
-            53.090672
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                25.323994,
+                53.090672
+            ]
+        }
     },
     {
-        "id"         : "28fdd314",
-        "properties" : {
+        "id"        : "676e5451",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2232,14 +2709,18 @@ export default [
             "description": "Слуцк Для Жизни ЧАТ",
             "phones"     : []
         },
-        "coordinates": [
-            27.552656,
-            53.02716
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.552656,
+                53.02716
+            ]
+        }
     },
     {
-        "id"         : "524908b0",
-        "properties" : {
+        "id"        : "253a1c7c",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2250,14 +2731,18 @@ export default [
             "description": "Здесь мы обсуждаем новости без флуда, флейма, фейков, попрошайничества, нецензурных выражений, провокаций, запрещенных материалов в нашей стране.",
             "phones"     : []
         },
-        "coordinates": [
-            26.402554,
-            54.480998
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                26.402554,
+                54.480998
+            ]
+        }
     },
     {
-        "id"         : "8e4bdb80",
-        "properties" : {
+        "id"        : "d5a0d13c",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2268,14 +2753,18 @@ export default [
             "description": "Чат Солигорск для жизни. Чат создан для общения, обсуждения событий происходящих в РБ",
             "phones"     : []
         },
-        "coordinates": [
-            27.543419,
-            52.792771
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.543419,
+                52.792771
+            ]
+        }
     },
     {
-        "id"         : "4e8d8eab",
-        "properties" : {
+        "id"        : "4b051a13",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2286,14 +2775,18 @@ export default [
             "description": "Самые актуальные новости Столбцов и Республики.",
             "phones"     : []
         },
-        "coordinates": [
-            26.745904,
-            53.485163
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                26.745904,
+                53.485163
+            ]
+        }
     },
     {
-        "id"         : "db74eca6",
-        "properties" : {
+        "id"        : "65311444",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
             "category"   : "telegram",
             "address"    : "",
@@ -2304,16 +2797,20 @@ export default [
             "description": "Чечерск для жизни",
             "phones"     : []
         },
-        "coordinates": [
-            30.916498,
-            52.917123
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                30.916498,
+                52.917123
+            ]
+        }
     },
     {
-        "id"         : "1b5c8647",
-        "properties" : {
+        "id"        : "18d48d20",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Ратомская, 7",
             "links"      : [
                 "https://peremena.by/"
@@ -2325,16 +2822,20 @@ export default [
                 "375444506226"
             ]
         },
-        "coordinates": [
-            27.459736,
-            53.942219
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.459736,
+                53.942219
+            ]
+        }
     },
     {
-        "id"         : "b73bc481",
-        "properties" : {
+        "id"        : "a0d40a4f",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "аг.Сеница, ул.Западная, 26",
             "links"      : [
                 "http://elispolya.by/"
@@ -2345,16 +2846,20 @@ export default [
                 "375296496888"
             ]
         },
-        "coordinates": [
-            27.508938,
-            53.819365
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.508938,
+                53.819365
+            ]
+        }
     },
     {
-        "id"         : "552f106d",
-        "properties" : {
+        "id"        : "c00c4cef",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Ржавецкая, 34",
             "links"      : [
                 "http://little-prince.by"
@@ -2366,16 +2871,20 @@ export default [
                 "375296032615"
             ]
         },
-        "coordinates": [
-            27.459001,
-            53.939045
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.459001,
+                53.939045
+            ]
+        }
     },
     {
-        "id"         : "f978e6ed",
-        "properties" : {
+        "id"        : "0e916a84",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Тепличная, 1",
             "links"      : [],
             "contact"    : "АВС",
@@ -2384,16 +2893,20 @@ export default [
                 "375293335567"
             ]
         },
-        "coordinates": [
-            27.642025,
-            53.920147
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.642025,
+                53.920147
+            ]
+        }
     },
     {
-        "id"         : "ab796e6c",
-        "properties" : {
+        "id"        : "be7db7e8",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "пос. Дроздово, Подлесный пер. 11 Б",
             "links"      : [],
             "contact"    : "GREEN HILL",
@@ -2402,32 +2915,40 @@ export default [
                 "375293983883"
             ]
         },
-        "coordinates": [
-            27.621601,
-            53.985709
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.621601,
+                53.985709
+            ]
+        }
     },
     {
-        "id"         : "8258c360",
-        "properties" : {
+        "id"        : "4ba3be67",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, Нововиленская д. 5 корпус А",
             "links"      : [],
             "contact"    : "АЛЬТАСФЕРА",
             "description": "Альтасфера, частная гимназия",
             "phones"     : []
         },
-        "coordinates": [
-            27.541538,
-            53.927895
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.541538,
+                53.927895
+            ]
+        }
     },
     {
-        "id"         : "3fe8bb41",
-        "properties" : {
+        "id"        : "2730e332",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Рафиева, 30",
             "links"      : [],
             "contact"    : "АЛЬТЕРНАТИВА",
@@ -2438,16 +2959,20 @@ export default [
                 "375172772444"
             ]
         },
-        "coordinates": [
-            27.454479,
-            53.867273
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.454479,
+                53.867273
+            ]
+        }
     },
     {
-        "id"         : "8345b5ed",
-        "properties" : {
+        "id"        : "21e7fe01",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, переулок М.Богдановича,15",
             "links"      : [],
             "contact"    : "ГОРОД СОЛНЦА",
@@ -2456,16 +2981,20 @@ export default [
                 "375296769066"
             ]
         },
-        "coordinates": [
-            27.58218,
-            53.94253
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.58218,
+                53.94253
+            ]
+        }
     },
     {
-        "id"         : "3234453d",
-        "properties" : {
+        "id"        : "225489d0",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Некрасова, 31",
             "links"      : [],
             "contact"    : "ДАВАЙТЕ РАСТИ",
@@ -2475,16 +3004,20 @@ export default [
                 "375298888671"
             ]
         },
-        "coordinates": [
-            27.583387,
-            53.933381
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.583387,
+                53.933381
+            ]
+        }
     },
     {
-        "id"         : "50162724",
-        "properties" : {
+        "id"        : "73367182",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Ежи Гедройца, 20",
             "links"      : [],
             "contact"    : "ПЕРСПЕКТИВНЫЙ ВЗГЛЯД",
@@ -2494,16 +3027,20 @@ export default [
                 "375259970606"
             ]
         },
-        "coordinates": [
-            27.483509,
-            53.851101
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.483509,
+                53.851101
+            ]
+        }
     },
     {
-        "id"         : "60f6825a",
-        "properties" : {
+        "id"        : "1dc72554",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Коммунистическая, 19 к.34",
             "links"      : [],
             "contact"    : "РЕБЕНОК БУДУЩЕГО",
@@ -2513,16 +3050,20 @@ export default [
                 "375296502556"
             ]
         },
-        "coordinates": [
-            27.556964,
-            53.913597
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.556964,
+                53.913597
+            ]
+        }
     },
     {
-        "id"         : "6bf4faa4",
-        "properties" : {
+        "id"        : "504763ae",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Мележа, 1",
             "links"      : [],
             "contact"    : "SUNNY SOUL",
@@ -2533,16 +3074,20 @@ export default [
                 "375333786706"
             ]
         },
-        "coordinates": [
-            27.601355,
-            53.939556
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.601355,
+                53.939556
+            ]
+        }
     },
     {
-        "id"         : "bc544b6b",
-        "properties" : {
+        "id"        : "e3066984",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Пинская, 28/1",
             "links"      : [],
             "contact"    : "LUCH",
@@ -2551,16 +3096,20 @@ export default [
                 "375297561725"
             ]
         },
-        "coordinates": [
-            27.516511,
-            53.905588
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.516511,
+                53.905588
+            ]
+        }
     },
     {
-        "id"         : "eb97f75a",
-        "properties" : {
+        "id"        : "76c9c231",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, пр. Независимости, 117, 3 этаж",
             "links"      : [],
             "contact"    : "СТЕМБРИДЖ",
@@ -2569,16 +3118,20 @@ export default [
                 "375296914900"
             ]
         },
-        "coordinates": [
-            27.634832,
-            53.930506
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.634832,
+                53.930506
+            ]
+        }
     },
     {
-        "id"         : "b1831b63",
-        "properties" : {
+        "id"        : "d55238c2",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Сторожевская, 8",
             "links"      : [],
             "contact"    : "ШКОЛА ЛВС",
@@ -2587,16 +3140,20 @@ export default [
                 "375293707069"
             ]
         },
-        "coordinates": [
-            27.55546,
-            53.912967
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.55546,
+                53.912967
+            ]
+        }
     },
     {
-        "id"         : "97237e64",
-        "properties" : {
+        "id"        : "1b205792",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Пугачевская, 10",
             "links"      : [],
             "contact"    : "ЭКО-ЭЛ",
@@ -2605,16 +3162,20 @@ export default [
                 "375172882106"
             ]
         },
-        "coordinates": [
-            27.576115,
-            53.916017
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.576115,
+                53.916017
+            ]
+        }
     },
     {
-        "id"         : "31847de2",
-        "properties" : {
+        "id"        : "545f0228",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Бельского, 15",
             "links"      : [
                 "https://www.100ballov.by",
@@ -2626,16 +3187,20 @@ export default [
                 "375447548851"
             ]
         },
-        "coordinates": [
-            27.483358,
-            53.905121
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.483358,
+                53.905121
+            ]
+        }
     },
     {
-        "id"         : "c50565e6",
-        "properties" : {
+        "id"        : "2ea045e6",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Красная, 7",
             "links"      : [
                 "https://www.100ballov.by",
@@ -2647,16 +3212,20 @@ export default [
                 "375447548851"
             ]
         },
-        "coordinates": [
-            27.57036,
-            53.912138
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.57036,
+                53.912138
+            ]
+        }
     },
     {
-        "id"         : "b40b8006",
-        "properties" : {
+        "id"        : "b5a0923d",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Гродно, ул.Мостовая, 31",
             "links"      : [
                 "http://grodno-school.100ballov.by",
@@ -2669,16 +3238,20 @@ export default [
                 "375297824712"
             ]
         },
-        "coordinates": [
-            23.8286,
-            53.676963
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                23.8286,
+                53.676963
+            ]
+        }
     },
     {
-        "id"         : "0c02f6bd",
-        "properties" : {
+        "id"        : "b689a0c7",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Авроровская, д. 6, пом. 1Н",
             "links"      : [
                 "http://uchis-igrai.by/"
@@ -2690,16 +3263,20 @@ export default [
                 "375333885839"
             ]
         },
-        "coordinates": [
-            27.564977,
-            53.861336
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.564977,
+                53.861336
+            ]
+        }
     },
     {
-        "id"         : "9b5f934a",
-        "properties" : {
+        "id"        : "d504cae9",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г. Минск, ул.Якубова, 60\r\n",
             "links"      : [
                 "http://innovagroup.by",
@@ -2711,16 +3288,20 @@ export default [
                 "375293880890"
             ]
         },
-        "coordinates": [
-            27.591299,
-            53.861039
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.591299,
+                53.861039
+            ]
+        }
     },
     {
-        "id"         : "5a2eb534",
-        "properties" : {
+        "id"        : "0e0a0625",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г. Минск, ул.Пугачевская, 10",
             "links"      : [
                 "http://innovagroup.by",
@@ -2732,16 +3313,20 @@ export default [
                 "375293880890"
             ]
         },
-        "coordinates": [
-            27.576115,
-            53.916017
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.576115,
+                53.916017
+            ]
+        }
     },
     {
-        "id"         : "efdfb8fb",
-        "properties" : {
+        "id"        : "c0a7413b",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, 4-й Загородный переулок, 58Б",
             "links"      : [
                 "http://www.digital-class.by/?fbclid=IwAR0wsTSidKXi4JBhJHn51CN8IyxEPdG3DgPxtr0H44NPWN86dK3v3JsYfoM",
@@ -2754,16 +3339,20 @@ export default [
                 "375255008114"
             ]
         },
-        "coordinates": [
-            27.510243,
-            53.907196
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.510243,
+                53.907196
+            ]
+        }
     },
     {
-        "id"         : "8b8bc3cd",
-        "properties" : {
+        "id"        : "790757e0",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "Минский район, д.Жуков Луг, Дорожная, 17а",
             "links"      : [
                 "https://smart-s.by",
@@ -2775,16 +3364,20 @@ export default [
                 "375256016500"
             ]
         },
-        "coordinates": [
-            27.766382,
-            53.973748
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.766382,
+                53.973748
+            ]
+        }
     },
     {
-        "id"         : "40fe312c",
-        "properties" : {
+        "id"        : "05821d2f",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Горецкого 93 (Класс Toddler)",
             "links"      : [
                 "http://xn----7sbbje3bhxn4a2d8d.xn--90ais/"
@@ -2795,16 +3388,20 @@ export default [
                 "375336308783"
             ]
         },
-        "coordinates": [
-            27.435208,
-            53.892133
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.435208,
+                53.892133
+            ]
+        }
     },
     {
-        "id"         : "57409493",
-        "properties" : {
+        "id"        : "f22c06de",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Бельского 15 (Класс Casa dei Bambini)",
             "links"      : [
                 "http://xn----7sbbje3bhxn4a2d8d.xn--90ais/"
@@ -2815,16 +3412,20 @@ export default [
                 "375336308783"
             ]
         },
-        "coordinates": [
-            27.483347,
-            53.905143
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.483347,
+                53.905143
+            ]
+        }
     },
     {
-        "id"         : "db9fad04",
-        "properties" : {
+        "id"        : "d66f290e",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Михаловская 14 (Класс Elementary)",
             "links"      : [
                 "http://xn----7sbbje3bhxn4a2d8d.xn--90ais/"
@@ -2835,16 +3436,20 @@ export default [
                 "375336308783"
             ]
         },
-        "coordinates": [
-            27.477655,
-            53.874086
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.477655,
+                53.874086
+            ]
+        }
     },
     {
-        "id"         : "90b708ef",
-        "properties" : {
+        "id"        : "ddb5ebe6",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, пр-т Победителей, 5",
             "links"      : [
                 "http://steamschool.by",
@@ -2856,16 +3461,20 @@ export default [
                 "375297423423"
             ]
         },
-        "coordinates": [
-            27.550685,
-            53.907397
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.550685,
+                53.907397
+            ]
+        }
     },
     {
-        "id"         : "6b2469cd",
-        "properties" : {
+        "id"        : "5c9ba7ba",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Брест, б-р Шевченко, 4, оф.431, 417",
             "links"      : [
                 "https://my-baby.by",
@@ -2879,16 +3488,20 @@ export default [
                 "375293222888"
             ]
         },
-        "coordinates": [
-            23.703905,
-            52.086454
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                23.703905,
+                52.086454
+            ]
+        }
     },
     {
-        "id"         : "36c1f7ce",
-        "properties" : {
+        "id"        : "02c1e654",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г. Минск, ул.Карла Маркса, 32",
             "links"      : [
                 "https://2english.by",
@@ -2900,16 +3513,20 @@ export default [
                 "375296370016"
             ]
         },
-        "coordinates": [
-            27.561258,
-            53.899468
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.561258,
+                53.899468
+            ]
+        }
     },
     {
-        "id"         : "0b9e1eb9",
-        "properties" : {
+        "id"        : "bfe484b6",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г. Минск, ул.Карла Маркса, 32",
             "links"      : [
                 "https://itstep.by/"
@@ -2922,16 +3539,20 @@ export default [
                 "375297068585"
             ]
         },
-        "coordinates": [
-            27.561258,
-            53.899468
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.561258,
+                53.899468
+            ]
+        }
     },
     {
-        "id"         : "5d06f4ad",
-        "properties" : {
+        "id"        : "e8c8ec73",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Гомель, ул.Пушкина, 2",
             "links"      : [
                 "https://gomel.itstep.by/"
@@ -2943,16 +3564,20 @@ export default [
                 "375296519729"
             ]
         },
-        "coordinates": [
-            31.010345,
-            52.433542
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                31.010345,
+                52.433542
+            ]
+        }
     },
     {
-        "id"         : "98b88d03",
-        "properties" : {
+        "id"        : "f3d7da0b",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Барановичи, пр.Советский, 35",
             "links"      : [
                 "https://baranovichi.itstep.by",
@@ -2964,16 +3589,20 @@ export default [
                 "375333788668"
             ]
         },
-        "coordinates": [
-            26.006707,
-            53.144425
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                26.006707,
+                53.144425
+            ]
+        }
     },
     {
-        "id"         : "1ccb9e03",
-        "properties" : {
+        "id"        : "e79da48a",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Брест, ул.Советская, 34",
             "links"      : [
                 "https://brest.itstep.by",
@@ -2986,16 +3615,20 @@ export default [
                 "375336335353"
             ]
         },
-        "coordinates": [
-            23.692852,
-            52.094098
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                23.692852,
+                52.094098
+            ]
+        }
     },
     {
-        "id"         : "f07b4065",
-        "properties" : {
+        "id"        : "6fa89a71",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Бобруйск, ул.Горького, 12",
             "links"      : [
                 "http://bobruisk.itstep.by/"
@@ -3007,16 +3640,20 @@ export default [
                 "375295688392"
             ]
         },
-        "coordinates": [
-            29.229711,
-            53.144564
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                29.229711,
+                53.144564
+            ]
+        }
     },
     {
-        "id"         : "4abb5e2c",
-        "properties" : {
+        "id"        : "b24c445c",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г. Витебск, пр-т Московский, 31А",
             "links"      : [
                 "https://vitebsk.itstep.by",
@@ -3029,16 +3666,20 @@ export default [
                 "+375291110934"
             ]
         },
-        "coordinates": [
-            30.223207,
-            55.178498
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                30.223207,
+                55.178498
+            ]
+        }
     },
     {
-        "id"         : "f10c8949",
-        "properties" : {
+        "id"        : "d7ab765f",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Гродно, ул.Мицкевича, 3",
             "links"      : [
                 "https://grodno.itstep.by/",
@@ -3051,16 +3692,20 @@ export default [
                 "375291110794"
             ]
         },
-        "coordinates": [
-            23.831287,
-            53.687087
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                23.831287,
+                53.687087
+            ]
+        }
     },
     {
-        "id"         : "1f8ef8bb",
-        "properties" : {
+        "id"        : "5b441d6f",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Могилев, пер.Пожарный, 1а",
             "links"      : [
                 "http://mogilev.itstep.by/",
@@ -3073,16 +3718,20 @@ export default [
                 "375291110755"
             ]
         },
-        "coordinates": [
-            30.334648,
-            53.899324
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                30.334648,
+                53.899324
+            ]
+        }
     },
     {
-        "id"         : "9c3b6e39",
-        "properties" : {
+        "id"        : "9e2c672c",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, пр.Победителей, 5",
             "links"      : [
                 "https://itpa.by/",
@@ -3094,16 +3743,20 @@ export default [
                 "375295865036"
             ]
         },
-        "coordinates": [
-            27.550669,
-            53.907397
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.550669,
+                53.907397
+            ]
+        }
     },
     {
-        "id"         : "67276271",
-        "properties" : {
+        "id"        : "307edb65",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Революционная, 8",
             "links"      : [
                 "https://lingualand.by/",
@@ -3118,16 +3771,20 @@ export default [
                 "375292415744"
             ]
         },
-        "coordinates": [
-            27.552754,
-            53.903171
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.552754,
+                53.903171
+            ]
+        }
     },
     {
-        "id"         : "b0c327e6",
-        "properties" : {
+        "id"        : "b9639d9d",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Красноармейская, 11",
             "links"      : [
                 "https://lingualand.by/",
@@ -3142,16 +3799,20 @@ export default [
                 "375292415744"
             ]
         },
-        "coordinates": [
-            27.567512,
-            53.900116
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.567512,
+                53.900116
+            ]
+        }
     },
     {
-        "id"         : "da55adf2",
-        "properties" : {
+        "id"        : "b9f5cabc",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Ленинградская, 20",
             "links"      : [
                 "https://lingualand.by/",
@@ -3166,16 +3827,20 @@ export default [
                 "375292415744"
             ]
         },
-        "coordinates": [
-            27.548256,
-            53.892366
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.548256,
+                53.892366
+            ]
+        }
     },
     {
-        "id"         : "a45384bb",
-        "properties" : {
+        "id"        : "e40a3a4e",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "образование",
+            "category"   : "education",
             "address"    : "г.Минск, ул.Замковая, 33",
             "links"      : [
                 "https://lingualand.by/",
@@ -3190,16 +3855,20 @@ export default [
                 "375292415744"
             ]
         },
-        "coordinates": [
-            27.547524,
-            53.906634
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.547524,
+                53.906634
+            ]
+        }
     },
     {
-        "id"         : "0d4c7d88",
-        "properties" : {
+        "id"        : "f29a2608",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "жилье",
+            "category"   : "housing",
             "address"    : "г. Несвиж",
             "links"      : [
                 "http://palacehotel.by/",
@@ -3212,16 +3881,20 @@ export default [
                 "375177059675"
             ]
         },
-        "coordinates": [
-            26.692458,
-            53.222275
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                26.692458,
+                53.222275
+            ]
+        }
     },
     {
-        "id"         : "c44e2061",
-        "properties" : {
+        "id"        : "56aa9cc2",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "жилье",
+            "category"   : "housing",
             "address"    : "г.Минск, ул.Кирова, 4",
             "links"      : [
                 "https://www.booking.com/hotel/by/hostel-point-minsk.ru.html"
@@ -3230,16 +3903,20 @@ export default [
             "description": "Hostel Point Minsk предлагает бесплатное проживание в Минске для иногородних, которые ищут близких",
             "phones"     : []
         },
-        "coordinates": [
-            27.552194,
-            53.892542
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.552194,
+                53.892542
+            ]
+        }
     },
     {
-        "id"         : "0d49a653",
-        "properties" : {
+        "id"        : "e68eed47",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "продукты питания",
+            "category"   : "food",
             "address"    : "г.Минск, ул.Богдановича, 128а",
             "links"      : [
                 "https://monkeyfood.by/",
@@ -3251,16 +3928,20 @@ export default [
                 "375293520606"
             ]
         },
-        "coordinates": [
-            27.584491,
-            53.936487
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.584491,
+                53.936487
+            ]
+        }
     },
     {
-        "id"         : "b5957261",
-        "properties" : {
+        "id"        : "ff0a772c",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "продукты питания",
+            "category"   : "food",
             "address"    : "г.Минск, ул.Октябрьская, 16",
             "links"      : [
                 "https://monkeyfood.by/"
@@ -3271,16 +3952,20 @@ export default [
                 "375333520106"
             ]
         },
-        "coordinates": [
-            27.574749,
-            53.889574
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.574749,
+                53.889574
+            ]
+        }
     },
     {
-        "id"         : "139ff909",
-        "properties" : {
+        "id"        : "c5a9b17c",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "продукты питания",
+            "category"   : "food",
             "address"    : "г.Минск, ул.Ложинская, 4",
             "links"      : [
                 "https://gruzin.by/"
@@ -3291,16 +3976,20 @@ export default [
                 "375293553102"
             ]
         },
-        "coordinates": [
-            27.684726,
-            53.946602
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.684726,
+                53.946602
+            ]
+        }
     },
     {
-        "id"         : "d0ccf877",
-        "properties" : {
+        "id"        : "fdcbd2fc",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "продукты питания",
+            "category"   : "food",
             "address"    : "г.Минск, ул.Октябрьская, 16",
             "links"      : [
                 "https://gruzin.by/"
@@ -3311,16 +4000,20 @@ export default [
                 "375296211044"
             ]
         },
-        "coordinates": [
-            27.574778,
-            53.889569
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.574778,
+                53.889569
+            ]
+        }
     },
     {
-        "id"         : "6c640ee3",
-        "properties" : {
+        "id"        : "db0475d4",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "продукты питания",
+            "category"   : "food",
             "address"    : "г.Минск, пр. Держинского, 119",
             "links"      : [
                 "https://gruzin.by/"
@@ -3331,16 +4024,20 @@ export default [
                 "375445547444"
             ]
         },
-        "coordinates": [
-            27.476739,
-            53.851241
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.476739,
+                53.851241
+            ]
+        }
     },
     {
-        "id"         : "3deede93",
-        "properties" : {
+        "id"        : "ea603993",
+        "type"      : "Feature",
+        "properties": {
             "type"       : "proposal",
-            "category"   : "продукты питания",
+            "category"   : "food",
             "address"    : "Минский р-н, Новодворский с/с, 82 здание АЗС А-100 №35",
             "links"      : [
                 "https://gruzin.by/"
@@ -3349,9 +4046,12 @@ export default [
             "description": "Помощь питанием",
             "phones"     : []
         },
-        "coordinates": [
-            27.615449,
-            53.832502
-        ]
+        "geometry"  : {
+            "type"       : "Point",
+            "coordinates": [
+                27.615449,
+                53.832502
+            ]
+        }
     }
 ]
