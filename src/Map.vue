@@ -947,7 +947,7 @@
                 overflow: auto
 
             .content
-                word-break: break-all
+                word-break: keep-all
             +desktop
                 width: 23em
 </style>
