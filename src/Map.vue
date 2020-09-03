@@ -771,12 +771,12 @@
                 location_type   : '',
                 request         : {
                     type       : '',
-                    category   : 'жилье',
-                    phone      : '+375291111111',
-                    address    : 'test',
-                    contact    : 'Contact',
-                    link       : 'https://t.me/zubr_in',
-                    description: 'Test',
+                    category   : '',
+                    phone      : '',
+                    address    : '',
+                    contact    : '',
+                    link       : '',
+                    description: '',
                 },
                 filter          : {
                     categories: [
