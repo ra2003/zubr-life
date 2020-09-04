@@ -575,10 +575,10 @@
                                 type = 'proposal';
                             }
                             let name = `${type}_${category}`;
-                            let scale = 0.5;
+                            let scale = 0.4;
                             if (category.substring(0, 8) === 'telegram') {
                                 name = 'telegram'
-                                scale  =  0.35;
+                                scale  =  0.4;
                             }
                             style = new Style({
                                 image: new Icon({
@@ -616,10 +616,10 @@
                     }
                     if (!style) {
                         let name = `${type}_${category}`;
-                        let scale = 0.5;
+                        let scale = 0.4;
                         if (category.substring(0, 8) === 'telegram') {
                             name = 'telegram'
-                            scale  =  0.3;
+                            scale  =  0.4;
                         }
                         style       = new Style({
                             image: new Icon({
