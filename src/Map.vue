@@ -232,6 +232,9 @@
                             @click="requestModal = false"/>
                     </header>
                     <section class="modal-card-body">
+                        <b-message>
+                            По вопросам <a href="https://t.me/zubr_info_bot" target="_blank">@zubr_info_bot</a>
+                        </b-message>
                         <b-field label="Тип">
                             <b-radio-button v-model="request.type"
                                             native-value="demand"
@@ -752,6 +755,14 @@
                         })
 
 
+                    })
+                    .catch(e => {
+                        this.$buefy.notification.open({
+                            message : 'Произошла ошибка,возможно есть проблемы с соединением, попробуйте воспользоваться VPN или ботом',
+                            type    : 'is-orange',
+                            duration: 5000,
+                        })
+                        throw e;
                     })
             },
             loadFeatures() {
