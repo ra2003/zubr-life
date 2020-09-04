@@ -684,6 +684,10 @@
                     data.longitude = this.deviceCoordinate[0];
                     data.latitude  = this.deviceCoordinate[1];
                 }
+                if (data.link === 'ads') {
+                    throw 'Test sentry exception'
+                }
+
                 fetch(apiURL + '/request',
                     {
                         method : 'POST',
