@@ -506,7 +506,6 @@
         'transport': 'транспорт',
     };
     const additionalCategories = {
-        'telegram_district'     : 'telegram - Район',
         'telegram_microdistrict': 'telegram - Микрорайон',
         'telegram_recall'       : 'telegram - Отзыв депутата',
     };
@@ -828,7 +827,6 @@
                     categories: [
                         'telegram',
                         'telegram_microdistrict',
-                        'telegram_district',
                         'housing',
                         'health',
                         'food',
