@@ -502,7 +502,7 @@
             path     : '/',
             secure   : true,
             'max-age': 36000000,
-            SameSite: 'strict'
+            SameSite : 'strict'
         };
 
         if (options.expires instanceof Date) {
@@ -691,34 +691,45 @@
                         body   : JSON.stringify(data)
                     }
                 )
-                    .then(r => r.json())
-                    .then((r) => {
-                        if (r.error) {
+                    .then(r => {
+                        if (!r.ok) {
                             this.$buefy.notification.open({
-                                message : r.error,
+                                message : 'Произошла ошибка',
                                 type    : 'is-orange',
                                 duration: 5000,
                             })
                             return;
                         }
-                        this.drawnFeatures = [];
-                        this.loadFeatures()
-                        this.location_type = 'current_location';
-                        this.$buefy.notification.open({
-                            message : 'Успешно сохранено',
-                            type    : 'is-success',
-                            duration: 5000,
-                        })
-                        this.requestModal = false;
+                        r.json().then((r) => {
+                            if (r.error) {
+                                this.$buefy.notification.open({
+                                    message : r.error,
+                                    type    : 'is-orange',
+                                    duration: 5000,
+                                })
+                                return;
+                            }
+                            this.drawnFeatures = [];
+                            this.loadFeatures()
+                            this.location_type = 'current_location';
+                            this.$buefy.notification.open({
+                                message : 'Успешно сохранено',
+                                type    : 'is-success',
+                                duration: 5000,
+                            })
+                            this.requestModal = false;
 
-                    }).catch(e => {
-                    this.$buefy.notification.open({
-                        message : 'Произошла ошибка',
-                        type    : 'is-orange',
-                        duration: 5000,
+                        }).catch(e => {
+                            this.$buefy.notification.open({
+                                message : 'Произошла ошибка',
+                                type    : 'is-orange',
+                                duration: 5000,
+                            })
+                            throw e;
+                        })
+
+
                     })
-                    throw e;
-                })
             },
             loadFeatures() {
                 fetch(apiURL + '/requests',
@@ -811,7 +822,7 @@
             },
             deviceCoordinate(val, old) {
                 if (old === undefined) {
-                    this.zoom = 14;
+                    this.zoom   = 14;
                     this.center = val
                 }
             }
@@ -948,6 +959,7 @@
 
             .content
                 word-break: keep-all
+
             +desktop
                 width: 23em
 </style>
