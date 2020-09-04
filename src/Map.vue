@@ -575,14 +575,12 @@
                                 type = 'proposal';
                             }
                             let name = `${type}_${category}`;
-                            let scale = 0.4;
                             if (category.substring(0, 8) === 'telegram') {
                                 name = 'telegram'
-                                scale  =  0.4;
                             }
                             style = new Style({
                                 image: new Icon({
-                                    scale,
+                                    scale  : 0.41,
                                     opacity: 0.75,
                                     src    : `/img/icons/${name}.png`,
                                 }),
@@ -616,14 +614,12 @@
                     }
                     if (!style) {
                         let name = `${type}_${category}`;
-                        let scale = 0.4;
                         if (category.substring(0, 8) === 'telegram') {
                             name = 'telegram'
-                            scale  =  0.4;
                         }
                         style       = new Style({
                             image: new Icon({
-                                scale,
+                                scale  : 0.41,
                                 opacity: 0.75,
                                 src    : `/img/icons/${name}.png`,
                             }),
