@@ -323,6 +323,14 @@
                                 {{item}}
                             </b-checkbox>
                         </div>
+                        <div class="field"
+                             v-for="(item, key) of additionalCategories"
+                             :key="key">
+                            <b-checkbox v-model="filter.categories"
+                                        :native-value="key">
+                                {{item}}
+                            </b-checkbox>
+                        </div>
                     </section>
                     <footer class="modal-card-foot">
                         <button class="button" type="button" @click="filterModal = false">Закрыть</button>
@@ -485,7 +493,7 @@
     import {findPointOnSurface}      from 'vuelayers/lib/ol-ext'
     import {Fill, Style, Text, Icon} from 'ol/style';
 
-    const categories = {
+    const categories           = {
         'telegram' : 'telegram',
         'housing'  : 'жилье',
         'other'    : 'иное',
@@ -494,6 +502,12 @@
         'food'     : 'продукты питания',
         'transport': 'транспорт',
     };
+    const additionalCategories = {
+        'telegram_district'     : 'telegram - Район',
+        'telegram_microdistrict': 'telegram - Микрорайон',
+        'telegram_recall'       : 'telegram - Отзыв депутата',
+    };
+
 
     const apiURL = process.env.VUE_APP_API_URL;
 
@@ -773,6 +787,7 @@
         data() {
             return {
                 center          : [27.568817138671978, 53.899078973945166],
+                additionalCategories,
                 zoom            : 9,
                 map,
                 categories,
@@ -801,6 +816,8 @@
                 filter          : {
                     categories: [
                         'telegram',
+                        'telegram_microdistrict',
+                        'telegram_district',
                         'housing',
                         'health',
                         'food',
