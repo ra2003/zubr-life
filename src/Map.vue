@@ -574,11 +574,17 @@
                             if (type === null) {
                                 type = 'proposal';
                             }
+                            let name = `${type}_${category}`;
+                            let scale = 0.5;
+                            if (category.substring(0, 8) === 'telegram') {
+                                name = 'telegram'
+                                scale  =  0.35;
+                            }
                             style = new Style({
                                 image: new Icon({
-                                    scale  : 0.5,
+                                    scale,
                                     opacity: 0.75,
-                                    src    : `/img/icons/${type}_${category}.png`,
+                                    src    : `/img/icons/${name}.png`,
                                 }),
                                 text : new Text(params),
                             })
@@ -609,11 +615,17 @@
                         type = 'proposal';
                     }
                     if (!style) {
+                        let name = `${type}_${category}`;
+                        let scale = 0.5;
+                        if (category.substring(0, 8) === 'telegram') {
+                            name = 'telegram'
+                            scale  =  0.3;
+                        }
                         style       = new Style({
                             image: new Icon({
-                                scale  : 0.5,
+                                scale,
                                 opacity: 0.75,
-                                src    : `/img/icons/${type}_${category}.png`,
+                                src    : `/img/icons/${name}.png`,
                             }),
                             text : new Text(params),
                         })
