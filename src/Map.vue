@@ -288,7 +288,7 @@
                             </b-radio-button>
                         </b-field>
                         <b-field label="Описание" required>
-                            <b-input maxlength="100" type="textarea" v-model="request.description"></b-input>
+                            <b-input maxlength="300" type="textarea" v-model="request.description"></b-input>
                         </b-field>
                     </section>
                     <footer class="modal-card-foot">
