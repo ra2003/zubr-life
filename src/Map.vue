@@ -830,7 +830,8 @@
                         'housing',
                         'health',
                         'food',
-                        'education'
+                        'education',
+                        'other'
                     ]
                 },
                 favourites
