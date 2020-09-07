@@ -133,7 +133,7 @@
                 </template>
             </vl-interaction-select>
             <vl-layer-vector v-for="(items, key) in map['proposal']" :key="key">
-                <vl-source-cluster :distance="30" v-if="filter.categories.includes(key)">
+                <vl-source-cluster :distance="85" v-if="filter.categories.includes(key)">
                     <vl-source-vector :features.sync="items"></vl-source-vector>
                     <vl-style-func :factory="clusterStyleFunc(key, 'proposal')"/>
                 </vl-source-cluster>
