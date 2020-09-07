@@ -504,6 +504,7 @@
         'education': 'образование',
         'food'     : 'продукты питания',
         'transport': 'транспорт',
+        'job'      : 'работа',
     };
     const additionalCategories = {
         'telegram_microdistrict': 'telegram - Микрорайон',

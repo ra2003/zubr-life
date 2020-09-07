@@ -1,6 +1,6 @@
 export default [
     {
-        "id"        : "01fee985",
+        "id"        : "13e93eca",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -22,7 +22,7 @@ export default [
         }
     },
     {
-        "id"        : "cab5f0a8",
+        "id"        : "f899d6be",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -44,7 +44,7 @@ export default [
         }
     },
     {
-        "id"        : "c6d0ffb4",
+        "id"        : "3b8d3a6f",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -68,7 +68,7 @@ export default [
         }
     },
     {
-        "id"        : "89a0ab29",
+        "id"        : "6888b36f",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -94,7 +94,7 @@ export default [
         }
     },
     {
-        "id"        : "436c85be",
+        "id"        : "4f681137",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -116,7 +116,7 @@ export default [
         }
     },
     {
-        "id"        : "914a386b",
+        "id"        : "82bc2db7",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -142,7 +142,7 @@ export default [
         }
     },
     {
-        "id"        : "38f7ec8c",
+        "id"        : "534394a8",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -166,7 +166,7 @@ export default [
         }
     },
     {
-        "id"        : "4bf8a558",
+        "id"        : "351b0183",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -190,7 +190,7 @@ export default [
         }
     },
     {
-        "id"        : "a8456446",
+        "id"        : "81819097",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -214,7 +214,7 @@ export default [
         }
     },
     {
-        "id"        : "218dc2e6",
+        "id"        : "f71eb1d1",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -223,7 +223,7 @@ export default [
             "links"      : [
                 "https://medavenu.by/"
             ],
-            "contact"    : "Медицинский центр \"Медавеню\"\nприемные дни — вторник, четверг, воскресенье",
+            "contact"    : "Медицинский центр \"Медавеню\" \nприемные дни — вторник, четверг, воскресенье",
             "description": "Консультация уролога, проведение УЗИ почек, взятие общего анализа мочи",
             "phones"     : [
                 "375172828400"
@@ -238,7 +238,7 @@ export default [
         }
     },
     {
-        "id"        : "b70161d2",
+        "id"        : "a079a7b2",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -265,7 +265,7 @@ export default [
         }
     },
     {
-        "id"        : "0c67f5f5",
+        "id"        : "a1a6b0b8",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -290,7 +290,7 @@ export default [
         }
     },
     {
-        "id"        : "258664b1",
+        "id"        : "1d4b9a91",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -315,7 +315,7 @@ export default [
         }
     },
     {
-        "id"        : "b6523c2b",
+        "id"        : "5778932c",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -339,7 +339,7 @@ export default [
         }
     },
     {
-        "id"        : "12a88dca",
+        "id"        : "ce9d8f18",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -365,7 +365,7 @@ export default [
         }
     },
     {
-        "id"        : "973885bc",
+        "id"        : "2be81fbe",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -389,7 +389,7 @@ export default [
         }
     },
     {
-        "id"        : "27e2db26",
+        "id"        : "41107824",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -413,7 +413,7 @@ export default [
         }
     },
     {
-        "id"        : "c863c54f",
+        "id"        : "506a5f06",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -422,7 +422,7 @@ export default [
             "links"      : [
                 "https://triomed.by/"
             ],
-            "contact"    : "ТРИОМЕД\nАндриенко Валерий",
+            "contact"    : "ТРИОМЕД \nАндриенко Валерий",
             "description": "Оказывает бесплатную стоматологическую помощь пострадавшим вплоть до установки имплантов и коронок если зубы выбиты.",
             "phones"     : []
         },
@@ -435,7 +435,7 @@ export default [
         }
     },
     {
-        "id"        : "594e2f6c",
+        "id"        : "ffd39208",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -460,7 +460,7 @@ export default [
         }
     },
     {
-        "id"        : "94d4cbbc",
+        "id"        : "bcfa0ee9",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -482,7 +482,7 @@ export default [
         }
     },
     {
-        "id"        : "ce74752d",
+        "id"        : "6cfcc3c6",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -504,7 +504,7 @@ export default [
         }
     },
     {
-        "id"        : "591b5949",
+        "id"        : "182e47e2",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -530,7 +530,7 @@ export default [
         }
     },
     {
-        "id"        : "783aedda",
+        "id"        : "ab7a9c57",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -552,7 +552,7 @@ export default [
         }
     },
     {
-        "id"        : "fce451d4",
+        "id"        : "a47388a8",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -576,7 +576,7 @@ export default [
         }
     },
     {
-        "id"        : "97293320",
+        "id"        : "ec610a41",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -600,7 +600,7 @@ export default [
         }
     },
     {
-        "id"        : "e2faed6c",
+        "id"        : "4a44a2a0",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -624,7 +624,7 @@ export default [
         }
     },
     {
-        "id"        : "35f6cdc3",
+        "id"        : "539fbdf9",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -646,7 +646,7 @@ export default [
         }
     },
     {
-        "id"        : "bdc7b88d",
+        "id"        : "93f4b5c9",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -668,7 +668,7 @@ export default [
         }
     },
     {
-        "id"        : "59cd9ea8",
+        "id"        : "88e8262e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -690,7 +690,7 @@ export default [
         }
     },
     {
-        "id"        : "812a7467",
+        "id"        : "76fbdb2c",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -712,7 +712,7 @@ export default [
         }
     },
     {
-        "id"        : "d69e2ad3",
+        "id"        : "fe45183a",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -736,7 +736,7 @@ export default [
         }
     },
     {
-        "id"        : "d08e5086",
+        "id"        : "83fca415",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -759,7 +759,7 @@ export default [
         }
     },
     {
-        "id"        : "e81a8142",
+        "id"        : "068a5797",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -781,7 +781,7 @@ export default [
         }
     },
     {
-        "id"        : "0a43ade6",
+        "id"        : "ddc4817e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -803,7 +803,7 @@ export default [
         }
     },
     {
-        "id"        : "f5fd258c",
+        "id"        : "eb46d369",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -825,7 +825,7 @@ export default [
         }
     },
     {
-        "id"        : "654dbd11",
+        "id"        : "6183f860",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -847,7 +847,7 @@ export default [
         }
     },
     {
-        "id"        : "93a6e304",
+        "id"        : "f188fd85",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -869,7 +869,7 @@ export default [
         }
     },
     {
-        "id"        : "72bd22db",
+        "id"        : "65699359",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -893,7 +893,7 @@ export default [
         }
     },
     {
-        "id"        : "7abf31ae",
+        "id"        : "1766e6c5",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -918,7 +918,7 @@ export default [
         }
     },
     {
-        "id"        : "3257aee2",
+        "id"        : "eef0f780",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -940,7 +940,7 @@ export default [
         }
     },
     {
-        "id"        : "3bf1907d",
+        "id"        : "91f11f0d",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -963,7 +963,7 @@ export default [
         }
     },
     {
-        "id"        : "567a9f59",
+        "id"        : "64014981",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -987,7 +987,7 @@ export default [
         }
     },
     {
-        "id"        : "29bef673",
+        "id"        : "61a09ca5",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1012,7 +1012,7 @@ export default [
         }
     },
     {
-        "id"        : "471b1eb1",
+        "id"        : "4466480c",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1034,7 +1034,7 @@ export default [
         }
     },
     {
-        "id"        : "073bc15c",
+        "id"        : "09ccff05",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1056,7 +1056,7 @@ export default [
         }
     },
     {
-        "id"        : "e8e85f42",
+        "id"        : "cd354606",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1078,7 +1078,7 @@ export default [
         }
     },
     {
-        "id"        : "5f4dc581",
+        "id"        : "9b417aef",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1102,7 +1102,7 @@ export default [
         }
     },
     {
-        "id"        : "704baa1f",
+        "id"        : "f2981c5e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1126,7 +1126,7 @@ export default [
         }
     },
     {
-        "id"        : "e98e6436",
+        "id"        : "13fc3457",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1148,7 +1148,7 @@ export default [
         }
     },
     {
-        "id"        : "5766a9f1",
+        "id"        : "d484ea2e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1170,7 +1170,7 @@ export default [
         }
     },
     {
-        "id"        : "ebb9cffc",
+        "id"        : "951bbe05",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1192,7 +1192,7 @@ export default [
         }
     },
     {
-        "id"        : "bfea638c",
+        "id"        : "87f0c985",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1216,7 +1216,7 @@ export default [
         }
     },
     {
-        "id"        : "7c8e7d8f",
+        "id"        : "b2697675",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1238,7 +1238,7 @@ export default [
         }
     },
     {
-        "id"        : "79f79a6d",
+        "id"        : "9e7b980e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1262,7 +1262,7 @@ export default [
         }
     },
     {
-        "id"        : "713eb688",
+        "id"        : "9ae03b01",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1286,7 +1286,7 @@ export default [
         }
     },
     {
-        "id"        : "09027da9",
+        "id"        : "76436809",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1308,7 +1308,7 @@ export default [
         }
     },
     {
-        "id"        : "03028c6f",
+        "id"        : "ef4bb0fb",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1332,7 +1332,7 @@ export default [
         }
     },
     {
-        "id"        : "3d8c1923",
+        "id"        : "d3e45483",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1354,7 +1354,7 @@ export default [
         }
     },
     {
-        "id"        : "0136ab88",
+        "id"        : "a39d2802",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1376,29 +1376,7 @@ export default [
         }
     },
     {
-        "id"        : "e3730eb0",
-        "type"      : "Feature",
-        "properties": {
-            "type"       : "proposal",
-            "category"   : "other",
-            "address"    : "Минский район, д.Семково",
-            "links"      : [],
-            "contact"    : "ООО Центр развития личности",
-            "description": "Проводите детский лагерь в д.Семково с 24 по 28 августа для детей возраста 7-12 лет. Если среди ваших клиентов- жертв репрессий есть ситуации, где детям спокойнее побыть вне семьи — давайте мой контакт. Можем взять до 4х детей на 5 дней бесплатно (питание, проживание вкл). Заберем от подъезда и привезем туда же",
-            "phones"     : [
-                "375296354010"
-            ]
-        },
-        "geometry"  : {
-            "type"       : "Point",
-            "coordinates": [
-                27.440152,
-                54.010371
-            ]
-        }
-    },
-    {
-        "id"        : "20085729",
+        "id"        : "2e344f66",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1420,7 +1398,7 @@ export default [
         }
     },
     {
-        "id"        : "e735292a",
+        "id"        : "15272230",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1442,7 +1420,7 @@ export default [
         }
     },
     {
-        "id"        : "71ee28e8",
+        "id"        : "57a401b6",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1464,7 +1442,7 @@ export default [
         }
     },
     {
-        "id"        : "54a65697",
+        "id"        : "99abc22e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1486,7 +1464,7 @@ export default [
         }
     },
     {
-        "id"        : "4f210ea2",
+        "id"        : "935657ed",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1508,7 +1486,7 @@ export default [
         }
     },
     {
-        "id"        : "38a8f8d1",
+        "id"        : "b77366b8",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1530,7 +1508,7 @@ export default [
         }
     },
     {
-        "id"        : "fb8fbe4f",
+        "id"        : "a6a4c0c5",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1552,11 +1530,11 @@ export default [
         }
     },
     {
-        "id"        : "bd3532f1",
+        "id"        : "41974e8a",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
-            "category"   : "other",
+            "category"   : "job",
             "address"    : "г.Минск, ул.Тимирязева, 127, ТЦ Ждановичи",
             "links"      : [],
             "contact"    : "Мария",
@@ -1574,7 +1552,7 @@ export default [
         }
     },
     {
-        "id"        : "5ccfee0a",
+        "id"        : "205248be",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1596,7 +1574,7 @@ export default [
         }
     },
     {
-        "id"        : "0401cf29",
+        "id"        : "c647ee18",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1618,7 +1596,7 @@ export default [
         }
     },
     {
-        "id"        : "ff0c804a",
+        "id"        : "dcfae1f2",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1640,7 +1618,7 @@ export default [
         }
     },
     {
-        "id"        : "5603f17a",
+        "id"        : "aed1305f",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1662,7 +1640,7 @@ export default [
         }
     },
     {
-        "id"        : "1a961650",
+        "id"        : "4a63b99e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1684,7 +1662,7 @@ export default [
         }
     },
     {
-        "id"        : "85d73b1e",
+        "id"        : "78745faf",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1706,7 +1684,7 @@ export default [
         }
     },
     {
-        "id"        : "7623fc64",
+        "id"        : "2f2acc69",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1728,7 +1706,7 @@ export default [
         }
     },
     {
-        "id"        : "f4dc96da",
+        "id"        : "5b5ce2fb",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1750,7 +1728,7 @@ export default [
         }
     },
     {
-        "id"        : "7da7bd5d",
+        "id"        : "6830829e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1772,7 +1750,7 @@ export default [
         }
     },
     {
-        "id"        : "cb59fd6b",
+        "id"        : "46971c6e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1794,7 +1772,7 @@ export default [
         }
     },
     {
-        "id"        : "41480c15",
+        "id"        : "765ba527",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1816,7 +1794,7 @@ export default [
         }
     },
     {
-        "id"        : "847e09ff",
+        "id"        : "b8a13e75",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1838,7 +1816,7 @@ export default [
         }
     },
     {
-        "id"        : "2cee686f",
+        "id"        : "122bcc4e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1860,7 +1838,7 @@ export default [
         }
     },
     {
-        "id"        : "3fd021e2",
+        "id"        : "e710fbf1",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1882,7 +1860,7 @@ export default [
         }
     },
     {
-        "id"        : "67bc6f1b",
+        "id"        : "faa6a4b6",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1904,7 +1882,7 @@ export default [
         }
     },
     {
-        "id"        : "cd502ce1",
+        "id"        : "2dc79190",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1926,7 +1904,7 @@ export default [
         }
     },
     {
-        "id"        : "5c739cf8",
+        "id"        : "57f65eef",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1948,7 +1926,7 @@ export default [
         }
     },
     {
-        "id"        : "21ecf010",
+        "id"        : "66a9c6be",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1970,7 +1948,7 @@ export default [
         }
     },
     {
-        "id"        : "6f0b8993",
+        "id"        : "2cf97c93",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -1992,7 +1970,7 @@ export default [
         }
     },
     {
-        "id"        : "ca804122",
+        "id"        : "5f9daba6",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2014,7 +1992,7 @@ export default [
         }
     },
     {
-        "id"        : "862c356e",
+        "id"        : "8994d4b2",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2036,7 +2014,7 @@ export default [
         }
     },
     {
-        "id"        : "7a656d59",
+        "id"        : "742a1a43",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2058,7 +2036,7 @@ export default [
         }
     },
     {
-        "id"        : "7dc97f17",
+        "id"        : "47e74010",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2080,7 +2058,7 @@ export default [
         }
     },
     {
-        "id"        : "ac306585",
+        "id"        : "61aae70d",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2102,7 +2080,7 @@ export default [
         }
     },
     {
-        "id"        : "0c5f6abc",
+        "id"        : "0b01949b",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2124,7 +2102,7 @@ export default [
         }
     },
     {
-        "id"        : "a663907a",
+        "id"        : "386494ef",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2146,7 +2124,7 @@ export default [
         }
     },
     {
-        "id"        : "75e30881",
+        "id"        : "338ee8d2",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2168,7 +2146,7 @@ export default [
         }
     },
     {
-        "id"        : "4410999f",
+        "id"        : "4e495bb0",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2190,7 +2168,7 @@ export default [
         }
     },
     {
-        "id"        : "c33c8232",
+        "id"        : "859cb3c1",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2212,7 +2190,7 @@ export default [
         }
     },
     {
-        "id"        : "df6fc1b1",
+        "id"        : "5eae44e4",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2234,7 +2212,7 @@ export default [
         }
     },
     {
-        "id"        : "79beb50f",
+        "id"        : "33334e23",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2256,7 +2234,7 @@ export default [
         }
     },
     {
-        "id"        : "3bac7fc1",
+        "id"        : "c7b01eb6",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2278,7 +2256,7 @@ export default [
         }
     },
     {
-        "id"        : "3dc676b9",
+        "id"        : "a74ff4d1",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2300,7 +2278,7 @@ export default [
         }
     },
     {
-        "id"        : "dd75bb92",
+        "id"        : "d5d3fb2d",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2322,7 +2300,7 @@ export default [
         }
     },
     {
-        "id"        : "c86bf3bd",
+        "id"        : "829b8c89",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2344,7 +2322,7 @@ export default [
         }
     },
     {
-        "id"        : "8decd201",
+        "id"        : "fd3ee932",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2366,7 +2344,7 @@ export default [
         }
     },
     {
-        "id"        : "7235b1e9",
+        "id"        : "543f0975",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2388,7 +2366,7 @@ export default [
         }
     },
     {
-        "id"        : "8063b2f6",
+        "id"        : "67edd437",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2410,7 +2388,7 @@ export default [
         }
     },
     {
-        "id"        : "79207391",
+        "id"        : "e9492ee3",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2432,7 +2410,7 @@ export default [
         }
     },
     {
-        "id"        : "15653468",
+        "id"        : "9ca8fef5",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2454,7 +2432,7 @@ export default [
         }
     },
     {
-        "id"        : "960feb4c",
+        "id"        : "d5efc712",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2476,7 +2454,7 @@ export default [
         }
     },
     {
-        "id"        : "551c0f7b",
+        "id"        : "8360029f",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2498,7 +2476,7 @@ export default [
         }
     },
     {
-        "id"        : "8ed81d9a",
+        "id"        : "f0d3437a",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2520,7 +2498,7 @@ export default [
         }
     },
     {
-        "id"        : "6b464b81",
+        "id"        : "c1251215",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2542,7 +2520,7 @@ export default [
         }
     },
     {
-        "id"        : "f76d968f",
+        "id"        : "eaf8be2f",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2564,7 +2542,7 @@ export default [
         }
     },
     {
-        "id"        : "7970c89d",
+        "id"        : "2bea765a",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2586,7 +2564,7 @@ export default [
         }
     },
     {
-        "id"        : "113c9540",
+        "id"        : "4e50c9e6",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2608,7 +2586,7 @@ export default [
         }
     },
     {
-        "id"        : "107edd70",
+        "id"        : "8c49c043",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2630,7 +2608,7 @@ export default [
         }
     },
     {
-        "id"        : "a109767e",
+        "id"        : "6a623604",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2652,7 +2630,7 @@ export default [
         }
     },
     {
-        "id"        : "6d86ba03",
+        "id"        : "42af9269",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2674,7 +2652,7 @@ export default [
         }
     },
     {
-        "id"        : "8ec789e5",
+        "id"        : "f887b3ee",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2696,7 +2674,7 @@ export default [
         }
     },
     {
-        "id"        : "3e6eb2d8",
+        "id"        : "4dacea10",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2718,7 +2696,7 @@ export default [
         }
     },
     {
-        "id"        : "14c5ebc1",
+        "id"        : "6148c6ad",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2740,7 +2718,7 @@ export default [
         }
     },
     {
-        "id"        : "881f5edf",
+        "id"        : "55202808",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2762,7 +2740,7 @@ export default [
         }
     },
     {
-        "id"        : "8e8bd2fb",
+        "id"        : "62f1a254",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2784,7 +2762,7 @@ export default [
         }
     },
     {
-        "id"        : "6e41c475",
+        "id"        : "4ba1cf56",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2809,7 +2787,7 @@ export default [
         }
     },
     {
-        "id"        : "ba2d2e11",
+        "id"        : "7ca5f14c",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2833,7 +2811,7 @@ export default [
         }
     },
     {
-        "id"        : "713826da",
+        "id"        : "fabb8e2e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2858,7 +2836,7 @@ export default [
         }
     },
     {
-        "id"        : "ff84a137",
+        "id"        : "9021a826",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2880,7 +2858,7 @@ export default [
         }
     },
     {
-        "id"        : "59426d46",
+        "id"        : "a9cf9362",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2902,7 +2880,7 @@ export default [
         }
     },
     {
-        "id"        : "17136f49",
+        "id"        : "db763fad",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2922,7 +2900,7 @@ export default [
         }
     },
     {
-        "id"        : "b607cc6d",
+        "id"        : "47426a35",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2946,7 +2924,7 @@ export default [
         }
     },
     {
-        "id"        : "e6986ada",
+        "id"        : "e3d510c4",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2968,7 +2946,7 @@ export default [
         }
     },
     {
-        "id"        : "de9c9f00",
+        "id"        : "1e261142",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -2991,7 +2969,7 @@ export default [
         }
     },
     {
-        "id"        : "5c41a081",
+        "id"        : "cc00e871",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3014,7 +2992,7 @@ export default [
         }
     },
     {
-        "id"        : "016ff735",
+        "id"        : "64567aa0",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3037,7 +3015,7 @@ export default [
         }
     },
     {
-        "id"        : "d4942c57",
+        "id"        : "4f8e1ab6",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3061,7 +3039,7 @@ export default [
         }
     },
     {
-        "id"        : "500a5c61",
+        "id"        : "110875d2",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3083,7 +3061,7 @@ export default [
         }
     },
     {
-        "id"        : "2f0e8ce3",
+        "id"        : "b9643c06",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3105,7 +3083,7 @@ export default [
         }
     },
     {
-        "id"        : "4b892ea8",
+        "id"        : "14461e56",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3127,7 +3105,7 @@ export default [
         }
     },
     {
-        "id"        : "85a35e2e",
+        "id"        : "cebbaca0",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3149,7 +3127,7 @@ export default [
         }
     },
     {
-        "id"        : "c4b77a01",
+        "id"        : "76327863",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3174,7 +3152,7 @@ export default [
         }
     },
     {
-        "id"        : "e3e5a0f4",
+        "id"        : "499290a3",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3199,7 +3177,7 @@ export default [
         }
     },
     {
-        "id"        : "24d379b1",
+        "id"        : "39153340",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3225,7 +3203,7 @@ export default [
         }
     },
     {
-        "id"        : "1580e105",
+        "id"        : "6efa7fe2",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3250,18 +3228,18 @@ export default [
         }
     },
     {
-        "id"        : "76e80e4f",
+        "id"        : "a4e72cb0",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
             "category"   : "education",
-            "address"    : "г. Минск, ул.Якубова, 60\n",
+            "address"    : "г. Минск, ул.Якубова, 60\r\n",
             "links"      : [
                 "http://innovagroup.by",
                 "innovagroup@tut.by"
             ],
             "contact"    : "ИННОВАЦИЯ",
-            "description": "Частное учреждение образования\n\"Учебно-педагогический комплекс\nдетский сад – средняя школа\n\"ИННОВАЦИЯ\"\"",
+            "description": "Частное учреждение образования\r\n\"Учебно-педагогический комплекс\r\nдетский сад – средняя школа\r\n\"ИННОВАЦИЯ\"\"",
             "phones"     : [
                 "375293880890"
             ]
@@ -3275,7 +3253,7 @@ export default [
         }
     },
     {
-        "id"        : "d8cbb2fa",
+        "id"        : "84915090",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3286,7 +3264,7 @@ export default [
                 "innovagroup@tut.by"
             ],
             "contact"    : "ИННОВАЦИЯ",
-            "description": "Частное учреждение образования\n\"Учебно-педагогический комплекс\nдетский сад – средняя школа\n\"ИННОВАЦИЯ\"\"",
+            "description": "Частное учреждение образования\r\n\"Учебно-педагогический комплекс\r\nдетский сад – средняя школа\r\n\"ИННОВАЦИЯ\"\"",
             "phones"     : [
                 "375293880890"
             ]
@@ -3300,7 +3278,7 @@ export default [
         }
     },
     {
-        "id"        : "759b5b66",
+        "id"        : "b298768b",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3326,7 +3304,7 @@ export default [
         }
     },
     {
-        "id"        : "539e7744",
+        "id"        : "bc8eba7b",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3351,7 +3329,7 @@ export default [
         }
     },
     {
-        "id"        : "f4fbe796",
+        "id"        : "c7054441",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3375,7 +3353,7 @@ export default [
         }
     },
     {
-        "id"        : "129428b3",
+        "id"        : "12538521",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3399,7 +3377,7 @@ export default [
         }
     },
     {
-        "id"        : "e98619bc",
+        "id"        : "21af8ce7",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3423,7 +3401,7 @@ export default [
         }
     },
     {
-        "id"        : "9732de1b",
+        "id"        : "1d575aba",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3448,7 +3426,7 @@ export default [
         }
     },
     {
-        "id"        : "0a8a910a",
+        "id"        : "5e8fcaa0",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3475,7 +3453,7 @@ export default [
         }
     },
     {
-        "id"        : "501b5a0e",
+        "id"        : "3be5ecc3",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3500,7 +3478,7 @@ export default [
         }
     },
     {
-        "id"        : "16effa2d",
+        "id"        : "23bcbb24",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3526,7 +3504,7 @@ export default [
         }
     },
     {
-        "id"        : "5aaa0845",
+        "id"        : "1f69124d",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3551,7 +3529,7 @@ export default [
         }
     },
     {
-        "id"        : "2d8391a2",
+        "id"        : "3e5d02f9",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3576,7 +3554,7 @@ export default [
         }
     },
     {
-        "id"        : "5556ac88",
+        "id"        : "f06eb290",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3602,7 +3580,7 @@ export default [
         }
     },
     {
-        "id"        : "a36f66f4",
+        "id"        : "38fafaee",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3627,7 +3605,7 @@ export default [
         }
     },
     {
-        "id"        : "ac97ca32",
+        "id"        : "182c2b40",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3653,7 +3631,7 @@ export default [
         }
     },
     {
-        "id"        : "7e558270",
+        "id"        : "e086d36b",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3679,7 +3657,7 @@ export default [
         }
     },
     {
-        "id"        : "75ddeac0",
+        "id"        : "cdcaa1a5",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3705,7 +3683,7 @@ export default [
         }
     },
     {
-        "id"        : "f6b4650c",
+        "id"        : "f11aeaa3",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3730,7 +3708,7 @@ export default [
         }
     },
     {
-        "id"        : "d4192754",
+        "id"        : "ecb6a192",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3758,7 +3736,7 @@ export default [
         }
     },
     {
-        "id"        : "bd7b4646",
+        "id"        : "059b373d",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3786,7 +3764,7 @@ export default [
         }
     },
     {
-        "id"        : "0238b32b",
+        "id"        : "2d3aaac1",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3814,7 +3792,7 @@ export default [
         }
     },
     {
-        "id"        : "eaf146f0",
+        "id"        : "ec276ee2",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3842,7 +3820,7 @@ export default [
         }
     },
     {
-        "id"        : "c5d32901",
+        "id"        : "078e5e0a",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3868,7 +3846,7 @@ export default [
         }
     },
     {
-        "id"        : "5533c23a",
+        "id"        : "0491314b",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3890,7 +3868,7 @@ export default [
         }
     },
     {
-        "id"        : "5d6fe820",
+        "id"        : "bbeec7e6",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3912,7 +3890,7 @@ export default [
         }
     },
     {
-        "id"        : "d6f125bb",
+        "id"        : "6587baea",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3934,7 +3912,7 @@ export default [
         }
     },
     {
-        "id"        : "ffd92691",
+        "id"        : "7f3ea2ca",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3956,7 +3934,7 @@ export default [
         }
     },
     {
-        "id"        : "2e503f76",
+        "id"        : "06276b2e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -3978,7 +3956,7 @@ export default [
         }
     },
     {
-        "id"        : "ecb97243",
+        "id"        : "1da131f7",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4000,7 +3978,7 @@ export default [
         }
     },
     {
-        "id"        : "e9fb301e",
+        "id"        : "a5541bbf",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4022,7 +4000,7 @@ export default [
         }
     },
     {
-        "id"        : "b46c2c67",
+        "id"        : "08335476",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4044,7 +4022,7 @@ export default [
         }
     },
     {
-        "id"        : "41167e9b",
+        "id"        : "45070d88",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4066,7 +4044,7 @@ export default [
         }
     },
     {
-        "id"        : "944a1332",
+        "id"        : "1e10aa0a",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4088,7 +4066,7 @@ export default [
         }
     },
     {
-        "id"        : "1b3589c4",
+        "id"        : "d1dc3e1c",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4110,7 +4088,7 @@ export default [
         }
     },
     {
-        "id"        : "4d3932e0",
+        "id"        : "8eb57ca5",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4132,7 +4110,7 @@ export default [
         }
     },
     {
-        "id"        : "4185043c",
+        "id"        : "91b49ac9",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4154,7 +4132,7 @@ export default [
         }
     },
     {
-        "id"        : "1f1c6637",
+        "id"        : "bc530ecc",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4176,7 +4154,7 @@ export default [
         }
     },
     {
-        "id"        : "f60db808",
+        "id"        : "e92ba7b6",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4198,7 +4176,7 @@ export default [
         }
     },
     {
-        "id"        : "5afc52b2",
+        "id"        : "7fac3a6f",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4220,7 +4198,7 @@ export default [
         }
     },
     {
-        "id"        : "42658274",
+        "id"        : "e528bd06",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4242,7 +4220,7 @@ export default [
         }
     },
     {
-        "id"        : "f1c06b9c",
+        "id"        : "74cda87f",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4264,7 +4242,7 @@ export default [
         }
     },
     {
-        "id"        : "a17516df",
+        "id"        : "4f730cf6",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4286,7 +4264,7 @@ export default [
         }
     },
     {
-        "id"        : "a9c958da",
+        "id"        : "8d00de1b",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4308,7 +4286,7 @@ export default [
         }
     },
     {
-        "id"        : "7c623e71",
+        "id"        : "9db5ef71",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4330,7 +4308,7 @@ export default [
         }
     },
     {
-        "id"        : "0568a547",
+        "id"        : "abee87d7",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4352,7 +4330,7 @@ export default [
         }
     },
     {
-        "id"        : "60a63399",
+        "id"        : "92d54fd7",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4374,7 +4352,7 @@ export default [
         }
     },
     {
-        "id"        : "d8163758",
+        "id"        : "9847b62d",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4396,7 +4374,7 @@ export default [
         }
     },
     {
-        "id"        : "02c2cb10",
+        "id"        : "7203ba40",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4418,7 +4396,7 @@ export default [
         }
     },
     {
-        "id"        : "7efd43aa",
+        "id"        : "4cbdbfc4",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4440,7 +4418,7 @@ export default [
         }
     },
     {
-        "id"        : "7da60853",
+        "id"        : "afc5933f",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4462,7 +4440,7 @@ export default [
         }
     },
     {
-        "id"        : "07223ce3",
+        "id"        : "dce18e59",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4484,7 +4462,7 @@ export default [
         }
     },
     {
-        "id"        : "9b9b4147",
+        "id"        : "c168d70e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4506,7 +4484,7 @@ export default [
         }
     },
     {
-        "id"        : "b66f4493",
+        "id"        : "d453e9b1",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4528,7 +4506,7 @@ export default [
         }
     },
     {
-        "id"        : "c645985a",
+        "id"        : "876ef2fd",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4550,7 +4528,7 @@ export default [
         }
     },
     {
-        "id"        : "e86ab7bb",
+        "id"        : "ca8e9f1a",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4572,7 +4550,7 @@ export default [
         }
     },
     {
-        "id"        : "1e0f76b7",
+        "id"        : "5c5084ab",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4594,7 +4572,7 @@ export default [
         }
     },
     {
-        "id"        : "947bc558",
+        "id"        : "f0129b46",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4616,7 +4594,7 @@ export default [
         }
     },
     {
-        "id"        : "d7c942eb",
+        "id"        : "7a5f15a5",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4638,7 +4616,7 @@ export default [
         }
     },
     {
-        "id"        : "751b25a1",
+        "id"        : "ebaf7a73",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4660,7 +4638,7 @@ export default [
         }
     },
     {
-        "id"        : "98bb611b",
+        "id"        : "5392c525",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4682,7 +4660,7 @@ export default [
         }
     },
     {
-        "id"        : "e8a67c5a",
+        "id"        : "b3f8f625",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4704,7 +4682,7 @@ export default [
         }
     },
     {
-        "id"        : "a4d2ba18",
+        "id"        : "9739ed73",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4726,7 +4704,7 @@ export default [
         }
     },
     {
-        "id"        : "7fa9b222",
+        "id"        : "37a715af",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4748,7 +4726,7 @@ export default [
         }
     },
     {
-        "id"        : "a366f342",
+        "id"        : "51a3a427",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4770,7 +4748,7 @@ export default [
         }
     },
     {
-        "id"        : "ffca539c",
+        "id"        : "cd3c10fe",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4792,7 +4770,7 @@ export default [
         }
     },
     {
-        "id"        : "f0297e75",
+        "id"        : "4a4da265",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4814,7 +4792,7 @@ export default [
         }
     },
     {
-        "id"        : "9d655b2e",
+        "id"        : "f0f3feae",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4836,7 +4814,7 @@ export default [
         }
     },
     {
-        "id"        : "4346dc53",
+        "id"        : "a0a4bbad",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4858,7 +4836,7 @@ export default [
         }
     },
     {
-        "id"        : "20df340e",
+        "id"        : "907df700",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4880,7 +4858,7 @@ export default [
         }
     },
     {
-        "id"        : "b6469e3b",
+        "id"        : "a2102150",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4902,7 +4880,7 @@ export default [
         }
     },
     {
-        "id"        : "a2f145dd",
+        "id"        : "6276705e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4924,7 +4902,7 @@ export default [
         }
     },
     {
-        "id"        : "690544ca",
+        "id"        : "db4aee32",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4946,7 +4924,7 @@ export default [
         }
     },
     {
-        "id"        : "73ef84fd",
+        "id"        : "7b1b9705",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4966,7 +4944,7 @@ export default [
         }
     },
     {
-        "id"        : "74e42d43",
+        "id"        : "cf298546",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -4988,7 +4966,7 @@ export default [
         }
     },
     {
-        "id"        : "a80e7db7",
+        "id"        : "c375a338",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5010,7 +4988,7 @@ export default [
         }
     },
     {
-        "id"        : "838a8510",
+        "id"        : "bf198bf6",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5030,7 +5008,7 @@ export default [
         }
     },
     {
-        "id"        : "09860271",
+        "id"        : "d524091c",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5052,7 +5030,7 @@ export default [
         }
     },
     {
-        "id"        : "b8409580",
+        "id"        : "387562c7",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5074,7 +5052,7 @@ export default [
         }
     },
     {
-        "id"        : "c039ab29",
+        "id"        : "3a5697f8",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5096,7 +5074,7 @@ export default [
         }
     },
     {
-        "id"        : "9aceb486",
+        "id"        : "e322ee85",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5118,7 +5096,7 @@ export default [
         }
     },
     {
-        "id"        : "c6827306",
+        "id"        : "46320dd5",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5140,7 +5118,7 @@ export default [
         }
     },
     {
-        "id"        : "1f04415d",
+        "id"        : "06c34a6b",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5162,7 +5140,7 @@ export default [
         }
     },
     {
-        "id"        : "b29be336",
+        "id"        : "10fe0fb8",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5184,7 +5162,7 @@ export default [
         }
     },
     {
-        "id"        : "2ed1af20",
+        "id"        : "58c770ae",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5206,7 +5184,7 @@ export default [
         }
     },
     {
-        "id"        : "0b215985",
+        "id"        : "1186ae68",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5228,7 +5206,7 @@ export default [
         }
     },
     {
-        "id"        : "e0e369ba",
+        "id"        : "7ef35764",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5250,7 +5228,7 @@ export default [
         }
     },
     {
-        "id"        : "ab2047ab",
+        "id"        : "31c3ec99",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5272,7 +5250,7 @@ export default [
         }
     },
     {
-        "id"        : "aafd3721",
+        "id"        : "6c195505",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5294,7 +5272,7 @@ export default [
         }
     },
     {
-        "id"        : "ec1025f2",
+        "id"        : "84c81980",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5316,7 +5294,7 @@ export default [
         }
     },
     {
-        "id"        : "18deaf92",
+        "id"        : "a42f8559",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5338,7 +5316,7 @@ export default [
         }
     },
     {
-        "id"        : "44767850",
+        "id"        : "582a1ef6",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5360,7 +5338,7 @@ export default [
         }
     },
     {
-        "id"        : "ece8e6b7",
+        "id"        : "a9f14de7",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5382,7 +5360,7 @@ export default [
         }
     },
     {
-        "id"        : "60118b37",
+        "id"        : "73ecb68a",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5404,7 +5382,7 @@ export default [
         }
     },
     {
-        "id"        : "94e63716",
+        "id"        : "5175afb3",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5426,7 +5404,7 @@ export default [
         }
     },
     {
-        "id"        : "89c86568",
+        "id"        : "a60f295c",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5448,7 +5426,7 @@ export default [
         }
     },
     {
-        "id"        : "37f68ff5",
+        "id"        : "a529c14c",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5470,7 +5448,7 @@ export default [
         }
     },
     {
-        "id"        : "4346d868",
+        "id"        : "686f8edd",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5492,7 +5470,7 @@ export default [
         }
     },
     {
-        "id"        : "8bd400c5",
+        "id"        : "109a014e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5512,7 +5490,7 @@ export default [
         }
     },
     {
-        "id"        : "d77f7473",
+        "id"        : "998ccf38",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5534,7 +5512,7 @@ export default [
         }
     },
     {
-        "id"        : "b24111fd",
+        "id"        : "0a8868b5",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5556,7 +5534,7 @@ export default [
         }
     },
     {
-        "id"        : "3d1e8a37",
+        "id"        : "c2073198",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5578,7 +5556,7 @@ export default [
         }
     },
     {
-        "id"        : "8d758987",
+        "id"        : "b22144e2",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5600,7 +5578,7 @@ export default [
         }
     },
     {
-        "id"        : "d887eab5",
+        "id"        : "edb6dded",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5622,7 +5600,7 @@ export default [
         }
     },
     {
-        "id"        : "653fc705",
+        "id"        : "81592194",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5644,7 +5622,7 @@ export default [
         }
     },
     {
-        "id"        : "b5ba4f7f",
+        "id"        : "5218db0f",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5666,7 +5644,7 @@ export default [
         }
     },
     {
-        "id"        : "5127694c",
+        "id"        : "7bf3294d",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5688,7 +5666,7 @@ export default [
         }
     },
     {
-        "id"        : "fca695aa",
+        "id"        : "89621adb",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5710,7 +5688,7 @@ export default [
         }
     },
     {
-        "id"        : "367dcc6f",
+        "id"        : "9a16104c",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5732,7 +5710,7 @@ export default [
         }
     },
     {
-        "id"        : "fd5ddad8",
+        "id"        : "f9974e77",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5754,7 +5732,7 @@ export default [
         }
     },
     {
-        "id"        : "c758202f",
+        "id"        : "583113f1",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5776,7 +5754,7 @@ export default [
         }
     },
     {
-        "id"        : "321a9039",
+        "id"        : "17ba1b1a",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5798,7 +5776,7 @@ export default [
         }
     },
     {
-        "id"        : "3dcdaf39",
+        "id"        : "b366e1bd",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5820,7 +5798,7 @@ export default [
         }
     },
     {
-        "id"        : "0895f893",
+        "id"        : "feee03cd",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5842,7 +5820,7 @@ export default [
         }
     },
     {
-        "id"        : "b3d798a3",
+        "id"        : "daf0ab96",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5864,7 +5842,7 @@ export default [
         }
     },
     {
-        "id"        : "785a4065",
+        "id"        : "14fd6d19",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5886,7 +5864,7 @@ export default [
         }
     },
     {
-        "id"        : "cc191eae",
+        "id"        : "590a6203",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5908,7 +5886,7 @@ export default [
         }
     },
     {
-        "id"        : "d23ef4e4",
+        "id"        : "8fde50d9",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5930,7 +5908,7 @@ export default [
         }
     },
     {
-        "id"        : "358e97d1",
+        "id"        : "63936ab8",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5952,7 +5930,7 @@ export default [
         }
     },
     {
-        "id"        : "59ce319a",
+        "id"        : "49e463bd",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5974,7 +5952,7 @@ export default [
         }
     },
     {
-        "id"        : "86201a84",
+        "id"        : "a0ac9f5b",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -5996,7 +5974,7 @@ export default [
         }
     },
     {
-        "id"        : "71ebfca6",
+        "id"        : "0bb16f90",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6018,7 +5996,7 @@ export default [
         }
     },
     {
-        "id"        : "4f6ebe20",
+        "id"        : "598b1349",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6040,7 +6018,7 @@ export default [
         }
     },
     {
-        "id"        : "a9241bc9",
+        "id"        : "79a9c7b1",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6062,7 +6040,7 @@ export default [
         }
     },
     {
-        "id"        : "13c86535",
+        "id"        : "5fe6d43d",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6084,7 +6062,7 @@ export default [
         }
     },
     {
-        "id"        : "8d1a8ba9",
+        "id"        : "bf542784",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6106,7 +6084,7 @@ export default [
         }
     },
     {
-        "id"        : "1c1e120c",
+        "id"        : "1007192a",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6128,7 +6106,7 @@ export default [
         }
     },
     {
-        "id"        : "ce98eeca",
+        "id"        : "13140421",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6150,7 +6128,7 @@ export default [
         }
     },
     {
-        "id"        : "9398ba80",
+        "id"        : "4cd71f45",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6172,7 +6150,7 @@ export default [
         }
     },
     {
-        "id"        : "e76191cd",
+        "id"        : "4da1dcf8",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6194,7 +6172,7 @@ export default [
         }
     },
     {
-        "id"        : "7c1d42b1",
+        "id"        : "d115344f",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6216,7 +6194,7 @@ export default [
         }
     },
     {
-        "id"        : "dffeecd3",
+        "id"        : "e498e068",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6238,7 +6216,7 @@ export default [
         }
     },
     {
-        "id"        : "296da37b",
+        "id"        : "3f4f46d7",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6260,7 +6238,7 @@ export default [
         }
     },
     {
-        "id"        : "19ea7c50",
+        "id"        : "2970d74d",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6282,7 +6260,7 @@ export default [
         }
     },
     {
-        "id"        : "f0e1beb3",
+        "id"        : "466bb48f",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6304,7 +6282,7 @@ export default [
         }
     },
     {
-        "id"        : "6e709f6f",
+        "id"        : "fd8ea5e3",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6329,7 +6307,7 @@ export default [
         }
     },
     {
-        "id"        : "2fc4d37c",
+        "id"        : "63e06f29",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6353,7 +6331,7 @@ export default [
         }
     },
     {
-        "id"        : "55f45010",
+        "id"        : "2b9f6d5d",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6377,7 +6355,7 @@ export default [
         }
     },
     {
-        "id"        : "74b97d0a",
+        "id"        : "6ab125f7",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6401,7 +6379,7 @@ export default [
         }
     },
     {
-        "id"        : "51d82e44",
+        "id"        : "4ccdd941",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6425,7 +6403,7 @@ export default [
         }
     },
     {
-        "id"        : "3938a5e0",
+        "id"        : "5ac73314",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6447,7 +6425,7 @@ export default [
         }
     },
     {
-        "id"        : "4eeb9013",
+        "id"        : "376cb497",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6471,7 +6449,7 @@ export default [
         }
     },
     {
-        "id"        : "7968c751",
+        "id"        : "0c56c72a",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6495,7 +6473,7 @@ export default [
         }
     },
     {
-        "id"        : "9eb2e6ec",
+        "id"        : "a11ba3b7",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6517,7 +6495,7 @@ export default [
         }
     },
     {
-        "id"        : "1702a699",
+        "id"        : "6c6411cd",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6539,7 +6517,7 @@ export default [
         }
     },
     {
-        "id"        : "f0fed227",
+        "id"        : "fdafafc2",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6561,7 +6539,7 @@ export default [
         }
     },
     {
-        "id"        : "4ac92be0",
+        "id"        : "deca5dca",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6583,7 +6561,7 @@ export default [
         }
     },
     {
-        "id"        : "b78ffbd8",
+        "id"        : "ad32e09d",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6606,7 +6584,7 @@ export default [
         }
     },
     {
-        "id"        : "ae535268",
+        "id"        : "3c0a5215",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6628,7 +6606,7 @@ export default [
         }
     },
     {
-        "id"        : "51e44dc3",
+        "id"        : "010bd7bf",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6650,7 +6628,7 @@ export default [
         }
     },
     {
-        "id"        : "0410f647",
+        "id"        : "ebd5771e",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6672,7 +6650,7 @@ export default [
         }
     },
     {
-        "id"        : "47edf833",
+        "id"        : "b527e8bc",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6694,7 +6672,7 @@ export default [
         }
     },
     {
-        "id"        : "68a881ff",
+        "id"        : "96e1755d",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6716,7 +6694,7 @@ export default [
         }
     },
     {
-        "id"        : "90975e73",
+        "id"        : "4c74d09d",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6738,7 +6716,7 @@ export default [
         }
     },
     {
-        "id"        : "feded3b1",
+        "id"        : "c3a3b8b4",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6760,7 +6738,7 @@ export default [
         }
     },
     {
-        "id"        : "831c3627",
+        "id"        : "b91cc021",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6782,7 +6760,7 @@ export default [
         }
     },
     {
-        "id"        : "bb333c58",
+        "id"        : "da14838b",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6804,7 +6782,7 @@ export default [
         }
     },
     {
-        "id"        : "16dc699f",
+        "id"        : "819b6a30",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6826,7 +6804,7 @@ export default [
         }
     },
     {
-        "id"        : "6daad99f",
+        "id"        : "04636bea",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6848,7 +6826,7 @@ export default [
         }
     },
     {
-        "id"        : "455e78be",
+        "id"        : "e246dd96",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6870,7 +6848,7 @@ export default [
         }
     },
     {
-        "id"        : "c421c5ce",
+        "id"        : "544ce774",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6892,7 +6870,7 @@ export default [
         }
     },
     {
-        "id"        : "a1254faf",
+        "id"        : "b9a2f5ba",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6914,7 +6892,7 @@ export default [
         }
     },
     {
-        "id"        : "61759b96",
+        "id"        : "89bcd8b2",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6936,7 +6914,7 @@ export default [
         }
     },
     {
-        "id"        : "081a4696",
+        "id"        : "5c46245a",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6958,7 +6936,7 @@ export default [
         }
     },
     {
-        "id"        : "dfb53160",
+        "id"        : "ddf29fb5",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -6980,7 +6958,7 @@ export default [
         }
     },
     {
-        "id"        : "9649d61d",
+        "id"        : "e94ac3f5",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7002,7 +6980,7 @@ export default [
         }
     },
     {
-        "id"        : "a4ced6c3",
+        "id"        : "a7a714f5",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7024,7 +7002,7 @@ export default [
         }
     },
     {
-        "id"        : "61c3d690",
+        "id"        : "79aa7482",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7046,7 +7024,7 @@ export default [
         }
     },
     {
-        "id"        : "f864100d",
+        "id"        : "128717e9",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7068,7 +7046,7 @@ export default [
         }
     },
     {
-        "id"        : "f256ad3d",
+        "id"        : "3cdc25c4",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7090,7 +7068,7 @@ export default [
         }
     },
     {
-        "id"        : "6ceac901",
+        "id"        : "04b4ef63",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7112,7 +7090,7 @@ export default [
         }
     },
     {
-        "id"        : "8534bc81",
+        "id"        : "abf67483",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7134,7 +7112,7 @@ export default [
         }
     },
     {
-        "id"        : "e9372665",
+        "id"        : "a554a459",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7156,7 +7134,7 @@ export default [
         }
     },
     {
-        "id"        : "7f74a236",
+        "id"        : "a92b8c64",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7178,7 +7156,7 @@ export default [
         }
     },
     {
-        "id"        : "0c7321d7",
+        "id"        : "1d3fde28",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7200,7 +7178,7 @@ export default [
         }
     },
     {
-        "id"        : "2faaea01",
+        "id"        : "217b2a55",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7222,7 +7200,7 @@ export default [
         }
     },
     {
-        "id"        : "97b481db",
+        "id"        : "932d3ef9",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7244,7 +7222,7 @@ export default [
         }
     },
     {
-        "id"        : "bf55d2a4",
+        "id"        : "c2bc9f43",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7266,7 +7244,7 @@ export default [
         }
     },
     {
-        "id"        : "6939dab5",
+        "id"        : "bec61086",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7288,7 +7266,7 @@ export default [
         }
     },
     {
-        "id"        : "4607e28c",
+        "id"        : "de7a39a7",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7310,7 +7288,7 @@ export default [
         }
     },
     {
-        "id"        : "1c62d1b8",
+        "id"        : "08b969a5",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7332,7 +7310,7 @@ export default [
         }
     },
     {
-        "id"        : "bec59bec",
+        "id"        : "522ba6cd",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7354,7 +7332,7 @@ export default [
         }
     },
     {
-        "id"        : "7d27b129",
+        "id"        : "c512f164",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7376,7 +7354,7 @@ export default [
         }
     },
     {
-        "id"        : "a3415293",
+        "id"        : "305e1976",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7398,7 +7376,7 @@ export default [
         }
     },
     {
-        "id"        : "a2b2127e",
+        "id"        : "622eb1e0",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7420,7 +7398,7 @@ export default [
         }
     },
     {
-        "id"        : "daecc1ef",
+        "id"        : "faefc520",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
@@ -7442,7 +7420,7 @@ export default [
         }
     },
     {
-        "id"        : "ab55db20",
+        "id"        : "6439c67f",
         "type"      : "Feature",
         "properties": {
             "type"       : "proposal",
