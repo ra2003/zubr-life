@@ -491,7 +491,7 @@
     </div>
 </template>
 <script>
-    import predefined                from './features'
+    import predefined                from './features.json'
     import favourites                from './favourites'
     import {findPointOnSurface}      from 'vuelayers/lib/ol-ext'
     import {Fill, Style, Text, Icon} from 'ol/style';
