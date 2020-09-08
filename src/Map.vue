@@ -247,7 +247,7 @@
                                 <span>Предложение</span>
                             </b-radio-button>
                         </b-field>
-                        <b-field label="Телефон">
+                        <b-field label="Телефон" v-show="request.category !== 'telegram'">
                             <b-input
                                 v-model="request.phone"
                                 placeholder="Контактные данные"
