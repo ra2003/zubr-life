@@ -138,10 +138,10 @@
                     <vl-style-func :factory="clusterStyleFunc(key, 'proposal')"/>
                 </vl-source-cluster>
             </vl-layer-vector>
-            <vl-layer-vector v-for="(items, key) in telegramChats" :key="key">
-                <vl-source-cluster :distance="85" v-if="filter.categories.includes(key)">
-                    <vl-source-vector :features.sync="items"></vl-source-vector>
-                    <vl-style-func :factory="clusterStyleFunc(key, 'proposal')"/>
+            <vl-layer-vector>
+                <vl-source-cluster :distance="85" v-if="filter.categories.includes('telegram')">
+                    <vl-source-vector :features.sync="telegramChats"></vl-source-vector>
+                    <vl-style-func :factory="clusterStyleFunc('telegram', 'proposal')"/>
                 </vl-source-cluster>
             </vl-layer-vector>
             <vl-layer-vector id="draw-pane">
@@ -817,10 +817,12 @@
                             properties: {
                                 links      : [item.link],
                                 description: item.name,
+                                category   : 'telegram',
+                                phones     : []
                             },
                             geometry  : {
                                 type       : 'Point',
-                                coordinates: [item.lat, item.long]
+                                coordinates: [item.long, item.lat]
                             }
                         }
                     }

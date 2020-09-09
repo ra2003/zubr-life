@@ -24,8 +24,10 @@ new Vue({
     el    : '#app',
     render: h => h(App),
 })
+if (process.env.NODE_ENV !== 'development') {
+    Sentry.init({
+        dsn         : "https://c847e26be2e94ac7b26915bde2e72cce@o419101.ingest.sentry.io/5305774",
+        integrations: [new VueIntegration({Vue, attachProps: true})],
+    });
+}
 
-Sentry.init({
-    dsn: "https://c847e26be2e94ac7b26915bde2e72cce@o419101.ingest.sentry.io/5305774",
-    integrations: [new VueIntegration({ Vue, attachProps: true })],
-});
