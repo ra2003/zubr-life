@@ -138,6 +138,12 @@
                     <vl-style-func :factory="clusterStyleFunc(key, 'proposal')"/>
                 </vl-source-cluster>
             </vl-layer-vector>
+            <vl-layer-vector v-for="(items, key) in telegramChats" :key="key">
+                <vl-source-cluster :distance="85" v-if="filter.categories.includes(key)">
+                    <vl-source-vector :features.sync="items"></vl-source-vector>
+                    <vl-style-func :factory="clusterStyleFunc(key, 'proposal')"/>
+                </vl-source-cluster>
+            </vl-layer-vector>
             <vl-layer-vector id="draw-pane">
                 <vl-source-vector ident="draw-target" :features.sync="drawnFeatures"></vl-source-vector>
                 <vl-style-box>
@@ -492,6 +498,7 @@
 </template>
 <script>
     import predefined                from './features.json'
+    import chats                     from './markers.json'
     import favourites                from './favourites'
     import {findPointOnSurface}      from 'vuelayers/lib/ol-ext'
     import {Fill, Style, Text, Icon} from 'ol/style';
@@ -802,6 +809,23 @@
                 zoom            : 9,
                 map,
                 categories,
+                telegramChats   : chats['markers'].map(
+                    item => {
+                        return {
+                            id        : item.link,
+                            type      : 'Feature',
+                            properties: {
+                                links      : [item.link],
+                                description: item.name,
+                            },
+                            geometry  : {
+                                type       : 'Point',
+                                coordinates: [item.lat, item.long]
+                            }
+                        }
+                    }
+                )
+                ,
                 selectedFeatures: [],
                 remoteFeatures  : [],
                 filterModal     : false,
