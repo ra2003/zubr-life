@@ -605,7 +605,7 @@
                             if (category.substring(0, 8) === 'telegram') {
                                 name = 'telegram'
                             }
-                            if (category.substring(0, 8) === 'eduction') {
+                            if (category.substring(0, 9) === 'education') {
                                 name = 'education'
                             }
                             style = new Style({
@@ -646,6 +646,9 @@
                         let name = `${type}_${category}`;
                         if (category.substring(0, 8) === 'telegram') {
                             name = 'telegram'
+                        }
+                        if (category.substring(0, 9) === 'education') {
+                            name = 'education'
                         }
                         style       = new Style({
                             image: new Icon({
