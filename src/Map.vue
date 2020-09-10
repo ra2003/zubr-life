@@ -497,7 +497,8 @@
     </div>
 </template>
 <script>
-    import predefined                from './features.json'
+    import predefined                from './predefined.json'
+    import svajeby                   from './svajeby.json'
     import chats                     from './markers.json'
     import favourites                from './favourites'
     import {findPointOnSurface}      from 'vuelayers/lib/ol-ext'
@@ -516,6 +517,8 @@
     const additionalCategories = {
         'telegram_microdistrict': 'telegram - Микрорайон',
         'telegram_recall'       : 'telegram - Отзыв депутата',
+        'education_extra'       : 'Образование - Дополнительно',
+        'education_preschool'   : 'Образование - Дошкольное',
     };
 
 
@@ -555,14 +558,14 @@
     let map = {
         proposal: {}
     };
-
-    for (let item of predefined) {
+    let all = predefined.concat(svajeby);
+    console.log(svajeby);
+    for (let item of all) {
         if (!map['proposal'][item.properties.category]) {
             map['proposal'][item.properties.category] = [];
         }
         map['proposal'][item.properties.category].push(item)
     }
-
     export default {
         methods: {
             clusterStyleFunc(category, type) {
@@ -601,6 +604,9 @@
                             let name = `${type}_${category}`;
                             if (category.substring(0, 8) === 'telegram') {
                                 name = 'telegram'
+                            }
+                            if (category.substring(0, 8) === 'eduction') {
+                                name = 'education'
                             }
                             style = new Style({
                                 image: new Icon({
@@ -818,6 +824,7 @@
                                 links      : [item.link],
                                 description: item.name,
                                 category   : 'telegram',
+                                type       : 'info',
                                 phones     : []
                             },
                             geometry  : {
@@ -858,7 +865,9 @@
                         'health',
                         'food',
                         'education',
-                        'other'
+                        'other',
+                        'education_preschool',
+                        'education_extra'
                     ]
                 },
                 favourites

@@ -1,0 +1,1476 @@
+[
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.687999725341797,
+                53.9463996887207
+            ]
+        },
+        "id": "svaje170",
+        "properties": {
+            "category": "education_extra",
+            "type": "proposal",
+            "address": "пр. Незалежнасці 179 - 27\r\nгандл. цэнтр \"Спектр\", 2гі паверх",
+            "phones": [
+                "+375444750007"
+            ],
+            "links": [
+                "https://svaje.by/6b",
+                "https://www.facebook.com/6Bminsk",
+                "https://www.instagram.com/6b.mm/"
+            ],
+            "description": "6B Мастацкая Майстэрня - Курсы малюнку ды ілюстрацыі, нефармальны творчы асяродак"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.476823128997808,
+                53.90764351043837
+            ]
+        },
+        "id": "svaje464",
+        "properties": {
+            "category": "education_extra",
+            "type": "proposal",
+            "address": "Прытыцкага 39 (офіс Golden Kid)\r\nНепасрэдна летнік кожную змену будзе знаходзіцца па за межамі гораду. Сталай пляцоўкі ў нас няма. Аб месцы правядзення летніка будзе паведамлена загадзя.",
+            "phones": [
+                "+375291933909"
+            ],
+            "links": [
+                "https://svaje.by/goldenkids",
+                "https://www.facebook.com/groups/goldenkidcamp",
+                "https://www.instagram.com/golden_kids_club/",
+                "https://vk.com/goldenkidsclub"
+            ],
+            "description": "Golden Kids Camp - Білінгвальны ангельска-беларускі летнік для дзетак ад 7 да 17 год уключна."
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.205042507934422,
+                55.19520716715594
+            ]
+        },
+        "id": "svaje213",
+        "properties": {
+            "category": "food",
+            "type": "proposal",
+            "address": "вул. Талстога, 1",
+            "phones": [
+                "+375297121111"
+            ],
+            "links": [
+                "https://svaje.by/torvald",
+                "https://www.facebook.com/torvaldpub",
+                "https://vk.com/torvald_pub"
+            ],
+            "description": "TORVALD art-pub - Ірландскі паб / піўны бар, Віцебск"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.028373448687717,
+                52.451083725866084
+            ]
+        },
+        "id": "svaje459",
+        "properties": {
+            "category": "education_extra",
+            "type": "proposal",
+            "address": "Галавацкага, 138",
+            "phones": [
+                "+375298347250"
+            ],
+            "links": [
+                "https://svaje.by/aik"
+            ],
+            "description": "ІП Георгі Кузьмянкоў: замежныя мовы, выкладанне у Гомелi - Рэпетытар. Выкладанне англiцкай, icпанскай, партугальскай а таксама чэшскай мовы жадаючым."
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.60783294612122,
+                53.899710862847925
+            ]
+        },
+        "id": "svaje444",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "Менскі р-н, Ратамка, вул.Друкарная, 5а\r\nг.Менск, вул.Уральская,3 ДК ім. Шарко",
+            "phones": [
+                "+375292474446"
+            ],
+            "links": [
+                "https://svaje.by/razam",
+                "https://www.facebook.com/krochymrazam",
+                "https://vk.com/krochymrazam"
+            ],
+            "description": "Адукацыйны цэнтр \"Крочым разам\" - Тэматычныя развіваючыя заняткі для дзяцей ад 3 да 7 гадоў, заняткі па сістэме Марыі Мантэсоры для дзяцей ад 1 да 7 гадоў, бацькоўскі клуб"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                26.009395504376926,
+                53.12970252773616
+            ]
+        },
+        "id": "svaje597",
+        "properties": {
+            "category": "food",
+            "type": "proposal",
+            "address": "вул. Камсамольская, 17",
+            "phones": [
+                "+375298659999"
+            ],
+            "links": [
+                "https://svaje.by/ambarmir"
+            ],
+            "description": "Амбар у Міраслава - Садавіна, гародніна, грыбы, ягады"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                25.96060001850128,
+                54.61821219989352
+            ]
+        },
+        "id": "svaje139",
+        "properties": {
+            "category": "food",
+            "type": "proposal",
+            "address": "вул. Карла Маркса, 13/3 (гандлевы цэнтр \"Талер\")",
+            "phones": [
+                "+375292592269",
+                "+375447792269"
+            ],
+            "links": [
+                "https://svaje.by/piunyhietman"
+            ],
+            "description": "Бар \"Піўны Гетман\", Астравец - Піўны бар + сушы, Астравец"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.595956124603163,
+                53.940735781597326
+            ]
+        },
+        "id": "svaje516",
+        "properties": {
+            "category": "food",
+            "type": "proposal",
+            "address": "вул. Літаратурная, 22",
+            "phones": [],
+            "links": [
+                "https://svaje.by/vy_peczka"
+            ],
+            "description": "Вы&Печка"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.62795223491821,
+                53.90584706274382
+            ]
+        },
+        "id": "svaje517",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Авангардная, 27",
+            "phones": [
+                "+375292474446"
+            ],
+            "links": [
+                "https://svaje.by/zorachki",
+                "https://www.facebook.com/zorachki.by/",
+                "https://www.instagram.com/zorachki.by/"
+            ],
+            "description": "Дзіцячы клуб Зорачкі | Садок па сістэме Мантэсоры ў Мінску - Дзіцячы клуб Зорачкі – гэта творчая, навучальная прастора створаная прафесіяналамі для дзетак ад 1 года і да школы."
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.546109952270513,
+                53.938209614641075
+            ]
+        },
+        "id": "svaje260",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Прыгарадная, 69",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n1/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №1. А-100, вул. Прыгарадная, 69 - Запраўка №1. А-100, вул. Прыгарадная, 69"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.53495196276856,
+                53.984836936625406
+            ]
+        },
+        "id": "svaje257",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "Папярнянскі с/с, раён вёскі Цнянка",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n10/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №10. А-100, Папярнянскі с/с, раён вёскі Цнянка - Запраўка №10. А-100, Папярнянскі с/с, раён вёскі Цнянка"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.64726141864014,
+                53.85183019212099
+            ]
+        },
+        "id": "svaje273",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "Машынабудаўнікоў, 7Б",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n11/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №11. А-100, Машынабудаўнікоў, 7Б - Запраўка №11. А-100, Машынабудаўнікоў, 7Б"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.46155599528504,
+                53.90789631905783
+            ]
+        },
+        "id": "svaje254",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Прытыцкага, 62в",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n12/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №12. А-100, вул. Прытыцкага, 62в - Запраўка №12. А-100, вул. Прытыцкага, 62в"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.646134890853887,
+                53.89085991670311
+            ]
+        },
+        "id": "svaje267",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Радыяльная, 13а",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n13/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №13. А-100, вул. Радыяльная, 13а - Запраўка №13. А-100, вул. Радыяльная, 13а"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.5868473427887,
+                53.87893346383152
+            ]
+        },
+        "id": "svaje268",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Трасцянецкая, 16",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n14/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №14. А-100, вул. Трасцянецкая, 16 - Запраўка №14. А-100, вул. Трасцянецкая, 16"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.67576793605042,
+                53.85230484019951
+            ]
+        },
+        "id": "svaje272",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Прамысловая, 2Б",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n15/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №15. А-100, вул. Прамысловая, 2Б - Запраўка №15. А-100, вул. Прамысловая, 2Б"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.51418093615723,
+                53.837930110092294
+            ]
+        },
+        "id": "svaje276",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Казінца, 133",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n16/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №16. А-100, вул. Казінца, 133 - Запраўка №16. А-100, вул. Казінца, 133"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.579755582153325,
+                53.936510681326354
+            ]
+        },
+        "id": "svaje261",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Някрасава, 41",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n17/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №17. А-100, вул. Някрасава, 41 - Запраўка №17. А-100, вул. Някрасава, 41"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.736010350524907,
+                53.832257348347284
+            ]
+        },
+        "id": "svaje270",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "Мінскі р-н, траса на г. Магілёў (М4), 4 км ад МКАД",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n18/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №18. А-100, Мінскі р-н, траса на г. Магілёў (М4) - Запраўка №18. А-100, Мінскі р-н, траса на г. Магілёў (М4)"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.408973969757085,
+                53.90494468307342
+            ]
+        },
+        "id": "svaje251",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Брыкета, 23",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n19/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №19. А-100, вул. Брыкета, 23 - Запраўка №19. А-100, вул. Брыкета, 23"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.643720902740483,
+                53.964392223963706
+            ]
+        },
+        "id": "svaje263",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "Мінскі р-н, Баравая, 7",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n2/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №2. А-100, Мінскі р-н, Баравая, 7 - Запраўка №2. А-100, Мінскі р-н, Баравая, 7"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.54988650256348,
+                53.96923928521186
+            ]
+        },
+        "id": "svaje259",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "Даўгінаўскі тракт, 190",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n20/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №20. А-100, Даўгінаўскі тракт, 190 - Запраўка №20. А-100, Даўгінаўскі тракт, 190"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.66131619387818,
+                53.901152125139284
+            ]
+        },
+        "id": "svaje266",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Ваўпшасава, 40",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n21/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №21. А-100, вул. Ваўпшасава, 40 - Запраўка №21. А-100, вул. Ваўпшасава, 40"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.98740843707276,
+                53.95285294063587
+            ]
+        },
+        "id": "svaje278",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "Траса М1/Е30 388-ы км",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n22/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №22. А-100, Траса М1/Е30 388-ы км - Запраўка №22. А-100, Траса М1/Е30 388-ы км"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.413641013442998,
+                53.91686371490566
+            ]
+        },
+        "id": "svaje255",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Казіміраўская, 39",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n23/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №23. А-100, вул. Казіміраўская, 39 - Запраўка №23. А-100, вул. Казіміраўская, 39"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.46351937228394,
+                53.839474791561535
+            ]
+        },
+        "id": "svaje277",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "АД Р1 \"Брэст-Мінск\", 9-ы км",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n24/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №24. А-100, АД Р1 \"Брэст-Мінск\" - Запраўка №24. А-100, АД Р1 \"Брэст-Мінск\", 9-ы км"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.53145436221314,
+                53.82310080186553
+            ]
+        },
+        "id": "svaje275",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "а/г Сеніца, вул. Зялёная",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n25/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №25. А-100, а/г Сеніца, вул. Зялёная - Запраўка №25. А-100, а/г Сеніца, вул. Зялёная"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                23.73743752413941,
+                52.07933429952085
+            ]
+        },
+        "id": "svaje282",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. 28 Лiпеня",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n26/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №26. А-100, вул. 28 Лiпеня - Запраўка №26. А-100, вул. 28 Лiпеня"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                23.71743897372437,
+                52.112395637246216
+            ]
+        },
+        "id": "svaje279",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "Запраўка №27. А-100, вул. Радужная, 20",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n27/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №27. А-100, вул. Радужная, 20 - Запраўка №27. А-100, вул. Радужная, 20"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                23.767542638122563,
+                52.095841666460075
+            ]
+        },
+        "id": "svaje281",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "пр. Рэспублікі, 6",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n28/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №28. А-100, пр. Рэспублікі, 6 - Запраўка №28. А-100, пр. Рэспублікі, 6"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                23.755011357604985,
+                52.1107616013978
+            ]
+        },
+        "id": "svaje280",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Я. Купалы, 106/4",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n29/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №29. А-100, вул. Я. Купалы, 106/4 - Запраўка №29. А-100, вул. Я. Купалы, 106/4"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.421644725143437,
+                53.87939515547964
+            ]
+        },
+        "id": "svaje252",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Шаранговiча, 81",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n3/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №3. А-100, вул. Шаранговiча, 81 - Запраўка №3. А-100, вул. Шаранговiча, 81"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.633174456893926,
+                53.90643632818298
+            ]
+        },
+        "id": "svaje265",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "ул. Анаева, 47",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n30/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №30. А-100, вул. Анаева, 47 - Запраўка №30. А-100, вул. Анаева, 47"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.611748971282964,
+                53.90764983067248
+            ]
+        },
+        "id": "svaje264",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Акадэмiчная, 34",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n31/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №31. А-100, вул. Акадэмiчная, 34 - Запраўка №31. А-100, вул. Акадэмiчная, 34"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                24.25523261004639,
+                51.833920940046895
+            ]
+        },
+        "id": "svaje283",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Брэсцкая",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n32/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №32. А-100, в. Макраны, вул. Брэсцкая - Запраўка №32. А-100, в. Макраны, вул. Брэсцкая"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.53764490061951,
+                53.96521272969359
+            ]
+        },
+        "id": "svaje258",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "Даўгінаўскі тракт, 178/1",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n33/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №33. А-100, Даўгінаўскі тракт, 178/1 - Запраўка №33. А-100, Даўгінаўскі тракт, 178/1"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.615396775543218,
+                53.83252327621905
+            ]
+        },
+        "id": "svaje274",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "Мінскі р-н, Навадворскі с/с, 82",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n35/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №35. А-100, Мінскі р-н, Навадворскі с/с, 82 - Запраўка №35. А-100, Мінскі р-н, Навадворскі с/с, 82"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.690166034042363,
+                53.86924941363866
+            ]
+        },
+        "id": "svaje271",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Герасiменка, 2",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n4/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №4. А-100, вул. Герасiменка, 2 - Запраўка №4. А-100, вул. Герасiменка, 2"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.429176368057256,
+                53.936529628919466
+            ]
+        },
+        "id": "svaje256",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Масюкоўшчына, 2а, корп.3",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n5/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №5. А-100, вул. Масюкоўшчына, 2а, корп.3 - Запраўка №5. А-100, вул. Масюкоўшчына, 2а, корп.3"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.49901572638703,
+                53.89463444228561
+            ]
+        },
+        "id": "svaje253",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Харкаўская, 81",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n6/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №6. А-100, вул. Харкаўская, 81 - Запраўка №6. А-100, вул. Харкаўская, 81"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.597458161651616,
+                53.880919334176454
+            ]
+        },
+        "id": "svaje269",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "пр. Партызанскі, 8а",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n7/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №7. А-100, пр. Партызанскі, 8а - Запраўка №7. А-100, пр. Партызанскі, 8а"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.642723120986943,
+                53.96632985383631
+            ]
+        },
+        "id": "svaje262",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "Бараўлянскi с/с, M3, 7-ы км, 1",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n8/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №8. А-100, Бараўлянскi с/с, M3, 7-ы км, 1 - Запраўка №8. А-100, Бараўлянскi с/с, M3, 7-ы км, 1"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                26.851954259216313,
+                54.31321225977736
+            ]
+        },
+        "id": "svaje284",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Лібава-Роменская, 129а",
+            "phones": [
+                "+375172333333"
+            ],
+            "links": [
+                "https://svaje.by/zaprauki/a-100-n9/",
+                "https://www.facebook.com/a100azs",
+                "https://www.instagram.com/azs_a100/",
+                "https://vk.com/a100azs"
+            ],
+            "description": "Запраўка №9. А-100, вул. Лібава-Роменская, 129а - Запраўка №9. А-100, вул. Лібава-Роменская, 129а"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.267975124081413,
+                54.00800362452142
+            ]
+        },
+        "id": "svaje633",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. Студзянецкая, 19",
+            "phones": [
+                "+375175174226"
+            ],
+            "links": [
+                "https://svaje.by/zaslauskaja-himnazija"
+            ],
+            "description": "Заслаўская гімназія - Клас з беларускай мовай навучання"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.5774274247284,
+                53.9194227664353
+            ]
+        },
+        "id": "svaje473",
+        "properties": {
+            "category": "food",
+            "type": "proposal",
+            "address": "вул. Веры Харужай, 8 - Камароўка, крыты рынак - ад цэнтральнага ўваходу ўніз і направа, у куце",
+            "phones": [],
+            "links": [
+                "https://svaje.by/kavapoint"
+            ],
+            "description": "Кава-Поінт на Камароўцы - Кава з сабой"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                23.8262996673584,
+                53.67829895019531
+            ]
+        },
+        "id": "svaje62",
+        "properties": {
+            "category": "food",
+            "type": "proposal",
+            "address": "вул. Замкавая, 11",
+            "phones": [
+                "+375445854245"
+            ],
+            "links": [
+                "https://svaje.by/nashakava",
+                "http://facebook.com/NashaKava",
+                "https://vk.com/clubnashakava"
+            ],
+            "description": "Кавярня \"Наша Кава\" - Кавярня ў цэнтры Гродна"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.335826992988586,
+                53.9022966733692
+            ]
+        },
+        "id": "svaje127",
+        "properties": {
+            "category": "food",
+            "type": "proposal",
+            "address": "вул. Першамайская, 22А",
+            "phones": [
+                "+375445342250",
+                "+375299547754"
+            ],
+            "links": [
+                "https://svaje.by/los",
+                "https://www.facebook.com/ShparkiLos",
+                "https://www.instagram.com/shparkilos",
+                "https://vk.com/shparkilos"
+            ],
+            "description": "Кавярня \"Шпаркi Лось\" - Хатка смачнай ежы, Магілёў"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.448587093670653,
+                53.87559264815606
+            ]
+        },
+        "id": "svaje514",
+        "properties": {
+            "category": "education_extra",
+            "type": "proposal",
+            "address": "вул. Ю.Семянякі, д.14 (Сухарава)",
+            "phones": [
+                "+375292447244",
+                "+375291622992"
+            ],
+            "links": [
+                "https://svaje.by/dziciacy_kvartal",
+                "https://web.facebook.com/kvartaldetskii",
+                "https://www.instagram.com/kvartal_detskii"
+            ],
+            "description": "Клуб развіцця і творчасці “Дзіцячы квартал” - \"Казачны завулак\" - развіваючыя заняткі для дзяцей 1-6 год."
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.251953119049062,
+                55.18835712584612
+            ]
+        },
+        "id": "svaje479",
+        "properties": {
+            "category": "food",
+            "type": "proposal",
+            "address": "вул. С. Панковай, 2",
+            "phones": [],
+            "links": [
+                "https://svaje.by/zoracki"
+            ],
+            "description": "Міні-кафэ \"Зорачкі\" - Бліны, кава-гарбата, марозіва"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                26.743622519313817,
+                53.88588834004112
+            ]
+        },
+        "id": "svaje297",
+        "properties": {
+            "category": "food",
+            "type": "proposal",
+            "address": "вул. Камсамольская, дом 5.",
+            "phones": [
+                "+375256839370"
+            ],
+            "links": [
+                "https://svaje.by/aksamit"
+            ],
+            "description": "Магазін прадуктаў \"Аксамiт\" - Невялічкі магазін прадуктаў"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                26.15711220000003,
+                54.9639848
+            ]
+        },
+        "id": "svaje524",
+        "properties": {
+            "category": "food",
+            "type": "proposal",
+            "address": "в.Клюшчаны, Астравецкі р-н. Гродзенская вобл. 230231",
+            "phones": [
+                "+375299376431"
+            ],
+            "links": [
+                "https://svaje.by/miod"
+            ],
+            "description": "Мёд і ўсе прадукты пчалярства - Мёд, прадукты пчалярства"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.6042195,
+                53.9264975
+            ]
+        },
+        "id": "svaje539",
+        "properties": {
+            "category": "food",
+            "type": "proposal",
+            "address": "вул. К.Чорнага, 18",
+            "phones": [
+                "+375293305506"
+            ],
+            "links": [
+                "https://svaje.by/krama"
+            ],
+            "description": "Прадуктовая крама \"Элікон\" - Прадуктовая крама (поўны асартымент) + аддзел пабытовай хіміі"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.622831836245705,
+                53.96922836299249
+            ]
+        },
+        "id": "svaje618",
+        "properties": {
+            "category": "education_extra",
+            "type": "proposal",
+            "address": "пас. Сонечны, вул. Сасновая, д. 1",
+            "phones": [
+                "+375447977775"
+            ],
+            "links": [
+                "https://svaje.by/alona"
+            ],
+            "description": "Рэпетытарства англійскай і беларускай моў - Англійская і беларуская мовы для дзяцей і падлеткаў. Дапамагу развіць маўленчыя навыкі і засвоіць школьную праграму."
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.556540855650383,
+                53.907918079804055
+            ]
+        },
+        "id": "svaje556",
+        "properties": {
+            "category": "food",
+            "type": "proposal",
+            "address": "вул. Багдановіча, 7",
+            "phones": [
+                "+375293140110"
+            ],
+            "links": [
+                "https://svaje.by/mienskaja_sliachta",
+                "https://vk.com/mienskaja_sliachta"
+            ],
+            "description": "РэстаБар \"Менская шляхта\" - Старабеларуская кухня, самаробныя напоі"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.574899673461914,
+                53.90039825439453
+            ]
+        },
+        "id": "svaje98",
+        "properties": {
+            "category": "food",
+            "type": "proposal",
+            "address": "вул. Першамайская, 18",
+            "phones": [],
+            "links": [
+                "https://svaje.by/kamianica"
+            ],
+            "description": "Страўня \"Камяніца\", рэстарацыя,  Менск - Рэстарацыя беларускай кухні"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                28.30270868088989,
+                54.09043001700901
+            ]
+        },
+        "id": "svaje632",
+        "properties": {
+            "category": "education_preschool",
+            "type": "proposal",
+            "address": "вул. 8-га сакавіка, 14",
+            "phones": [],
+            "links": [
+                "https://svaje.by/skola6-zodzina"
+            ],
+            "description": "Сярэдняя школа №6 - Класы з беларускай мовай навучання"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.54010009765625,
+                53.91189956665039
+            ]
+        },
+        "id": "svaje144",
+        "properties": {
+            "category": "education_extra",
+            "type": "proposal",
+            "address": "[у працэсе пераезду]",
+            "phones": [
+                "+375291759985"
+            ],
+            "links": [
+                "https://svaje.by/dziciacyja-centry/тайм-клуб-сямейны-падворак/"
+            ],
+            "description": "Тайм-клуб \"Сямейны падворак\" - Тайм-клуб, міні-садок і школка для 1-2 класаў"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.631497699999954,
+                53.9294429
+            ]
+        },
+        "id": "svaje592",
+        "properties": {
+            "category": "education",
+            "type": "proposal",
+            "address": "пр. Незалежнасці, 113",
+            "phones": [
+                "+375297704493"
+            ],
+            "links": [
+                "https://svaje.by/ritor"
+            ],
+            "description": "Школа рыторыкі Ягора Прыстаўкі - Курсы аратарскага мастацтва па-беларуску"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                27.587560810386663,
+                53.90456860312347
+            ]
+        },
+        "id": "svaje220",
+        "properties": {
+            "category": "food",
+            "type": "proposal",
+            "address": "вул. Чапаева, 3.",
+            "phones": [
+                "+375292672299",
+                "+375291772299"
+            ],
+            "links": [
+                "https://svaje.by/vilki",
+                "https://www.facebook.com/vilkiby",
+                "https://vk.com/vilkiby"
+            ],
+            "description": "Шпаркія вілкі - Першая ў Мінску дастаўка страў беларускай нацыянальнай кухні ў гаршчэчках."
+        }
+    }
+]
