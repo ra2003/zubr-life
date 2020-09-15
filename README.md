@@ -1,6 +1,6 @@
 ### ZUBR.life
 
-Или как бэкендер занялся фронтендом
+Или как бэкендер занялся фронтендом.
 
 ## Project setup
 ```
@@ -21,6 +21,4 @@ yarn build
 ```
 yarn lint
 ```
-
-Jenkinsfile
 

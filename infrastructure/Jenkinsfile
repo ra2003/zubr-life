@@ -4,10 +4,42 @@ pipeline {
     disableConcurrentBuilds()
   }
   stages {
-    stage('Gathering env variables') {
-      steps {
-        sh 'echo 1'
-      }
+    stage('Build') {
+        agent {
+            docker {
+                image 'node:12.16.3'
+                args '-v ${PWD}:/usr/src/life -w /usr/src/life'
+                reuseNode true
+            }
+        }
+        environment {
+            CYPRESS_CACHE_FOLDER = "${WORKSPACE}/cache/Cypress"
+            VUE_APP_API_URL      = credentials('LIFE_API_URL')
+        }
+        steps {
+            sh 'yarn install'
+            sh 'yarn build'
+            stash includes: 'dist/**', name: 'output'
+            stash includes: 'infrastructure/*', name: 'infra'
+        }
+    }
+    stage('Deploy') {
+        environment {
+            FRONTEND_HOST   = credentials('FRONTEND_HOST')
+        }
+        steps {
+            unstash 'infra'
+            unstash 'output'
+            writeFile file: 'infrastructure/hosts', text: """
+${FRONTEND_HOST}
+            """
+            ansiblePlaybook(
+               playbook: 'infrastructure/ansistrano_deploy.yml',
+               inventory: 'infrastructure/hosts',
+               credentialsId: "SSH_PRIVATE_KEY",
+               hostKeyChecking: false
+           )
+        }
     }
   }
 }
