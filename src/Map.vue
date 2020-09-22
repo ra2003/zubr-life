@@ -559,7 +559,6 @@
         proposal: {}
     };
     let all = predefined.concat(svajeby);
-    console.log(svajeby);
     for (let item of all) {
         if (!map['proposal'][item.properties.category]) {
             map['proposal'][item.properties.category] = [];
@@ -606,8 +605,9 @@
                                 name = 'telegram'
                             }
                             if (category.substring(0, 9) === 'education') {
-                                name = 'education'
+                                name = `${type}_education`
                             }
+
                             style = new Style({
                                 image: new Icon({
                                     scale  : 0.41,
@@ -616,6 +616,7 @@
                                 }),
                                 text : new Text(params),
                             })
+
 
                             cache[size] = style
                         }
@@ -648,7 +649,7 @@
                             name = 'telegram'
                         }
                         if (category.substring(0, 9) === 'education') {
-                            name = 'education'
+                            name = `${type}_education`;
                         }
                         style       = new Style({
                             image: new Icon({
